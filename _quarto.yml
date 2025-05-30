@@ -1,0 +1,71 @@
+project:
+  type: website
+
+lang: es
+date-format: iso
+
+execute:
+    freeze: auto
+
+website:
+  title: "Taller: elaboración de informes"
+  description: "Website del taller de elaboración de informes del Herbario Universidad de Antioquia HUA"
+  site-url: https://herbarihua.github.io/taller-elaboracion-informes/
+  repo-url: https://github.com/herbarihua/taller-elaboracion-informes/
+
+  page-navigation: true
+  back-to-top-navigation: true
+  bread-crumbs: true
+
+  # google-analytics:
+  #   tracking-id: "G-QKP4WCQ1Q4"
+  #   anonymize-ip: true
+
+  twitter-card:
+    card-style: summary_large_image
+
+  open-graph: true
+
+  navbar:
+    # logo: images/logo_reproducible_quarto.png
+    right:
+      - text: "Inicio"
+        href: index.qmd
+      - text: "Preparación"
+        href: preparacion/index.qmd
+      # - text: "Presentaciones"
+        # menu:
+        #   - text: "Introducción al curso"
+        #     href: slides/intro/
+        #   - text: "Introducción a Quarto"
+        #     href: slides/intro-quarto/
+        #   - text: "Workflow"
+        #     href: slides/workflow/
+        #   - text: "Git y GitHub"
+        #     href: slides/git-github/
+        #   - text: "Introducción a R"
+        #     href: slides/intro-r/
+      - text: "HUA"
+        href: https://www.udea.edu.co/wps/portal/udea/web/inicio/unidades-academicas/ciencias-exactas-naturales/herbario
+      - icon: facebook
+        href: https://www.facebook.com/herbariohua/
+      - icon: instagram
+        href: https://www.instagram.com/herbariohua/
+      - icon: github
+        href: https://github.com/geobota/herbariohua/
+  # sidebar:
+  #   style: "docked"
+  #   logo: images/logo_reproducible_quarto.png
+
+  page-footer:
+    left: Herbario Universidad de Antioquia HUA © 2025. Este sitio web está bajo una licencia [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+    right: Hecho por [\@alexespinosaco](https://alexespinosaco.github.io) con [![](https://www.r-project.org/logo/Rlogo.svg){fig-alt="R" width=21px}](https://www.r-project.org/) y [![](https://quarto.org/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org/)
+
+format:
+  html:
+    theme: 
+      light: cosmo
+      dark: solar
+    css: styles.scss
+    toc: true
+    mainfont: "Atkinson Hyperlegible"

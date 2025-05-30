@@ -1,0 +1,9 @@
+---
+title: "Taller: elaboración de informes"
+---
+
+Bienvenido al sitio web del taller sobre elaboración de informes del Herbario de la Universidad de Antioquia, realizado en el marco del contrato CW317139.
+
+## Preparación
+
+Antes de comenzar, asegúrate de tener todo instalado y configurado como se indica en la sección Preparación. [Clic aquí](preparacion/).
