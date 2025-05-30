@@ -1,0 +1,391 @@
+---
+title: "Preparación"
+author: "Álex Espinosa-Correa"
+date: 2025-05-30
+toc: true
+---
+
+::: {.callout-warning}
+## Requisitos
+
+Se requiere que cada participante disponga de su propio ordenador personal. En este equipo, deberá tener instalado el software necesario para el desarrollo del taller.
+:::
+
+::: {.callout-important}
+Descargue los materiales (clone el repositorio) del talle  <https://github.com/herbarioudea/materiales-elaboracion-informes> el martes 3 de junio por la mañana.
+:::
+
+:::{.callout-note}
+Este paso a paso fue elaborado con versiones anteriores de los programas, pero el proceso de instalación sigue siendo el mismo.
+:::
+
+::: {.callout-note}
+Si tiene problemas con la instalación, póngase en contacto con el organizador.
+:::
+
+::: {.callout-important}
+En las instalaciones de programas mostradas en este paso a paso se activará el **Control de cuentas de usuario** de Windows. Hacer clic en **Sí**
+:::
+
+-   Instalar R, [versión 4.5.0 o posterior](https://cran.rstudio.com)
+-   Instalar RTools [version 4.5 o posterior](https://cran.rstudio.com/)
+-   Instalar RStudio, [versión 2025.05.0-496 o posterior](https://posit.co/download/rstudio-desktop/)
+-   Instalar Quarto, [versión 1.7.31 o posterior](https://quarto.org/docs/get-started/)
+    -   Después de instalar Quarto, instalar `TinyTeX`
+-   Instalar Git, [versión 2.49.0 o posterior](https://git-scm.com)
+-   Instalar [GitHub Desktop](https://github.com/apps/desktop)
+-   Instalar [Zotero 7](https://www.zotero.org/download/)
+-   Descargar los materiales (clonar el repositorio) del taller <https://github.com/herbarioudea/materiales-elaboracion-informes/.git>
+-   Instalar los paquetes de R necesarios
+```{r}
+#| echo: true
+#| eval: false
+
+install.packages(
+  c(
+    "countdown", "ethnobotanyR", "flextable", "fontawesome", 
+    "ggthemes", "gt", "here", "janitor", "palmerpenguins", 
+    "readxl", "showtext", "sysfonts", "tidyverse", "visdat" 
+  )
+)
+```
+
+## Instalar R
+
+Este es un paso a paso de cómo instalar R en Windows.
+
+-   Ir a <https://posit.co/download/rstudio-desktop/>
+
+![](images/r_instalacion_00.png)
+
+-   Ir hasta esta sección de la página. Hacer clic en **DOWNLOAD AND INSTALL R**
+
+![](images/r_instalacion_01.png)
+
+-   Hacer clic en Download R for Windows 
+
+![](images/r_instalacion_02.png)
+
+-   Hacer clic en **base**
+
+![](images/r_instalacion_03.png)
+
+-   Hacer clic en **Download R-4.5.0 for Windows**. Esto iniciara la descarga de `R-4.5.0-win.exe`
+
+![](images/r_instalacion_04.png)
+
+-   Buscar donde se ha descargado `R-4.5.0-win.exe`. Hacer doble clic sobre él para abrir. Se abrirá esta ventana. Hacer clic en **Aceptar**
+
+![](images/r_instalacion_07.png)
+
+-   Hacer clic en **Siguiente**
+
+![](images/r_instalacion_08.png)
+
+-   Hacer clic en **Siguiente**
+
+![](images/r_instalacion_09.png)
+
+-   Hacer clic en **Siguiente**
+
+![](images/r_instalacion_10.png)
+
+-   Hacer clic en **Siguiente**
+
+![](images/r_instalacion_11.png)
+
+-   Hacer clic en **Siguiente**
+
+![](images/r_instalacion_12.png)
+
+-   Esperar a que la instalación termine
+
+![](images/r_instalacion_13.png)
+
+-   Hacer clic en **Finalizar**
+
+![](images/r_instalacion_14.png)
+
+### Instalar RTools
+
+Es recomendable instalar RTools. Evitaremos algunos problemas al instalar ciertos paquetes
+
+-   Regresar a esta [ventana](https://cran.rstudio.com/). Hacer clic en **RTools**
+
+![](images/r_instalacion_03.png)
+
+-   Hacer clic en **RTools 4.5**
+
+![](images/r_instalacion_05.png)
+
+-   Hacer clic en **Rtools45 installer** o **64-bit ARM Rtools44 installer** dependiendo de la configuración de su computadora. Comenzará la descarga de `rtools45-6536-6492.exe` o `rtools45-aarch64-6536-6492.exe`, respectivamente. Buscar donde se ha descargado el archivo, hacer doble clic y seguir las instrucciones. 
+
+![](images/r_instalacion_06.png)
+
+## Instalar RStudio
+
+Este es un paso a paso de cómo instalar RStudio en Windows.
+
+-   Ir a <https://posit.co/download/rstudio-desktop/>
+
+![](images/r_instalacion_00.png)
+
+-   Ir hasta esta sección de la página. Hacer clic en **DOWNLOAD RSTUDIO DESKTOP FOR WINDOWS**. Esto iniciara la descarga de `RStudio-2025.05.0-496.exe`
+
+![](images/r_instalacion_01.png)
+
+-   Buscar donde se ha descargado `RStudio-2025.05.0-496.exe`. Hacer doble clic sobre él para abrir. Se abrirá esta ventana. Hacer clic en **Siguiente**
+
+![](images/rstudio_instalacion_01.png)
+
+-   Hacer clic en **Instalar**
+
+![](images/rstudio_instalacion_02.png)
+
+-   Esperar a que la instalación termine 
+
+![](images/rstudio_instalacion_03.png)
+
+-   Hacer clic en **Terminar**
+
+![](images/rstudio_instalacion_04.png)
+
+## Instalar Quarto
+
+-   Ir a <https://quarto.org>. Hacer clic en **Get Started**
+
+![](images/quarto_instalacion_01.png)
+
+-   Hacer clic en **Download Quarto CLI**. Esto iniciara la descarga de `quarto-1.7.31-win.msi`
+
+![](images/quarto_instalacion_02.png)
+
+-   Buscar donde se ha descargado `quarto-1.7.31-win.msi`. Hacer doble clic sobre él para abrir. Se abrirá esta ventana. Hacer clic en **Next**
+
+![](images/quarto_instalacion_03.png)
+
+-   Hacer clic en **Next**
+
+![](images/quarto_instalacion_04.png)
+
+-   Hacer clic en **Next**
+
+![](images/quarto_instalacion_05.png)
+
+-   Esperar a que termine
+
+![](images/quarto_instalacion_06.png)
+
+-   Hacer clic en **Finish**
+
+![](images/quarto_instalacion_07.png)
+
+
+### Instalar TinyTex
+
+-   Abrir RStudio (la apariencia puede variar)
+
+![](images/tinytext_instalacion_01.png)
+
+-   Hacer clic en la pestaña **Terminal** que se encuentra en el lado izquierdo
+
+![](images/tinytext_instalacion_02.png)
+
+-   Copiar el siguiente código. Pegar en la **Terminal** usando {{< kbd Ctrl-Shift-V >}}. Presionar {{< kbd Enter >}}
+
+```{.bash filename="Terminal"}
+quarto install tinytex
+```
+
+![](images/tinytext_instalacion_03.png)
+
+-   Esperar a que termine la descarga e instalación de TinyTex
+
+![](images/tinytext_instalacion_04.png)
+
+-   Al finanilizar la descarga e instalación, la terminal se ha de ver así
+
+![](images/tinytext_instalacion_05.png)
+
+## Instalar Git
+
+-   Ir a <https://git-scm.com>. Hacer clic en **Download for Windows**
+
+![](images/git_instalacion_01.png)
+
+::: {.callout-note collapse="true"}
+## Alternativa de descarga
+
+Ir a <https://gitforwindows.org>. Hacer clic en **Download**. Esto iniciara la descarga de `GitHubDesktopSetup-x64.exe`
+
+![](images/git_instalacion_03.png)
+:::
+
+-   Hacer clic en **Click here to download**. Esto iniciara la descarga de `GitHubDesktopSetup-x64.exe`
+
+![](images/git_instalacion_02.png)
+
+-   Buscar donde se ha descargado `GitHubDesktopSetup-x64.exe`. Hacer doble clic sobre él para abrir. Se abrirá esta ventana. Hacer clic en **Next**
+
+![](images/git_instalacion_04.png)
+
+-   Hacer clic en **Next**
+
+![](images/git_instalacion_05.png)
+
+-   Hacer clic en **Next**
+
+![](images/git_instalacion_06.png)
+
+-   Hacer clic en **Next**
+
+![](images/git_instalacion_07.png)
+
+-   Hacer clic en **Next**
+
+![](images/git_instalacion_08.png)
+
+-   Hacer clic en **Next**
+
+![](images/git_instalacion_09.png)
+
+-   Hacer clic en **Next**
+
+![](images/git_instalacion_10.png)
+
+-   Hacer clic en **Next**
+
+![](images/git_instalacion_11.png)
+
+-   Hacer clic en **Next**
+
+![](images/git_instalacion_12.png)
+
+-   Hacer clic en **Next**
+
+![](images/git_instalacion_13.png)
+
+-   Hacer clic en **Next**
+
+![](images/git_instalacion_14.png)
+
+-   Hacer clic en **Next**
+
+![](images/git_instalacion_15.png)
+
+-   Hacer clic en **Next**
+
+![](images/git_instalacion_16.png)
+
+-   Hacer clic en **Next**
+
+![](images/git_instalacion_17.png)
+
+-   Hacer clic en **Next**
+
+![](images/git_instalacion_18.png)
+
+-   Esperar a que la instalación termine
+
+![](images/git_instalacion_19.png)
+
+-   Hacer clic en **Finish**
+
+![](images/git_instalacion_20.png)
+
+## Instalar GitHub Desktop
+
+-   Ir a <https://github.com/apps/desktop>. Hacer clic en **Download now**
+
+![](images/github_instalacion_01.png)
+
+-   Hacer clic en **Download for Windows (64bit)**. Esto iniciara la descarga de `GitHubDesktopSetup-x64.exe`
+
+![](images/github_instalacion_02.png)
+
+-   Buscar donde se ha descargado `GitHubDesktopSetup-x64.exe`. Hacer doble clic sobre él para abrir. Se abrirá esta ventana 
+
+![](images/github_instalacion_03.png)
+
+-   Esperar hasta que termine al instalación y aparezca esta ventana
+
+![](images/github_instalacion_04.png)
+
+## Instalar Zotero
+
+-   Ir a <https://www.zotero.org>. Hacer clic en **Download**
+
+![](images/zotero_instalacion_01.png)
+
+-   Hacer clic en **Download (64-bit)**. Esto iniciara la descarga de `Zotero-7.0.15_x64_setup.exe`
+
+![](images/zotero_instalacion_02.png)
+
+-   Buscar donde se ha descargado `Zotero-7.0.15_x64_setup.exe`. Hacer doble clic sobre él para abrir. Se abriá esta ventana. Esperar a que el proceso termine 
+
+![](images/zotero_instalacion_03.png)
+
+-   Hacer clic en **Next**
+
+![](images/zotero_instalacion_04.png)
+
+-   Hacer clic en **Next**
+
+![](images/zotero_instalacion_05.png)
+
+-   Hacer clic en **Install**
+
+![](images/zotero_instalacion_06.png)
+
+-   Esperar a que la instalación termine
+
+![](images/zotero_instalacion_07.png)
+
+-   Hacer clic en **Finish**
+
+![](images/zotero_instalacion_08.png)
+
+## Descargar los archivos (clonar el repositorio) del taller
+
+::: {.callout-important}
+Si está inscrito al taller, descargue los materiales (clone el repositorio) del taller  <https://github.com/herbarioudea/materiales-elaboracion-informes/> el domingo 3 de junio por la mañana.
+:::
+
+-   Ir a <https://github.com/herbarioudea/materiales-elaboracion-informes/>
+
+-   Hacer clic en **\<\> Code** y copiar la URL bajo la pestaña HTTPS <https://github.com/herbarioudea/materiales-elaboracion-informes/.git>
+
+::: {.callout-tip}
+En este punto, podría descargar los archivos. Hacer clic en la opción **Download zip**. Esto descargará el archivo `materiales-elaboracion-informes/-main.zip`, el cual tendrá que descomprimir. 
+:::
+
+-   En RStudio, ir a **File** \> **New Project** \> **Version Control** \> **From Git** > pegar la URL en el cuadro de **Repository URL**. Hacer clic en **Create Project**. Esperar a que termine
+
+![Tomado de [Get Started with Quarto](https://github.com/rstudio-conf-2022/get-started-quarto/blob/main/materials/images/clone-repo.gif)](https://rstudio-conf-2022.github.io/get-started-quarto/materials/images/clone-repo.gif)
+
+::: {.callout-tip}
+En en el cuadro de  **Create project as subdirectory of** puede elegir el directorio donde quiere descargar el repositorio.
+:::
+
+## Instalar los paquetes de R necesarios
+
+-   Abrir RStudio (la apariencia puede variar)
+
+![](images/tinytext_instalacion_01.png)
+
+-   Copiar el siguiente código. Pegar en la **Console** usando {{< kbd Ctrl-C >}}, Presionar {{< kbd Enter >}}
+
+```{r}
+#| echo: true
+#| eval: false
+
+install.packages(
+  c(
+    "countdown", "ethnobotanyR", "flextable", "fontawesome", 
+    "ggthemes", "gt", "here", "janitor", "palmerpenguins", 
+    "readxl", "showtext", "sysfonts", "tidyverse", "visdat" 
+  )
+)
+```
+
+-   La descarga e instalación de paquetes puede tardar según su conexión a internet y las especificaciones de su equipo.
