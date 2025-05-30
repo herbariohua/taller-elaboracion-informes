@@ -216,16 +216,16 @@ quarto install tinytex
 ::: {.callout-note collapse="true"}
 ## Alternativa de descarga
 
-Ir a <https://gitforwindows.org>. Hacer clic en **Download**. Esto iniciara la descarga de `GitHubDesktopSetup-x64.exe`
+Ir a <https://gitforwindows.org>. Hacer clic en **Download**. Esto iniciara la descarga de `Git-2.49.0-64bit.exe`
 
 ![](images/git_instalacion_03.png)
 :::
 
--   Hacer clic en **Click here to download**. Esto iniciara la descarga de `GitHubDesktopSetup-x64.exe`
+-   Hacer clic en **Click here to download**. Esto iniciara la descarga de `Git-2.49.0-64bit.exe`
 
 ![](images/git_instalacion_02.png)
 
--   Buscar donde se ha descargado `GitHubDesktopSetup-x64.exe`. Hacer doble clic sobre él para abrir. Se abrirá esta ventana. Hacer clic en **Next**
+-   Buscar donde se ha descargado `Git-2.49.0-64bit.exe`. Hacer doble clic sobre él para abrir. Se abrirá esta ventana. Hacer clic en **Next**
 
 ![](images/git_instalacion_04.png)
 
