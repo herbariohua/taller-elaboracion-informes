@@ -348,7 +348,7 @@ Ir a <https://gitforwindows.org>. Hacer clic en **Download**. Esto iniciara la d
 ## Descargar los archivos (clonar el repositorio) del taller
 
 ::: {.callout-important}
-Si está inscrito al taller, descargue los materiales (clone el repositorio) del taller  <https://github.com/herbarioudea/materiales-elaboracion-informes/> el domingo 3 de junio por la mañana.
+Si está inscrito al taller, descargue los materiales (clone el repositorio) del taller  <https://github.com/herbarioudea/materiales-elaboracion-informes/> el martes 3 de junio por la mañana.
 :::
 
 -   Ir a <https://github.com/herbarioudea/materiales-elaboracion-informes/>
