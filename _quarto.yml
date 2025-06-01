@@ -5,7 +5,7 @@ lang: es
 date-format: iso
 
 execute:
-    freeze: auto
+  freeze: auto
 
 website:
   title: "Taller: elaboración de informes"
@@ -52,7 +52,7 @@ website:
       - icon: instagram
         href: https://www.instagram.com/herbariohua/
       - icon: github
-        href: https://github.com/geobota/herbariohua/
+        href: https://github.com/herbariohua/
   # sidebar:
   #   style: "docked"
   #   logo: images/logo_reproducible_quarto.png
@@ -66,6 +66,7 @@ format:
     theme: 
       light: cosmo
       dark: solar
-    css: styles.scss
     toc: true
-    mainfont: "Atkinson Hyperlegible"
+    respect-user-color-scheme: true
+    css: styles.scss
+    # mainfont: "Atkinson Hyperlegible"
