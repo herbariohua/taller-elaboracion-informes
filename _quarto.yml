@@ -10,8 +10,8 @@ execute:
 website:
   title: "Taller: elaboración de informes"
   description: "Website del taller de elaboración de informes del Herbario Universidad de Antioquia HUA"
-  site-url: https://herbarihua.github.io/taller-elaboracion-informes/
-  repo-url: https://github.com/herbarihua/taller-elaboracion-informes/
+  site-url: https://herbariohua.github.io/taller-elaboracion-informes/
+  repo-url: https://github.com/herbariohua/taller-elaboracion-informes/
 
   page-navigation: true
   back-to-top-navigation: true
@@ -69,4 +69,3 @@ format:
     toc: true
     respect-user-color-scheme: true
     css: styles.scss
-    # mainfont: "Atkinson Hyperlegible"
