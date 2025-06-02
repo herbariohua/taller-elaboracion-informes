@@ -35,7 +35,7 @@ En las instalaciones de programas mostradas en este paso a paso se activará el 
 -   Instalar Git, [versión 2.49.0 o posterior](https://git-scm.com)
 -   Instalar [GitHub Desktop](https://github.com/apps/desktop)
 -   Instalar [Zotero 7](https://www.zotero.org/download/)
--   Descargar los materiales (clonar el repositorio) del taller <https://github.com/herbarioudea/materiales-elaboracion-informes/.git>
+-   Descargar los materiales (clonar el repositorio) del taller <https://github.com/herbariohua/materiales-elaboracion-informes.git>
 -   Instalar los paquetes de R necesarios
 ```{r}
 #| echo: true
@@ -353,7 +353,7 @@ Si está inscrito al taller, descargue los materiales (clone el repositorio) del
 
 -   Ir a <https://github.com/herbarioudea/materiales-elaboracion-informes/>
 
--   Hacer clic en **\<\> Code** y copiar la URL bajo la pestaña HTTPS <https://github.com/herbarioudea/materiales-elaboracion-informes/.git>
+-   Hacer clic en **\<\> Code** y copiar la URL bajo la pestaña HTTPS <https://github.com/herbariohua/materiales-elaboracion-informes.git>
 
 ::: {.callout-tip}
 En este punto, podría descargar los archivos. Hacer clic en la opción **Download zip**. Esto descargará el archivo `materiales-elaboracion-informes/-main.zip`, el cual tendrá que descomprimir. 
