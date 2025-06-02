@@ -1,0 +1,30 @@
+author: 
+  - name: "Álex Espinosa-Correa"
+    url: https://alexespinosaco.github.io/
+    affiliation: "Grupo de Estudios Botánicos GEOBOTA"
+    affiliation-url: https://geobota.github.io/
+
+institute: "Universidad de Antioquia"
+
+format: 
+  revealjs:
+    theme:
+      - simple
+      - custom.scss
+    width: 1920
+    height: 1080
+    slide-number: true
+    chalkboard: true
+    controls: true
+    touch: true
+    footer: "[herbariohua.github.io/taller-elaboracion-informes](https://herbariohua.github.io/taller-elaboracion-informes/)"
+    logo: "/imagenes/logo_herbario.png"
+    pointer:
+      color: green
+      pointerSize: 30
+
+revealjs-plugins:
+  - pointer
+
+execute:
+  freeze: auto
