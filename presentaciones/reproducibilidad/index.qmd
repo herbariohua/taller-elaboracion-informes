@@ -1,0 +1,930 @@
+---
+title: "Reproducibilidad"
+# date: 2025-06-02
+bibliography: references.bib
+csl: apa.csl
+nocite: |
+  @positsoftware2022; @positsoftware2024; @lopp2019; @slingsby2024; @campitelli2024
+---
+
+```{r}
+#| label: setup
+#| output: false
+
+if (!require("here")) install.packages("here"); library("here")
+if (!require("fontawesome")) install.packages("fontawesome"); library("fontawesome")
+if (!require("countdown")) install.packages("countdown"); library("countdown")
+```
+
+```{r}
+#| label: countdown
+#| echo: false
+#| 
+countdown_timer <- function(
+    minutes = 1, 
+    play_sound = TRUE, 
+    font_size = "2em", 
+    ...
+) {
+  countdown::countdown(
+    minutes = minutes,
+    play_sound = play_sound,
+    color_border              = "#white",
+    color_text                = "white",
+    color_running_background  = "#009E73",
+    color_running_text        = "white",
+    color_finished_background = "#D55E00",
+    color_finished_text       = "white",
+    font_size = font_size,
+    ...
+  )
+}
+```
+
+## Proposito {.incremental}
+
+-   Mostrar la importancia de la reproducibilidad en la ciencia
+-   Enseñar el flujo de trabajo orientados a proyectos
+
+## ¿Estamos en crisis? 
+
+::: columns
+::: {.column .fragment width="50%"}
+![Respuesta de 1576 cientificos a ¿existe una crisis de reproducibilidad? @baker2016](images/crisis_01.jpeg){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+::: {.fragment}
+![Registros de WoS que en el título, resumen o palabras clave contienen: «crisis de reproducibilidad», «crisis científica», «ciencia en crisis», «crisis en la ciencia», «crisis de replicación», o «crisis de replicabilidad». @fanelli2018](images/crisis_grafica.jpeg){fig-align="center" width="800"}
+:::
+
+::: {.fragment}
+![246 biólogo obtiene 246 resultados diferentes. @oza2023](images/crisis_articulo.png){fig-align="center" width="800"}
+:::
+:::
+:::
+
+## ¿Alguien por favor quiere pensar en los biólogos?
+
+![¿Cuántos trabajos publicados en su campo son reproducibles? @baker2016](images/crisis_02.jpeg){fig-align="center"}
+
+## "Why? Why? Oh, that's why"
+
+![¿Ha fracasado al reproducir un experimento? ¿Qué factores contribuyen a que una investigación sea irreproducible? @baker2016](images/crisis_03.jpeg){fig-align="center"}
+
+## «Alguien tiene que hacer algo, por favor»
+
+![¿Alguna vez has intentado publicar un intento de reproducción? ¿Ha establecido procedimientos de reproducibilidad? @baker2016](images/crisis_04.jpeg)
+
+## Repetibilidad, Replicabilidad, Reproducibilidad, y otras erres
+
+::: {.fragment}
+|            @goodman2016            |  @claerbout1992  | @associationforcomputingmachineryacm2020 |
+|:------------------------:|:---------------:|:---------------------------:|
+|                                    |                  |              Repetibilidad               |
+|  Reproducibilidad de los métodos   | Reproducibilidad |              Replicabilidad              |
+| Reproducibilidad de los resultados |  Replicabilidad  |             Reproducibilidad             |
+|    Reproducibilidad inferencial    |                  |                                          |
+
+: Comparación de términos. Traducido de @plesser2018.
+:::
+
+::: {.fragment}
+![Explicación de la terminología sobre reproducibilidad y replicabilidad. @whitaker2017.](images/reproducible-matrix.jpg){fig-align="center"}
+:::
+
+## El espectro de la reproducibilidad
+
+::: {layout-ncol=1}
+::: {.fragment}
+![Espectro de reproducibilidad más común. @peng2011.](images/reproducibility_spectrum_1.png){fig-align="center"}
+:::
+
+::: {.fragment}
+![Compartir datos y código se considera suficiente para que muchos reproduzcan el análisis de datos. Sin embargo, esto no es suficiente. @akalin2021.](images/reproducibility_spectrum_2.png){fig-align="center"}
+:::
+:::
+
+# `r fontawesome::fa("laptop-code", "white")` Actividad {background-color="#0072B2" transition="slide-in"}
+
+-   Abrir `script_super-analisis.r` que se encuentra en la carpeta `reproducibilidad`
+-   Ejecutar el script
+
+<br>
+
+<br>
+
+```{r}
+#| label: timer-1
+#| echo: false
+
+countdown_timer(5)
+```
+
+## Niveles de reproducibilidad en R
+
+![Niveles de reproducibilidad. @higgins2024](images/levels_reproducibility.jpg){fig-align="center"}
+
+## Advertencia
+
+::: {.fragment .r-fit-text}
+Si la primera línea de tu script R es
+
+`setwd("C:\Users\jenny\ruta\que\solo\yo\tengo")`
+
+Iré a tu oficina y LE PRENDERÉ FUEGO A TU ORDENADOR 🔥
+
+*Jenny Bryan*
+:::
+
+::: columns
+::: {.column .fragment width="50%"}
+![`r fontawesome::fa("mastodon")` [\@jennybryan\@fosstodon.org](https://fosstodon.org/@jennybryan)](images/jenny_bryan.jpeg)
+
+:::
+
+::: {.column .fragment width="50%"}
+-   Científica de datos y profesora asociada de estadística en la Universidad de Columbia Británica. Estadista e ingeniera de software en Posit.
+-   Autora de [*Happy Git and GitHub for the useR*](https://happygitwithr.com), [*What they gorgot to teach you about R*](https://rstats.wtf), [*STAT 545: Data wrangling, exploration, and analysis with R*](http://stat545.com).
+-   Autora y responsable de `reprex`, `readxl`, `googlesheets4`, `usethis`, entre otros. 
+:::
+:::
+
+::: {.footer}
+Algo similar ocurre con `rm(list = ls())`.
+:::
+
+## Dos problemas
+
+::: columns
+::: {.column .fragment width="50%"}
+### `setwd()`
+
+[`setwd()` establece el directorio de trabajo.]{.fragment}
+
+[`setwd("/Users/alex/github/r/etnobotanica-workshop")`]{.fragment}
+
+[La probabilidad de que `setwd()` tenga el efecto deseado (hacer que las rutas de los archivos funcionen) para alguien que no sea su autor es del 0%. También es poco probable que funcione para el autor dentro de uno o dos años u ordenadores.]{.fragment}
+
+[Las rutas fijas y absolutas, especialmente cuando están esparcidas por todo el código, hacen que un proyecto sea frágil. Este tipo de código no viaja bien a través del tiempo o del espacio.]{.fragment}
+:::
+
+::: {.column .fragment width="50%"}
+### `rm(list = ls())`
+
+[`rm(list = ls())` elimina «*todos*» los objetos del entorno de trabajo actual.]{.fragment}
+
+[Pensada para reiniciar las cosas, ya sea para reiniciar el análisis actual o para cambiar de un proyecto a otro. Pero hay mejores maneras de hacer ambas cosas: reiniciar R y Usar un IDE con soporte adecuado para proyectos.]{.fragment}
+
+[Dada la intención, no va lo suficientemente lejos. Todo lo que hace es borrar objetos creados por el usuario del espacio de trabajo. Muchos otros cambios persisten de forma invisible y pueden tener profundos efectos posteriormente.]{.fragment}
+:::
+:::
+
+## Entorno de desarrollo integrado (IDE)
+
+::::: columns
+:::: {.column width="50%"}
+::: {.fragment fragment-index=1}
+Aplicación que proporciona servicios integrales para facilitar el desarrollo de software.
+
+Ventajas:
+
+-   Resaltado de sintaxis
+-   Autocompletado de texto
+-   Manejo de librerías
+-   Construir, compilar o ejecutar
+-   y mucho más…
+:::
+
+::: {.fragment fragment-index=2}
+IDEs populares:
+
+-   Emacs
+-   RStudio
+-   vim
+-   VS Code
+:::
+::::
+
+:::: {.column .fragment fragment-index=1width="50%"}
+![[Apariencia por defecto de RStudio.](https://docs.posit.co/ide/user/ide/get-started/)](images/rstudio_ide.jpeg){fig-align="center"}
+::::
+:::::
+
+## Siempre empezar R desde cero
+
+::: columns
+::: {.column width="50%"}
+[Siempre es recomendable trabajar en un espacio de trabajo desde cero, sin guardar o cargar cada vez. En RStudio se puede puede hacer de esta forma.]{.fragment fragment-index=1}
+
+[Siempre es recomendable reiniciar R de vez en cuando. En RStudio se puede hacer en **Session** \> **Restar R**. Atajo de teclado: {{< kbd Ctrl-Shift-F10 >}}]{.fragment fragment-index=3}
+:::
+
+::: {.column .fragment fragment-index=2 width="50%"}
+![Para desactivar `.Rdata` ir a **Tools** \> **Global Options**.](images/rstudio_workspace.png){fig-align="center"}
+:::
+:::
+
+::: footer
+[Más información](https://rstats.wtf/source-and-blank-slates#always-start-r-with-a-blank-slate)
+:::
+
+## Flujo de trabajo orienta a proyectos[^4] 
+
+[^4]: Project-oriented workflow
+
+::: {.fragment}
+Enfoque de organización que estructura todo el trabajo, código, datos y resultados relacionados con un proyecto en una única carpeta o estructura de carpetas organizada. Esta metodología facilita el manejo y la reproducibilidad de proyectos, especialmente en ciencia de datos, programación y análisis.
+:::
+
+::: columns
+::: {.column .fragment width="50%"}
+### Características
+
+::: {.incremental}
+-   Estructura organizada de carpetas
+-   Separación de código y datos
+-   Control de versiones
+-   Scripts y documentación reproducibles
+-   Portabilidad
+:::
+:::
+
+::: {.column .fragment width="50%"}
+### Ventajas
+
+::: {.incremental}
+-   Reproducibilidad
+-   Colaboración
+-   Escalabilidad
+:::
+:::
+:::
+
+
+## Proyectos
+
+> Gestionar tus proyectos de forma reproducible no sólo hace que tu ciencia reproducible, sino que te facilita la vida. [\@vsbuffalo](https://x.com/vsbuffalo/status/323638476153167872)
+
+::: incremental
+-   Un proyecto es una carpeta que contiene todos los archivos relevantes para un trabajo en particular.
+
+-   Los proyectos permiten que las investigaciones sean reproducibles, portátiles y autocontenibles.
+
+-   Trabajar con proyectos implica tener:
+
+    -   **Disciplina en el sistema de archivos**: todos los archivos relacionados a un proyecto (datos, imágenes, resultados, scripts, etc) están en la carpeta del proyecto.
+    -   **Intencionalidad en el directorio de trabajo**: siempre se trabaja en el directorio del proyecto.
+    -   **Disciplina en las rutas de archivos**: todas las rutas son relativas (nunca absolutas) y relativas a la carpeta del proyecto.
+:::
+
+::: footer
+Más información: @bryan2024; @bryan2017
+:::
+
+## Proyectos de RStudio
+
+::: columns
+::: {.column .fragment width="50%"}
+Los proyectos de RStudio facilitan la división del trabajo en varios contextos, con su propio directorio y espacio de trabajo, historial y documentos.
+
+![Hay varias formas de crear un proyecto. La más sencilla es **File** \> **New Project**. Imagen: @wickham2023](images/rstudio_new-project.png){fig-align="center" width="800"}
+:::
+
+::: {.column .fragment width="50%"}
+La barra de herramientas de proyectos se encuentra en la esquina superior derecha de RStudio. Muestra el nombre del proyecto actual, y tiene comandos para:
+
+![Opciones de la barra de herramientas de proyectos de RStudio.](images/rstudio_project_open.png){fig-align="center"}
+:::
+:::
+
+::: footer
+[Más información](https://docs.posit.co/ide/user/ide/guide/code/projects.html)
+:::
+
+# `r fontawesome::fa("laptop-code", "white")` Actividad {background-color="#0072B2" transition="slide-in"}
+
+-   Crear dentro de `Documentos` un nuevo proyecto de RStudio
+
+<br>
+
+<br>
+
+```{r}
+#| label: timer-2
+#| echo: false
+
+countdown_timer(5)
+```
+
+## Rutas
+
+::: columns
+::: {.column width="50%"}
+::: {.fragment}
+### Rutas absolutas
+
+Indican la ubicación de un archivo o directorio desde el directorio raíz del sistema de archivos. Dificulta la reproducibilidad ya que esa ruta sólo «*funciona*» en el equipo donde se haya creado.
+
+`/usuarios/yo/documentos/r/proyecto/scripts/super-analisis.R`
+:::
+
+\
+
+::: {.fragment}
+### Rutas relativas
+
+Indican la ubicación de un archivo o directorio a partir de la posición actual del sistema operativo en el sistema de archivos.
+
+`scripts/super-analisis.R`
+:::
+:::
+
+::: {.column .fragment width="50%"}
+![`Here`: encuentra tu camino. Ilustración de [Allison Horst](https://allisonhorst.com/r-packages-functions).](images/package_here.jpg){fig-align="center"}
+:::
+:::
+
+## You are `here::here()`
+
+El objetivo del paquete here es facilitar la referenciación de archivos en [flujos de trabajo orientados a proyectos](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)[^3]. `here` utiliza el directorio de nivel superior de un proyecto para construir fácilmente rutas a archivos.
+
+[^3]: Puede ser: Proyecto de RStudio, repositorio de git, paquete R, carpeta con un archivo llamado `.here`
+
+\
+
+::: {.fragment}
+### Ruta absoluta:
+
+```{r}
+#| label: ejemplo-ruta-1
+#| eval: false
+#| echo: true
+
+readr::read_csv("/Users/alex/documento/r/etnobotanica-workshop/data/raw_data.csv")
+```
+:::
+
+\
+
+::: {.fragment}
+### Ruta relativa
+
+```{r}
+#| label: ejemplo-ruta-2
+#| eval: false
+#| echo: true
+
+readr::read_csv("data/raw_data.csv")
+```
+:::
+
+\
+
+::: {.fragment}
+### Ruta relativa usando `here`
+
+```{r}
+#| label: ejemplo-ruta-3
+#| eval: false
+#| echo: true
+
+readr::read_csv(here::here("data", "raw_data.csv")) # opción 1
+readr::read_csv(here::here("data/raw_data.csv")) # opción 2
+```
+:::
+
+# `r fontawesome::fa("laptop-code", "white")` Actividad {background-color="#0072B2" transition="slide-in"}
+
+-   Copiar dentro del proyecto que creo todos los archivos de la carpeta `ejercicio`, que se encuentra en la carpeta `reproducibilidad`
+-   Abrir `01_script_rutas.R` que se encuentra en la carpeta `scripts`
+-   Realizar los ejercicio
+
+<br>
+
+<br>
+
+```{r}
+#| label: timer-3
+#| echo: false
+
+countdown_timer(15)
+```
+
+## El nombre de las cosas
+
+::: columns
+::: {.column width="70%"}
+
+::: {.fragment fragment-index="1"}
+### No
+
+``` {.markdown code-line-numbers="false"}
+myabstract.docx
+Joe’s Filenames Use Spaces and Punctuation.xlsx
+figure 1.png
+fig 2.png
+JW7d^(2sl@deletethisandyourcareerisoverWx2*.txt
+```
+:::
+
+\
+
+::: {.fragment fragment-index="2"}
+### Sí
+
+``` {.markdown code-line-numbers="false"}
+2014-06-08_abstract-for-sla.docx
+joes-filenames-are-getting-better.xlsx
+fig01_scatterplot-talk-length-vs-interest.png
+fig02_histogram-talk-attendance.png
+1986-01-28_raw-data-from-challenger-o-rings.txt
+```
+:::
+:::
+
+::: {.column .fragment width="30%"}
+![<https://xkcd.com/1459/>](images/xkcd_documents.png){fig-align="center"}
+:::
+:::
+
+::: {.footer}
+Más información: @bryan2024; @bryan2015
+:::
+
+## Principios para los nombres (de los archivos)
+
+::: incremental
+1.  Legible por máquinas
+
+    -   Expresiónes regulares (regex) y globbing[^1] amigable
+        -   Evitar espacios, puntuación, caracteres acentuados y distinción entre mayúsculas y minúsculas
+    -   Fácil de computar
+        -   Uso deliberado de delimitadores: "\_" para delimitar unidades de metadatos y "-" para delimitar palabras
+
+2.  Legible por humanos
+
+    -   El nombre contiene información sobre el contenido
+
+    -   Relacionado al concepto de URL semántica[^2]
+
+3.  Funciona bien con el orden predeterminado (alfanúmerico)
+
+    -   Poner algo numérico primero
+
+    -   Utilice ceros a la izquierda de otros números
+
+    -   Utilice la norma ISO 8601 para fechas: YYYY-MM-DD
+:::
+
+[^1]: Definir uno o más patrones globales y generar archivos a partir de coincidencias inclusivas o exclusivas. Ejemplo: documento1.txt, documento2.txt. [Fuente](https://learn.microsoft.com/en-us/dotnet/core/extensions/file-globbing)
+
+[^2]: URLs que son entendibles para el usuario. Ejemplo: <https://es.wikipedia.org/wiki/URL_semántica>
+
+## Ejemplos
+
+::: columns
+::: {.column .fragment fragment-index="1" width="50%"}
+### Orden lógico
+
+``` {.markdown code-line-numbers="false"}
+01_marshal-data.R
+02_pre-dea-filtering.R
+03_dea-with-Limma-voom.R
+04_explore-dea-results.R
+90_Limma-model-term-name-fiasco.R
+helper01_load-counts.R
+helper02_load-exp-des.R
+helper03_load-focus-statinf.R
+helper04_extract-and-tidy.R
+```
+:::
+
+::: {.column .fragment fragment-index="2" width="50%"}
+### Orden crónologico
+
+``` {.markdown code-line-numbers="false"}
+2015-11-09_package-installation.R
+2016-05-21_package-installation.R
+2017-09-05_package-installation.R
+2018-06-29_package-installation.R
+2019-02-19_repair-default-library.R
+2020-06-06_record-existing-pkgs.R
+2021-06-15_git-config-analysis.R
+2021-08-29-git-default-branch.R
+2022-08-11_record-existing-pkgs.R
+```
+:::
+:::
+
+\
+
+::: {.fragment fragment-index="3"}
+### Ejemplo más complejo
+
+``` {.markdown code-line-numbers="false"}
+2013-06-26_BRAFWTNEGASSAY_Plasmid-Cellline-100-1MutantFraction_HO1.csv
+2013-06-26_BRAFWTNEGASSAY_Plasmid-Cellline-100-1MutantFraction_HO2.csv
+2013-06-26_BRAFWTNEGASSAY_Plasmid-Cellline-100-1MutantFraction_plateflle.csv
+2014-02-26_BRAFWTNEGASSAY_FFPEDNA-CRC-1-41_A01.csv
+2014-02-26_BRAFWTNEGASSAY_FFPEDNA-CRC-1-41_A02.csv
+```
+:::
+
+## Formatos de los nombres
+
+::: columns
+::: {.column .fragment width="70%"}
+![[Allison Horst](https://allisonhorst.com/everything-else).](images/that_case.jpeg){fig-align="center"}
+:::
+
+::: {.column .fragment width="30%"}
+-   flatcase
+-   SCREAMINGCASE
+-   camelCase
+-   PascalCase
+-   snake_case
+-   SCREAMING_SNAKE_CASE
+-   camel_Snake_Case
+-   Pascal_Snake_Case
+-   kebab-case
+-   SCREAMING-KEBAB-CASE
+-   camel-Kebad-Case
+-   Pascal-Kebad-Case
+:::
+:::
+
+::: {.fragment}
+R no acepta todos los formatos listados. Formatos sugeridos: camelCase, flatcase, PascalCase, period.case, snake_case.
+:::
+
+## «Lo lamento, pero hizo que el emperador perdiera el estilo»
+
+::: columns
+::: {.column .fragment width="50%"}
+Un buen estilo de codificación es como una correcta puntuación: se puede prescindir de él, perofacilitalalectura. Todas las guías de estilo se basan fundamentalmente en opiniones. Algunas decisiones realmente facilitan el uso del código, pero muchas decisiones son arbitrarias. Lo más importante de una guía de estilo es que proporciona coherencia, lo que facilita la escritura del código porque hay que tomar menos decisiones.
+
+![](images/meme_assignment.jpg)
+:::
+
+::: {.column .fragment width="50%"}
+### Guías de estilo
+
+::: {.incremental}
+-   [Guía de estilo de Bioconductor](https://contributions.bioconductor.org/r-code.html#r-code)
+-   [Guía de estilo de Colin Gillespie](https://csgillespie.wordpress.com/2010/11/23/r-style-guide/)
+-   [Guía de estilo de Google](https://google.github.io/styleguide/Rguide.html)
+-   [Guía de estilo del Tidyverse](https://style.tidyverse.org)
+:::
+
+::: {.fragment}
+Dos paquetes de R soportan la Guía de estilo del Tidyverse: `styler` y `lintr`.
+
+![Styler añade un complemento de RStudio que facilita aplicar el estilo.](images/styler_0.1.gif){fig-align="center"}
+:::
+:::
+:::
+
+# `r fontawesome::fa("laptop-code", "white")` Actividad {background-color="#0072B2" transition="slide-in"}
+
+-   Leer la Guía de estilo del Tidyverse <https://style.tidyverse.org>
+-   Practicar el estilo.
+
+<br>
+
+<br>
+
+```{r}
+#| label: timer-4
+#| echo: false
+
+countdown_timer(15)
+```
+
+## Estructura de un proyecto
+
+::: columns
+::: {.column .fragment width="50%"}
+No hay una estructura estándar para organizar un proyecto. Lo principal es que sea «organizado» y entendible por uno mismo y por otros. 
+
+La estructura de las carpetas y los nombres de los archivos deben ser:
+
+-   Autodocumentados:
+    -   Los datos en la carpeta `datos`
+    -   Los scripts en la carpeta `scripts`
+-   Fáciles de codificar. Ejemplo:
+    -   medellin_temperatura-minima.csv
+    -   medellin_temperatura-maxina.csv
+-   Todos los archivos necesarios para
+
+Hay varios paquetes que facilitan algunas de estas tareas: `usethis`, `rrtools`.
+:::
+
+::: {.column .fragment width="50%"}
+### Ejemplo de estructura de un proyecto
+
+``` {.markdown code-line-numbers="false"}
+proyecto/
+├── proyecto.Rproject  # proyecto de RStudio
+├── README.md          # útil para describir el proyecto
+├── code/
+│   ├── functions
+│   └── scripts
+├── data/
+│   ├── raw_data/      # los datos sin procesar
+│   │   ├── muestreo.xlsx
+│   ├── derived_data/  # los datos procesados
+│       └── datos.csv
+├── images/
+├── output/
+│   ├── report.pdf     # el archivo exportado
+├── report/
+│   ├── apa.csl        # el estilo de citas y referencias
+│   ├── references.bib # la información de las referencias
+│   └── report.qmd
+├── tables/
+└── templates/
+```
+:::
+:::
+
+## Quarto
+
+No se trata solo de obtener resultados reproducibles; los informes o manuscritos también deben serlo. Quarto es un sistema de publicación científica y técnica de código abierto. Puede entrelazar texto y código para producir resultados con un formato elegante en forma de documentos, páginas web, blogs, libros y mucho más. Los archivos de Quarto (`.qmd`) son archivos de texto plano conformado por:
+
+::::: {.fragment}
+### Metadata (YAML)
+
+:::: {.columns}
+::: {.column width="50%"}
+``` yaml
+format: html
+engine: knitr
+```
+:::
+
+::: {.column width="50%"}
+``` yaml
+format: html
+engine: jupyter
+```
+:::
+::::
+
+### Código
+
+:::: {.columns}
+::: {.column width="50%"}
+````code
+```{{r}}
+library(dplyr)
+mtcars |> 
+  group_by(cyl) |> 
+  summarize(mean = mean(mpg))
+```
+````
+:::
+
+::: {.column width="50%"}
+````code
+```{{python}}
+from siuba import *
+(mtcars
+  >> group_by(_.cyl)
+  >> summarize(avg_mpg = _.mpg.mean()))
+```
+````
+
+::::
+::::::
+
+### Texto 
+
+``` markdown
+# Título 1
+Esta es una frase con algo de **texto en negrita**, *texto en cursiva* y una 
+![Descripción de la imagen](imagen.png){fig-alt=«Alt text para la imagen»}.
+```
+:::
+
+## Rutas en Quarto
+
+Al usar un documento de Quarto dentro de un proyecto, es importante ser consciente de la ubicación de los archivos utilizados; por eso, las rutas relativas son fundamentales. Por diseño, el directorio de trabajo para renderizar archivos de Quarto es el directorio del propio archivo, que no siempre es la raíz del proyecto (.Rproj).
+
+::: {.fragment}
+Tenemos el siguiente proyecto. Queremos mostrar `data.csv` en `index.qmd`
+``` {.markdown code-line-numbers="false"}
+proyecto/
+├── proyecto.Rproject # proyecto de RStudio
+├── code/
+│   └── index.qmd     # arhcivo de Quarto
+└── data/
+    └── data.csv/     # los datos
+```
+:::
+
+:::: columns
+::: {.column .fragment width="50%"}
+### Ruta relativa
+
+```{r}
+#| label: ejemplo-ruta-4
+#| eval: false
+#| echo: true
+
+read.csv(
+  "../data.csv"
+)
+
+# los .. significa «una carpeta 
+# arriba de donde yo esté»
+```
+:::
+
+::: {.column .fragment width="50%"}
+### Ruta relativa con `here`
+
+```{r}
+#| label: ejemplo-ruta-5
+#| eval: false
+#| echo: true
+
+read.csv(
+  here::here(
+    "data",
+    "data.csv"
+  )
+)
+```
+:::
+::::
+
+# `r fontawesome::fa("laptop-code", "white")` Actividad {background-color="#0072B2" transition="slide-in"}
+
+-   Abrir `02_quarto_directorio-trabajo.qmd` que se encuentra en la carpeta `scripts`
+-   Leer las instrucciones y realizar la actividad
+-   Abrir `03_quarto_rutas.qmd` que se encuentra en la carpeta `scripts`
+-   Leer las instrucciones y realizar la actividad
+
+<br>
+
+<br>
+
+```{r}
+#| label: timer-5
+#| echo: false
+
+countdown_timer(15)
+```
+
+## Flujo de trabajo
+
+![<https://xkcd.com/2054/>](images/data_pipeline.png){fig-align="center"}
+
+::: columns
+::: {.column .fragment width="50%"}
+### Procesos y código
+
+![](images/process-script.png){fig-align="center"}
+:::
+
+::: {.column .fragment width="50%"}
+### Procesos y objetos
+
+![](images/process-out.png){fig-align="center"}
+:::
+:::
+
+::: {.footer}
+Imágenes de @bryan2024.
+:::
+
+## Una API humana para el análisis
+
+![Siempre que se pueda, se ha de apostar por [formatos abiertos](https://es.wikipedia.org/wiki/Formato_abierto): `CSV`, `JPEG`, `HTML`, `ODS`, `ODT`, `PDF`, `PNG`, `SVG`, `TSV`, `TXT`. Imagen @bryan2024.](images/input-code-output.jpg){fig-align="center"}
+
+## Control de versiones
+
+::: columns
+::: {.column width="50%"}
+::: {.fragment fragment-index=2}
+> Un control de versiones es un sistema que registra los cambios realizados en un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante. \[...\] en realidad puedes hacer lo mismo con casi cualquier tipo de archivo que encuentres en una computadora. @chacon2014
+:::
+
+::: {.fragment fragment-index=3}
+Un método básico y rudimentario del control de versiones es tener copias de un mismo archivo.
+
+``` {.markdown code-line-numbers="false"}
+2015-11-09_package-installation.R
+2016-05-21_package-installation.R
+2017-09-05_package-installation.R
+2018-06-29_package-installation.R
+```
+:::
+
+::: {.fragment fragment-index=4}
+![Se comienza con una versión básica y se van guardando sólo los cambios. @gonzalez2019.](images/play-changes.svg){fig-align="center"}
+:::
+:::
+
+::: {.column .fragment fragment-index=1 width="50%"}
+![Una revisión «normal» de un documento. [PHD Comics](https://phdcomics.com/comics/archive.php?comicid=1531).](images/notfinal.gif){fig-align="center"}
+:::
+:::
+
+## Git y GitHub
+
+::: {.columns .fragment}
+::: {.column width="50%"}
+> Git es un sistema de control de versiones. Git gestiona la evolución de un conjunto de archivos -llamado repositorio- de una forma sana y muy estructurada. En un flujo de trabajo basado en Git, documentas y, opcionalmente, expones tu trabajo a medida que avanzas. La comunicación y la colaboración son las aplicaciones estrella del control de versiones. @bryan2018.
+
+:::
+
+::: {.column width="50%"}
+![Logo de Git.](images/git_logo.png){fig-align="center"}
+:::
+:::
+
+::: {.columns .fragment}
+::: {.column width="50%"}
+> GitHub es el mayor proveedor de alojamiento de repositorios Git, y es el punto de encuentro para que millones de desarrolladores colaboren en el desarrollo de sus proyectos. Un gran porcentaje de los repositorios Git se almacenan en GitHub, y muchos proyectos de código abierto lo utilizan para hospedar su Git, realizar su seguimiento de fallos, hacer revisiones de código y otras cosas. @chacon2014.
+:::
+
+::: {.column width="50%"}
+![El invertocat logo de Github. La silueta es [The Octocat](https://octodex.github.com), la mascota de GitHub.](images/github_invertocat-logo.png){fig-align="center"}
+:::
+:::
+
+## Entornos reproducibles
+
+::: {.columns .fragment}
+::: {.column width="60%"}
+Un entorno (environment) consiste en todas las dependencias necesarias para que el código se ejecute correctamente. Esto incluye el propio R, los paquetes de R y las dependencias del sistema. Puede ser difícil gestionar entornos reproducibles:
+
+::: {.incremental}
+-   El código que solía ejecutarse ya no se ejecuta, a pesar de que el código no ha cambiado.
+-   Tener miedo de actualizar o instalar un nuevo paquete, ya que podría romper su código o el de otra persona.
+-   Escribir `install.packages()` en tu entorno no hace nada, o no hace lo *correcto*.
+:::
+:::
+
+::: {.column width="40%"}
+![«El proyecto cebolla»: apostar por el flujo de trabajo orientado a proyectos significa adoptar herramientas que permitan gestionar mediante programación cada una de las capas de la configuración del proyecto. @bryan2024](images/project-oyster-greyed.svg){fig-align="center"}
+:::
+:::
+
+::: {.fragment}
+Estos retos pueden abordarse mediante una cuidadosa combinación de herramientas y estrategias. Acá sólo abordamos: la actualización segura de paquetes y la colaboración en equipo. Quedando por fuera el manejo de varias versiones de R y las dependencias del sistema, para lo cual es recomendable investigar sobre **rig** y **Docker**.
+:::
+
+::: {.footer}
+<https://xkcd.com/1987/>
+:::
+
+## `renv`
+
+::: columns
+::: {.column .fragment width="50%"}
+`renv` ayuda a crear entornos reproducibles para sus proyectos de R, haciendo los proyectos:
+
+::: {.incremental}
+-   Aislados: la instalación de un paquete nuevo o actualizado para un proyecto no romperá sus otros proyectos, y viceversa. `renv` proporciona a cada proyecto su propia biblioteca privada.
+-   Portátil: transporte fácilmente sus proyectos de un ordenador a otro, incluso a través de diferentes plataformas. `renv` facilita la instalación de los paquetes de los que depende su proyecto.
+-   Reproducible: `renv` registra las versiones exactas de los paquetes de los que depende, y asegura que esas versiones exactas son las que se instalan allá donde vaya.
+:::
+:::
+
+::: {.column .fragment width="50%"}
+![](images/renv_logo.png){fig-align="center" width="250"}
+
+![Los verbos y sustantivos más importantes de `renv`.](images/renv_verbos.png){fig-align="center"}
+:::
+:::
+
+::: {.footer}
+<https://rstudio.github.io/renv/>
+:::
+
+## {background-color="black" background-image="images/renv_resume.png" background-size="contain"}
+
+::: {.footer}
+<https://rcd.ucsb.edu/sites/default/files/2023-12/dls-202311-renv-white.pdf>
+:::
+
+# `r fontawesome::fa("mug-saucer", "white")` Pausa {background-color="#000000" transition="slide-in"}
+
+<br>
+
+<br>
+
+```{r}
+#| label: timer-6
+#| echo: false
+
+countdown_timer(15)
+```
+
+## Referencias {visibility="uncounted"}
+
+::: {#refs}
+:::
