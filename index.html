@@ -278,6 +278,29 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./preparacion/index.html"> 
 <span class="menu-text">Preparación</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-presentaciones" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Presentaciones</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-presentaciones">    
+        <li>
+    <a class="dropdown-item" href="./presentaciones/intro-quarto/">
+ <span class="dropdown-text">Introducción a Quarto</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./presentaciones/intro-r/">
+ <span class="dropdown-text">Introducción a R</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./presentaciones/reproducibilidad/">
+ <span class="dropdown-text">Reproducibilidad</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./presentaciones/git-github/">
+ <span class="dropdown-text">Git y GitHub</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="https://www.udea.edu.co/wps/portal/udea/web/inicio/unidades-academicas/ciencias-exactas-naturales/herbario"> 
 <span class="menu-text">HUA</span></a>
@@ -315,6 +338,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#preparación" id="toc-preparación" class="nav-link active" data-scroll-target="#preparación">Preparación</a></li>
+  <li><a href="#introducción-a-quarto" id="toc-introducción-a-quarto" class="nav-link" data-scroll-target="#introducción-a-quarto">Introducción a Quarto</a></li>
+  <li><a href="#introducción-a-r" id="toc-introducción-a-r" class="nav-link" data-scroll-target="#introducción-a-r">Introducción a R</a></li>
+  <li><a href="#reproducibilidad" id="toc-reproducibilidad" class="nav-link" data-scroll-target="#reproducibilidad">Reproducibilidad</a></li>
+  <li><a href="#git-y-github" id="toc-git-y-github" class="nav-link" data-scroll-target="#git-y-github">Git y GitHub</a></li>
   </ul>
 </nav>
     </div>
@@ -345,6 +372,26 @@ ul.task-list li input[type="checkbox"] {
 <section id="preparación" class="level2">
 <h2 class="anchored" data-anchor-id="preparación">Preparación</h2>
 <p>Antes de comenzar, asegúrate de tener todo instalado y configurado como se indica en la sección Preparación. <a href="preparacion/">Clic aquí</a>.</p>
+</section>
+<section id="introducción-a-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="introducción-a-quarto">Introducción a Quarto</h2>
+<iframe width="800" height="475" src="presentaciones/intro-quarto/" title="Presentación Introducción a Quarto"></iframe>
+<p>Si no puedes ver la presentación, mírala haciendo <a href="presentaciones/intro-quarto/">clic aquí</a>.</p>
+</section>
+<section id="introducción-a-r" class="level2">
+<h2 class="anchored" data-anchor-id="introducción-a-r">Introducción a R</h2>
+<iframe width="800" height="475" src="presentaciones/intro-r/" title="Presentación Introducción a R"></iframe>
+<p>Si no puedes ver la presentación, mírala haciendo <a href="presentaciones/intro-r/">clic aquí</a>.</p>
+</section>
+<section id="reproducibilidad" class="level2">
+<h2 class="anchored" data-anchor-id="reproducibilidad">Reproducibilidad</h2>
+<iframe width="800" height="475" src="presentaciones/reproducibilidad/" title="Reproducibilidad"></iframe>
+<p>Si no puedes ver la presentación, mírala haciendo <a href="presentaciones/reproducibilidad/">clic aquí</a>.</p>
+</section>
+<section id="git-y-github" class="level2">
+<h2 class="anchored" data-anchor-id="git-y-github">Git y GitHub</h2>
+<iframe width="800" height="475" src="presentaciones/git-github/" title="Presentación Git y GitHub"></iframe>
+<p>Si no puedes ver la presentación, mírala haciendo <a href="presentaciones/git-github/">clic aquí</a>.</p>
 
 
 </section>
@@ -435,7 +482,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/herbarihua\.github\.io\/taller-elaboracion-informes\/");
+        var filterRegex = new RegExp("https:\/\/herbariohua\.github\.io\/taller-elaboracion-informes\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

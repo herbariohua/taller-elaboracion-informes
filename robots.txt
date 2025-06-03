@@ -1,1 +1,1 @@
-Sitemap: https://herbarihua.github.io/taller-elaboracion-informes/sitemap.xml
+Sitemap: https://herbariohua.github.io/taller-elaboracion-informes/sitemap.xml
