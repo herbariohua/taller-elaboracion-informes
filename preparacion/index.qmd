@@ -12,7 +12,7 @@ Se requiere que cada participante disponga de su propio ordenador personal. En e
 :::
 
 ::: {.callout-important}
-Descargue los materiales (clone el repositorio) del talle  <https://github.com/herbarioudea/materiales-elaboracion-informes> el martes 3 de junio por la mañana.
+Descargue los materiales (clone el repositorio) del talle  <https://github.com/herbariohua/materiales-elaboracion-informes> el martes 3 de junio por la mañana.
 :::
 
 :::{.callout-note}
@@ -348,10 +348,10 @@ Ir a <https://gitforwindows.org>. Hacer clic en **Download**. Esto iniciara la d
 ## Descargar los archivos (clonar el repositorio) del taller
 
 ::: {.callout-important}
-Si está inscrito al taller, descargue los materiales (clone el repositorio) del taller  <https://github.com/herbarioudea/materiales-elaboracion-informes/> el martes 3 de junio por la mañana.
+Si está inscrito al taller, descargue los materiales (clone el repositorio) del taller  <https://github.com/herbariohua/materiales-elaboracion-informes/> el martes 3 de junio por la mañana.
 :::
 
--   Ir a <https://github.com/herbarioudea/materiales-elaboracion-informes/>
+-   Ir a <https://github.com/herbariohua/materiales-elaboracion-informes/>
 
 -   Hacer clic en **\<\> Code** y copiar la URL bajo la pestaña HTTPS <https://github.com/herbariohua/materiales-elaboracion-informes.git>
 
