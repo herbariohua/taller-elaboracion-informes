@@ -1,0 +1,161 @@
+---
+title: "Git & GitHub"
+# date: 2025-06-02
+bibliography: references.bib
+---
+
+```{r}
+#| label: setup
+
+# if (!require("fontawesome")) install.packages("fontawesome"); library("fontawesome")
+# if (!require("countdown")) install.packages("countdown"); library("countdown")
+if (!require("fontawesome")) install.packages("fontawesome")
+if (!require("countdown")) install.packages("countdown")
+```
+
+```{r}
+#| label: countdown
+#| echo: false
+#| 
+countdown_timer <- function(
+    minutes = 1, 
+    play_sound = TRUE, 
+    font_size = "2em", 
+    ...
+) {
+  countdown::countdown(
+    minutes = minutes,
+    play_sound = play_sound,
+    color_border              = "#white",
+    color_text                = "white",
+    color_running_background  = "#009E73",
+    color_running_text        = "white",
+    color_finished_background = "#D55E00",
+    color_finished_text       = "white",
+    font_size = font_size,
+    ...
+  )
+}
+```
+
+## Una historia conocida... y sufrida
+
+::: columns
+::: {.column .fragment width="50%" fragment-index="1"}
+![Una revisión «normal» de un documento. [PHD Comics](https://phdcomics.com/comics/archive.php?comicid=1531).](images/notfinal.gif){fig-align="center"}
+:::
+
+::: {.column .fragment width="50%" fragment-index="2"}
+![Historial de versiones en Google Docs](images/version_history.png){fig-align="center"}
+:::
+:::
+
+## Control de versiones
+
+> Un control de versiones es un sistema que registra los cambios realizados en un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante. \[...\] en realidad puedes hacer lo mismo con casi cualquier tipo de archivo que encuentres en una computadora. @chacon2014
+
+Un método básico y rudimentario del control de versiones es terner copias de un mismo archivo.
+
+::: {style="font-size: 70px"}
+    2015-11-09_package-installation.R
+    2016-05-21_package-installation.R
+    2017-09-05_package-installation.R
+    2018-06-29_package-installation.R
+:::
+
+![Se comienza con una versión básica y se van guardando sólo los cambios. @gonzalez2019.](images/play-changes.svg){fig-align="center"}
+
+## Sistemas de control de versiones
+
+::: columns
+::: {.column width="33%"}
+### Locales
+
+![Contiene una simple base de datos, en la que se lleva el registro de todos los cambios realizados a los archivos.](images/local.png){fig-align="center"}
+:::
+
+::: {.column width="33%"}
+### Centralizados
+
+![Tienen un único servidor que contiene todos los archivos versionados y varios clientes que descargan los archivos desde ese lugar central.](images/centralized.png){fig-align="center"}
+:::
+
+::: {.column width="33%"}
+### Distribuidos
+
+![Los clientes no solo descargan la última copia instantánea de los archivos, sino que se replica completamente el repositorio.](images/distributed.png){fig-align="center"}
+:::
+:::
+
+::: footer
+Imágenes tomadas de @chacon2014.
+:::
+
+## Git
+
+::: columns
+::: {.column width="50%"}
+> Como muchas de las grandes cosas en esta vida, Git comenzó con un poco de destrucción creativa y una gran polémica. @chacon2014.
+
+<!-- En el 2002, el proyecto del kernel de Linux empezó a usar un DVCS propietario llamado BitKeeper. En el 2005 la relación con BitKeeper se terminó. Entre el 3 de abril y el 6 de abril de 2005 Linus Torvalds desarrollo Git teniendo en cuenta que fuera veloz, sencillo, con gran soporte para desarrollo no lineal, completamente distribuido y capaz de manejar grandes proyectos eficientemente. -->
+
+Git es un sistema de control de versiones distribuido gratuito y de código abierto diseñado para manejar todo, desde proyectos pequeños hasta proyectos muy grandes con velocidad y eficiencia.
+:::
+
+::: {.column width="50%"}
+![Linus Torvalds. <a href="https://commons.wikimedia.org/wiki/File:LinuxCon_Europe_Linus_Torvalds_05.jpg">Krd</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons](images/linus_torvalds.jpg){fig-align="center"}
+:::
+:::
+
+## Por qué Git
+
+::: columns
+::: {.column width="50%"}
+> Las ventajas de Git solo superan las desventajas cuando consideras la sobrecarga de trabajar con otras personas, incluyendo tu yo futuro. ¿Y quién entre nosotros no necesita hacer eso? En un flujo de trabajo basado en Git, documentas y, opcionalmente, expones tu trabajo a medida que avanzas. La comunicación y la colaboración son las aplicaciones estrella del control de versiones. El modelo de gestión de archivos de Git puede sentirse incómodamente rígido, pero permite la distribución de archivos entre diferentes personas, computadoras y tiempo. @bryan2018.
+:::
+
+::: {.column width="50%"}
+![Probablmente un mundo mejor. [Lennart Wittkuhn](https://fediscience.org/@lnnrtwttkhn/112050378335673304).](images/final.png){fig-align="center"}
+:::
+:::
+
+## GitHub
+
+::: columns
+::: {.column width="50%"}
+> GitHub es el mayor proveedor de alojamiento de repositorios Git, y es el punto de encuentro para que millones de desarrolladores colaboren en el desarrollo de sus proyectos. Un gran porcentaje de los repositorios Git se almacenan en GitHub, y muchos proyectos de código abierto lo utilizan para hospedar su Git, realizar su seguimiento de fallos, hacer revisiones de código y otras cosas. @chacon2014.
+
+> Incluso para proyectos individuales privados, es una buena idea subir tu trabajo a una ubicación remota para tener tranquilidad. ¿Por qué? Porque es bastante fácil estropear tu repositorio local de Git, especialmente cuando eres nuevo en esto. La buena noticia es que a menudo solo la infraestructura de Git está estropeada. ¡Tus archivos están bien! @bryan2018.
+:::
+
+::: {.column width="50%"}
+![[The Octocat](https://octodex.github.com), la mascota de GitHub.](images/octocat.png){fig-align="center"}
+:::
+:::
+
+::: footer
+Entre las alternativas a GitHub destacan [Bitbucket](https://bitbucket.org) y [GitLab](https://about.gitlab.com).
+:::
+
+## Git y GitHub en RStudio
+
+RStudio ofrece integración con Git y GitHub permitiendo un flujo de trabajo continuo desde el mismo IDE.
+
+![Pasos para sincronizar el repositorio desde RStudio.](images/commit_steps.png)
+
+# `r fontawesome::fa("person-chalkboard", "white")` Demostración {background-color="#009E73" transition="slide-in"}
+
+-   "Oh Shit, Git!?!"
+
+<br>
+
+<br>
+
+```{r}
+#| label: timer-1
+#| echo: false
+
+countdown_timer(15)
+```
+
+## Referencias
