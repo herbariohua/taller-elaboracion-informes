@@ -19,6 +19,7 @@ format:
     touch: true
     footer: "[herbariohua.github.io/taller-elaboracion-informes](https://herbariohua.github.io/taller-elaboracion-informes/)"
     logo: "/imagenes/logo_herbario.png"
+    code-block-height: 850px
     pointer:
       color: green
       pointerSize: 30
