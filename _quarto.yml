@@ -1,5 +1,8 @@
 project:
   type: website
+  render:
+    - "*.qmd"
+    - "!materiales/"
 
 lang: es
 date-format: iso
