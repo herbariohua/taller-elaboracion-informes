@@ -7,3 +7,35 @@ Bienvenido al sitio web del taller sobre elaboración de informes del Herbario d
 ## Preparación
 
 Antes de comenzar, asegúrate de tener todo instalado y configurado como se indica en la sección Preparación. [Clic aquí](preparacion/).
+
+## Introducción a Quarto
+
+```{=html}
+<iframe width="800" height="475" src="presentaciones/intro-quarto/" title="Presentación Introducción a Quarto"></iframe>
+```
+
+Si no puedes ver la presentación, mírala haciendo [clic aquí](presentaciones/intro-quarto/).
+
+## Introducción a R
+
+```{=html}
+<iframe width="800" height="475" src="presentaciones/intro-r/" title="Presentación Introducción a R"></iframe>
+```
+
+Si no puedes ver la presentación, mírala haciendo [clic aquí](presentaciones/intro-r/).
+
+## Reproducibilidad
+
+```{=html}
+<iframe width="800" height="475" src="presentaciones/reproducibilidad/" title="Reproducibilidad"></iframe>
+```
+
+Si no puedes ver la presentación, mírala haciendo [clic aquí](presentaciones/reproducibilidad/).
+
+## Git y GitHub
+
+```{=html}
+<iframe width="800" height="475" src="presentaciones/git-github/" title="Presentación Git y GitHub"></iframe>
+```
+
+Si no puedes ver la presentación, mírala haciendo [clic aquí](presentaciones/git-github/).

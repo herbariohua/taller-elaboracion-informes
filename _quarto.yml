@@ -33,18 +33,16 @@ website:
         href: index.qmd
       - text: "Preparación"
         href: preparacion/index.qmd
-      # - text: "Presentaciones"
-        # menu:
-        #   - text: "Introducción al curso"
-        #     href: slides/intro/
-        #   - text: "Introducción a Quarto"
-        #     href: slides/intro-quarto/
-        #   - text: "Workflow"
-        #     href: slides/workflow/
-        #   - text: "Git y GitHub"
-        #     href: slides/git-github/
-        #   - text: "Introducción a R"
-        #     href: slides/intro-r/
+      - text: "Presentaciones"
+        menu:
+          - text: "Introducción a Quarto"
+            href: presentaciones/intro-quarto/
+          - text: "Introducción a R"
+            href: presentaciones/intro-r/
+          - text: "Reproducibilidad"
+            href: presentaciones/reproducibilidad/
+          - text: "Git y GitHub"
+            href: presentaciones/git-github/
       - text: "HUA"
         href: https://www.udea.edu.co/wps/portal/udea/web/inicio/unidades-academicas/ciencias-exactas-naturales/herbario
       - icon: facebook
