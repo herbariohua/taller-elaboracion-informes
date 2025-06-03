@@ -1,5 +1,600 @@
 [
   {
+    "objectID": "presentaciones/reproducibilidad/index.html#proposito",
+    "href": "presentaciones/reproducibilidad/index.html#proposito",
+    "title": "Reproducibilidad",
+    "section": "Proposito",
+    "text": "Proposito\n\nMostrar la importancia de la reproducibilidad en la ciencia\nEnseñar el flujo de trabajo orientados a proyectos"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#estamos-en-crisis",
+    "href": "presentaciones/reproducibilidad/index.html#estamos-en-crisis",
+    "title": "Reproducibilidad",
+    "section": "¿Estamos en crisis?",
+    "text": "¿Estamos en crisis?\n\n\n\n\n\nRespuesta de 1576 cientificos a ¿existe una crisis de reproducibilidad? Baker (2016)\n\n\n\n\n\n\n\nRegistros de WoS que en el título, resumen o palabras clave contienen: «crisis de reproducibilidad», «crisis científica», «ciencia en crisis», «crisis en la ciencia», «crisis de replicación», o «crisis de replicabilidad». Fanelli (2018)\n\n\n\n\n\n\n\n246 biólogo obtiene 246 resultados diferentes. Oza (2023)"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#alguien-por-favor-quiere-pensar-en-los-biólogos",
+    "href": "presentaciones/reproducibilidad/index.html#alguien-por-favor-quiere-pensar-en-los-biólogos",
+    "title": "Reproducibilidad",
+    "section": "¿Alguien por favor quiere pensar en los biólogos?",
+    "text": "¿Alguien por favor quiere pensar en los biólogos?\n\n¿Cuántos trabajos publicados en su campo son reproducibles? Baker (2016)"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#why-why-oh-thats-why",
+    "href": "presentaciones/reproducibilidad/index.html#why-why-oh-thats-why",
+    "title": "Reproducibilidad",
+    "section": "“Why? Why? Oh, that’s why”",
+    "text": "“Why? Why? Oh, that’s why”\n\n¿Ha fracasado al reproducir un experimento? ¿Qué factores contribuyen a que una investigación sea irreproducible? Baker (2016)"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#alguien-tiene-que-hacer-algo-por-favor",
+    "href": "presentaciones/reproducibilidad/index.html#alguien-tiene-que-hacer-algo-por-favor",
+    "title": "Reproducibilidad",
+    "section": "«Alguien tiene que hacer algo, por favor»",
+    "text": "«Alguien tiene que hacer algo, por favor»\n\n¿Alguna vez has intentado publicar un intento de reproducción? ¿Ha establecido procedimientos de reproducibilidad? Baker (2016)"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#repetibilidad-replicabilidad-reproducibilidad-y-otras-erres",
+    "href": "presentaciones/reproducibilidad/index.html#repetibilidad-replicabilidad-reproducibilidad-y-otras-erres",
+    "title": "Reproducibilidad",
+    "section": "Repetibilidad, Replicabilidad, Reproducibilidad, y otras erres",
+    "text": "Repetibilidad, Replicabilidad, Reproducibilidad, y otras erres\n\n\nComparación de términos. Traducido de Plesser (2018).\n\n\n\n\n\n\n\nGoodman et al. (2016)\nClaerbout & Karrenbach (1992)\nAssociation for Computing Machinery (2020)\n\n\n\n\n\n\nRepetibilidad\n\n\nReproducibilidad de los métodos\nReproducibilidad\nReplicabilidad\n\n\nReproducibilidad de los resultados\nReplicabilidad\nReproducibilidad\n\n\nReproducibilidad inferencial\n\n\n\n\n\n\n\n\n\n\nExplicación de la terminología sobre reproducibilidad y replicabilidad. Whitaker (2017)."
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#el-espectro-de-la-reproducibilidad",
+    "href": "presentaciones/reproducibilidad/index.html#el-espectro-de-la-reproducibilidad",
+    "title": "Reproducibilidad",
+    "section": "El espectro de la reproducibilidad",
+    "text": "El espectro de la reproducibilidad\n\n\n\n\n\n\nEspectro de reproducibilidad más común. Peng (2011).\n\n\n\n\n\n\n\n\n\nCompartir datos y código se considera suficiente para que muchos reproduzcan el análisis de datos. Sin embargo, esto no es suficiente. Akalin (2021)."
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#niveles-de-reproducibilidad-en-r",
+    "href": "presentaciones/reproducibilidad/index.html#niveles-de-reproducibilidad-en-r",
+    "title": "Reproducibilidad",
+    "section": "Niveles de reproducibilidad en R",
+    "text": "Niveles de reproducibilidad en R\n\nNiveles de reproducibilidad. Higgins (2024)"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#advertencia",
+    "href": "presentaciones/reproducibilidad/index.html#advertencia",
+    "title": "Reproducibilidad",
+    "section": "Advertencia",
+    "text": "Advertencia\n\nSi la primera línea de tu script R es\nsetwd(\"C:\\Users\\jenny\\ruta\\que\\solo\\yo\\tengo\")\nIré a tu oficina y LE PRENDERÉ FUEGO A TU ORDENADOR 🔥\nJenny Bryan\n\n\n\n\n\n\n @jennybryan@fosstodon.org\n\n\n\n\nCientífica de datos y profesora asociada de estadística en la Universidad de Columbia Británica. Estadista e ingeniera de software en Posit.\nAutora de Happy Git and GitHub for the useR, What they gorgot to teach you about R, STAT 545: Data wrangling, exploration, and analysis with R.\nAutora y responsable de reprex, readxl, googlesheets4, usethis, entre otros.\n\n\n\nAlgo similar ocurre con rm(list = ls())."
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#dos-problemas",
+    "href": "presentaciones/reproducibilidad/index.html#dos-problemas",
+    "title": "Reproducibilidad",
+    "section": "Dos problemas",
+    "text": "Dos problemas\n\n\nsetwd()\nsetwd() establece el directorio de trabajo.\nsetwd(\"/Users/alex/github/r/etnobotanica-workshop\")\nLa probabilidad de que setwd() tenga el efecto deseado (hacer que las rutas de los archivos funcionen) para alguien que no sea su autor es del 0%. También es poco probable que funcione para el autor dentro de uno o dos años u ordenadores.\nLas rutas fijas y absolutas, especialmente cuando están esparcidas por todo el código, hacen que un proyecto sea frágil. Este tipo de código no viaja bien a través del tiempo o del espacio.\n\nrm(list = ls())\nrm(list = ls()) elimina «todos» los objetos del entorno de trabajo actual.\nPensada para reiniciar las cosas, ya sea para reiniciar el análisis actual o para cambiar de un proyecto a otro. Pero hay mejores maneras de hacer ambas cosas: reiniciar R y Usar un IDE con soporte adecuado para proyectos.\nDada la intención, no va lo suficientemente lejos. Todo lo que hace es borrar objetos creados por el usuario del espacio de trabajo. Muchos otros cambios persisten de forma invisible y pueden tener profundos efectos posteriormente."
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#entorno-de-desarrollo-integrado-ide",
+    "href": "presentaciones/reproducibilidad/index.html#entorno-de-desarrollo-integrado-ide",
+    "title": "Reproducibilidad",
+    "section": "Entorno de desarrollo integrado (IDE)",
+    "text": "Entorno de desarrollo integrado (IDE)\n\n\n\nAplicación que proporciona servicios integrales para facilitar el desarrollo de software.\nVentajas:\n\nResaltado de sintaxis\nAutocompletado de texto\nManejo de librerías\nConstruir, compilar o ejecutar\ny mucho más…\n\n\n\nIDEs populares:\n\nEmacs\nRStudio\nvim\nVS Code\n\n\n\n\n\n\nApariencia por defecto de RStudio."
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#siempre-empezar-r-desde-cero",
+    "href": "presentaciones/reproducibilidad/index.html#siempre-empezar-r-desde-cero",
+    "title": "Reproducibilidad",
+    "section": "Siempre empezar R desde cero",
+    "text": "Siempre empezar R desde cero\n\n\nSiempre es recomendable trabajar en un espacio de trabajo desde cero, sin guardar o cargar cada vez. En RStudio se puede puede hacer de esta forma.\nSiempre es recomendable reiniciar R de vez en cuando. En RStudio se puede hacer en Session &gt; Restar R. Atajo de teclado: Ctrl-Shift-F10Ctrl-Shift-F10\n\n\n\n\nPara desactivar .Rdata ir a Tools &gt; Global Options.\n\n\n\n\nMás información"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#flujo-de-trabajo-orienta-a-proyectos4",
+    "href": "presentaciones/reproducibilidad/index.html#flujo-de-trabajo-orienta-a-proyectos4",
+    "title": "Reproducibilidad",
+    "section": "Flujo de trabajo orienta a proyectos1",
+    "text": "Flujo de trabajo orienta a proyectos1\n\nEnfoque de organización que estructura todo el trabajo, código, datos y resultados relacionados con un proyecto en una única carpeta o estructura de carpetas organizada. Esta metodología facilita el manejo y la reproducibilidad de proyectos, especialmente en ciencia de datos, programación y análisis.\n\n\n\nCaracterísticas\n\nEstructura organizada de carpetas\nSeparación de código y datos\nControl de versiones\nScripts y documentación reproducibles\nPortabilidad\n\n\nVentajas\n\nReproducibilidad\nColaboración\nEscalabilidad\n\n\nProject-oriented workflow"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#proyectos",
+    "href": "presentaciones/reproducibilidad/index.html#proyectos",
+    "title": "Reproducibilidad",
+    "section": "Proyectos",
+    "text": "Proyectos\n\nGestionar tus proyectos de forma reproducible no sólo hace que tu ciencia reproducible, sino que te facilita la vida. @vsbuffalo\n\n\nUn proyecto es una carpeta que contiene todos los archivos relevantes para un trabajo en particular.\nLos proyectos permiten que las investigaciones sean reproducibles, portátiles y autocontenibles.\nTrabajar con proyectos implica tener:\n\nDisciplina en el sistema de archivos: todos los archivos relacionados a un proyecto (datos, imágenes, resultados, scripts, etc) están en la carpeta del proyecto.\nIntencionalidad en el directorio de trabajo: siempre se trabaja en el directorio del proyecto.\nDisciplina en las rutas de archivos: todas las rutas son relativas (nunca absolutas) y relativas a la carpeta del proyecto.\n\n\n\nMás información: Bryan et al. (2024); Bryan (2017)"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#proyectos-de-rstudio",
+    "href": "presentaciones/reproducibilidad/index.html#proyectos-de-rstudio",
+    "title": "Reproducibilidad",
+    "section": "Proyectos de RStudio",
+    "text": "Proyectos de RStudio\n\n\nLos proyectos de RStudio facilitan la división del trabajo en varios contextos, con su propio directorio y espacio de trabajo, historial y documentos.\n\n\n\nHay varias formas de crear un proyecto. La más sencilla es File &gt; New Project. Imagen: Wickham et al. (2023)\n\n\n\nLa barra de herramientas de proyectos se encuentra en la esquina superior derecha de RStudio. Muestra el nombre del proyecto actual, y tiene comandos para:\n\n\n\nOpciones de la barra de herramientas de proyectos de RStudio.\n\n\n\n\nMás información"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#rutas",
+    "href": "presentaciones/reproducibilidad/index.html#rutas",
+    "title": "Reproducibilidad",
+    "section": "Rutas",
+    "text": "Rutas\n\n\n\nRutas absolutas\nIndican la ubicación de un archivo o directorio desde el directorio raíz del sistema de archivos. Dificulta la reproducibilidad ya que esa ruta sólo «funciona» en el equipo donde se haya creado.\n/usuarios/yo/documentos/r/proyecto/scripts/super-analisis.R\n\n\n\n\nRutas relativas\nIndican la ubicación de un archivo o directorio a partir de la posición actual del sistema operativo en el sistema de archivos.\nscripts/super-analisis.R\n\n\n\n\n\nHere: encuentra tu camino. Ilustración de Allison Horst."
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#you-are-herehere",
+    "href": "presentaciones/reproducibilidad/index.html#you-are-herehere",
+    "title": "Reproducibilidad",
+    "section": "You are here::here()",
+    "text": "You are here::here()\nEl objetivo del paquete here es facilitar la referenciación de archivos en flujos de trabajo orientados a proyectos1. here utiliza el directorio de nivel superior de un proyecto para construir fácilmente rutas a archivos.\n\n\n\nRuta absoluta:\n\nreadr::read_csv(\"/Users/alex/documento/r/etnobotanica-workshop/data/raw_data.csv\")\n\n\n\n\n\nRuta relativa\n\nreadr::read_csv(\"data/raw_data.csv\")\n\n\n\n\n\nRuta relativa usando here\n\nreadr::read_csv(here::here(\"data\", \"raw_data.csv\")) # opción 1\nreadr::read_csv(here::here(\"data/raw_data.csv\")) # opción 2\n\n\nPuede ser: Proyecto de RStudio, repositorio de git, paquete R, carpeta con un archivo llamado .here"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#el-nombre-de-las-cosas",
+    "href": "presentaciones/reproducibilidad/index.html#el-nombre-de-las-cosas",
+    "title": "Reproducibilidad",
+    "section": "El nombre de las cosas",
+    "text": "El nombre de las cosas\n\n\n\nNo\nmyabstract.docx\nJoe’s Filenames Use Spaces and Punctuation.xlsx\nfigure 1.png\nfig 2.png\nJW7d^(2sl@deletethisandyourcareerisoverWx2*.txt\n\n\n\n\nSí\n2014-06-08_abstract-for-sla.docx\njoes-filenames-are-getting-better.xlsx\nfig01_scatterplot-talk-length-vs-interest.png\nfig02_histogram-talk-attendance.png\n1986-01-28_raw-data-from-challenger-o-rings.txt\n\n\n\n\n\nhttps://xkcd.com/1459/\n\n\n\n\nMás información: Bryan et al. (2024); Bryan (2015)"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#principios-para-los-nombres-de-los-archivos",
+    "href": "presentaciones/reproducibilidad/index.html#principios-para-los-nombres-de-los-archivos",
+    "title": "Reproducibilidad",
+    "section": "Principios para los nombres (de los archivos)",
+    "text": "Principios para los nombres (de los archivos)\n\nLegible por máquinas\n\nExpresiónes regulares (regex) y globbing1 amigable\n\nEvitar espacios, puntuación, caracteres acentuados y distinción entre mayúsculas y minúsculas\n\nFácil de computar\n\nUso deliberado de delimitadores: “_” para delimitar unidades de metadatos y “-” para delimitar palabras\n\n\nLegible por humanos\n\nEl nombre contiene información sobre el contenido\nRelacionado al concepto de URL semántica2\n\nFunciona bien con el orden predeterminado (alfanúmerico)\n\nPoner algo numérico primero\nUtilice ceros a la izquierda de otros números\nUtilice la norma ISO 8601 para fechas: YYYY-MM-DD\n\n\nDefinir uno o más patrones globales y generar archivos a partir de coincidencias inclusivas o exclusivas. Ejemplo: documento1.txt, documento2.txt. FuenteURLs que son entendibles para el usuario. Ejemplo: https://es.wikipedia.org/wiki/URL_semántica"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#ejemplos",
+    "href": "presentaciones/reproducibilidad/index.html#ejemplos",
+    "title": "Reproducibilidad",
+    "section": "Ejemplos",
+    "text": "Ejemplos\n\n\nOrden lógico\n01_marshal-data.R\n02_pre-dea-filtering.R\n03_dea-with-Limma-voom.R\n04_explore-dea-results.R\n90_Limma-model-term-name-fiasco.R\nhelper01_load-counts.R\nhelper02_load-exp-des.R\nhelper03_load-focus-statinf.R\nhelper04_extract-and-tidy.R\n\nOrden crónologico\n2015-11-09_package-installation.R\n2016-05-21_package-installation.R\n2017-09-05_package-installation.R\n2018-06-29_package-installation.R\n2019-02-19_repair-default-library.R\n2020-06-06_record-existing-pkgs.R\n2021-06-15_git-config-analysis.R\n2021-08-29-git-default-branch.R\n2022-08-11_record-existing-pkgs.R\n\n\n\n\nEjemplo más complejo\n2013-06-26_BRAFWTNEGASSAY_Plasmid-Cellline-100-1MutantFraction_HO1.csv\n2013-06-26_BRAFWTNEGASSAY_Plasmid-Cellline-100-1MutantFraction_HO2.csv\n2013-06-26_BRAFWTNEGASSAY_Plasmid-Cellline-100-1MutantFraction_plateflle.csv\n2014-02-26_BRAFWTNEGASSAY_FFPEDNA-CRC-1-41_A01.csv\n2014-02-26_BRAFWTNEGASSAY_FFPEDNA-CRC-1-41_A02.csv"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#formatos-de-los-nombres",
+    "href": "presentaciones/reproducibilidad/index.html#formatos-de-los-nombres",
+    "title": "Reproducibilidad",
+    "section": "Formatos de los nombres",
+    "text": "Formatos de los nombres\n\n\n\n\n\nAllison Horst.\n\n\n\n\nflatcase\nSCREAMINGCASE\ncamelCase\nPascalCase\nsnake_case\nSCREAMING_SNAKE_CASE\ncamel_Snake_Case\nPascal_Snake_Case\nkebab-case\nSCREAMING-KEBAB-CASE\ncamel-Kebad-Case\nPascal-Kebad-Case\n\n\n\nR no acepta todos los formatos listados. Formatos sugeridos: camelCase, flatcase, PascalCase, period.case, snake_case."
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#lo-lamento-pero-hizo-que-el-emperador-perdiera-el-estilo",
+    "href": "presentaciones/reproducibilidad/index.html#lo-lamento-pero-hizo-que-el-emperador-perdiera-el-estilo",
+    "title": "Reproducibilidad",
+    "section": "«Lo lamento, pero hizo que el emperador perdiera el estilo»",
+    "text": "«Lo lamento, pero hizo que el emperador perdiera el estilo»\n\n\nUn buen estilo de codificación es como una correcta puntuación: se puede prescindir de él, perofacilitalalectura. Todas las guías de estilo se basan fundamentalmente en opiniones. Algunas decisiones realmente facilitan el uso del código, pero muchas decisiones son arbitrarias. Lo más importante de una guía de estilo es que proporciona coherencia, lo que facilita la escritura del código porque hay que tomar menos decisiones.\n\n\nGuías de estilo\n\nGuía de estilo de Bioconductor\nGuía de estilo de Colin Gillespie\nGuía de estilo de Google\nGuía de estilo del Tidyverse\n\n\nDos paquetes de R soportan la Guía de estilo del Tidyverse: styler y lintr.\n\n\n\nStyler añade un complemento de RStudio que facilita aplicar el estilo."
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#estructura-de-un-proyecto",
+    "href": "presentaciones/reproducibilidad/index.html#estructura-de-un-proyecto",
+    "title": "Reproducibilidad",
+    "section": "Estructura de un proyecto",
+    "text": "Estructura de un proyecto\n\n\nNo hay una estructura estándar para organizar un proyecto. Lo principal es que sea «organizado» y entendible por uno mismo y por otros.\nLa estructura de las carpetas y los nombres de los archivos deben ser:\n\nAutodocumentados:\n\nLos datos en la carpeta datos\nLos scripts en la carpeta scripts\n\nFáciles de codificar. Ejemplo:\n\nmedellin_temperatura-minima.csv\nmedellin_temperatura-maxina.csv\n\nTodos los archivos necesarios para\n\nHay varios paquetes que facilitan algunas de estas tareas: usethis, rrtools.\n\nEjemplo de estructura de un proyecto\nproyecto/\n├── proyecto.Rproject  # proyecto de RStudio\n├── README.md          # útil para describir el proyecto\n├── code/\n│   ├── functions\n│   └── scripts\n├── data/\n│   ├── raw_data/      # los datos sin procesar\n│   │   ├── muestreo.xlsx\n│   ├── derived_data/  # los datos procesados\n│       └── datos.csv\n├── images/\n├── output/\n│   ├── report.pdf     # el archivo exportado\n├── report/\n│   ├── apa.csl        # el estilo de citas y referencias\n│   ├── references.bib # la información de las referencias\n│   └── report.qmd\n├── tables/\n└── templates/"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#quarto",
+    "href": "presentaciones/reproducibilidad/index.html#quarto",
+    "title": "Reproducibilidad",
+    "section": "Quarto",
+    "text": "Quarto\nNo se trata solo de obtener resultados reproducibles; los informes o manuscritos también deben serlo. Quarto es un sistema de publicación científica y técnica de código abierto. Puede entrelazar texto y código para producir resultados con un formato elegante en forma de documentos, páginas web, blogs, libros y mucho más. Los archivos de Quarto (.qmd) son archivos de texto plano conformado por:\n\nMetadata (YAML)\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\nCódigo\n\n\n```{r}\nlibrary(dplyr)\nmtcars |&gt; \n  group_by(cyl) |&gt; \n  summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import *\n(mtcars\n  &gt;&gt; group_by(_.cyl)\n  &gt;&gt; summarize(avg_mpg = _.mpg.mean()))\n```\n\nTexto\n# Título 1\nEsta es una frase con algo de **texto en negrita**, *texto en cursiva* y una \n![Descripción de la imagen](imagen.png){fig-alt=«Alt text para la imagen»}."
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#rutas-en-quarto",
+    "href": "presentaciones/reproducibilidad/index.html#rutas-en-quarto",
+    "title": "Reproducibilidad",
+    "section": "Rutas en Quarto",
+    "text": "Rutas en Quarto\nAl usar un documento de Quarto dentro de un proyecto, es importante ser consciente de la ubicación de los archivos utilizados; por eso, las rutas relativas son fundamentales. Por diseño, el directorio de trabajo para renderizar archivos de Quarto es el directorio del propio archivo, que no siempre es la raíz del proyecto (.Rproj).\n\nTenemos el siguiente proyecto. Queremos mostrar data.csv en index.qmd\nproyecto/\n├── proyecto.Rproject # proyecto de RStudio\n├── code/\n│   └── index.qmd     # arhcivo de Quarto\n└── data/\n    └── data.csv/     # los datos\n\n\n\nRuta relativa\n\nread.csv(\n  \"../data.csv\"\n)\n\n# los .. significa «una carpeta \n# arriba de donde yo esté»\n\n\nRuta relativa con here\n\nread.csv(\n  here::here(\n    \"data\",\n    \"data.csv\"\n  )\n)"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#flujo-de-trabajo",
+    "href": "presentaciones/reproducibilidad/index.html#flujo-de-trabajo",
+    "title": "Reproducibilidad",
+    "section": "Flujo de trabajo",
+    "text": "Flujo de trabajo\n\n\n\nhttps://xkcd.com/2054/\n\n\n\n\nProcesos y código\n\n\n\n\n\n\nProcesos y objetos\n\n\n\n\n\n\n\nImágenes de Bryan et al. (2024)."
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#una-api-humana-para-el-análisis",
+    "href": "presentaciones/reproducibilidad/index.html#una-api-humana-para-el-análisis",
+    "title": "Reproducibilidad",
+    "section": "Una API humana para el análisis",
+    "text": "Una API humana para el análisis\n\nSiempre que se pueda, se ha de apostar por formatos abiertos: CSV, JPEG, HTML, ODS, ODT, PDF, PNG, SVG, TSV, TXT. Imagen Bryan et al. (2024)."
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#control-de-versiones",
+    "href": "presentaciones/reproducibilidad/index.html#control-de-versiones",
+    "title": "Reproducibilidad",
+    "section": "Control de versiones",
+    "text": "Control de versiones\n\n\n\n\nUn control de versiones es un sistema que registra los cambios realizados en un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante. […] en realidad puedes hacer lo mismo con casi cualquier tipo de archivo que encuentres en una computadora. Chacon (2014)\n\n\n\nUn método básico y rudimentario del control de versiones es tener copias de un mismo archivo.\n2015-11-09_package-installation.R\n2016-05-21_package-installation.R\n2017-09-05_package-installation.R\n2018-06-29_package-installation.R\n\n\n\n\n\nSe comienza con una versión básica y se van guardando sólo los cambios. Gonzalez et al. (2019).\n\n\n\n\n\n\n\nUna revisión «normal» de un documento. PHD Comics."
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#git-y-github",
+    "href": "presentaciones/reproducibilidad/index.html#git-y-github",
+    "title": "Reproducibilidad",
+    "section": "Git y GitHub",
+    "text": "Git y GitHub\n\n\n\nGit es un sistema de control de versiones. Git gestiona la evolución de un conjunto de archivos -llamado repositorio- de una forma sana y muy estructurada. En un flujo de trabajo basado en Git, documentas y, opcionalmente, expones tu trabajo a medida que avanzas. La comunicación y la colaboración son las aplicaciones estrella del control de versiones. Bryan (2018).\n\n\n\n\n\nLogo de Git.\n\n\n\n\n\n\nGitHub es el mayor proveedor de alojamiento de repositorios Git, y es el punto de encuentro para que millones de desarrolladores colaboren en el desarrollo de sus proyectos. Un gran porcentaje de los repositorios Git se almacenan en GitHub, y muchos proyectos de código abierto lo utilizan para hospedar su Git, realizar su seguimiento de fallos, hacer revisiones de código y otras cosas. Chacon (2014).\n\n\n\n\n\nEl invertocat logo de Github. La silueta es The Octocat, la mascota de GitHub."
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#entornos-reproducibles",
+    "href": "presentaciones/reproducibilidad/index.html#entornos-reproducibles",
+    "title": "Reproducibilidad",
+    "section": "Entornos reproducibles",
+    "text": "Entornos reproducibles\n\n\nUn entorno (environment) consiste en todas las dependencias necesarias para que el código se ejecute correctamente. Esto incluye el propio R, los paquetes de R y las dependencias del sistema. Puede ser difícil gestionar entornos reproducibles:\n\nEl código que solía ejecutarse ya no se ejecuta, a pesar de que el código no ha cambiado.\nTener miedo de actualizar o instalar un nuevo paquete, ya que podría romper su código o el de otra persona.\nEscribir install.packages() en tu entorno no hace nada, o no hace lo correcto.\n\n\n\n\n\n«El proyecto cebolla»: apostar por el flujo de trabajo orientado a proyectos significa adoptar herramientas que permitan gestionar mediante programación cada una de las capas de la configuración del proyecto. Bryan et al. (2024)\n\n\n\n\nEstos retos pueden abordarse mediante una cuidadosa combinación de herramientas y estrategias. Acá sólo abordamos: la actualización segura de paquetes y la colaboración en equipo. Quedando por fuera el manejo de varias versiones de R y las dependencias del sistema, para lo cual es recomendable investigar sobre rig y Docker.\n\n\nhttps://xkcd.com/1987/"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#renv",
+    "href": "presentaciones/reproducibilidad/index.html#renv",
+    "title": "Reproducibilidad",
+    "section": "renv",
+    "text": "renv\n\n\nrenv ayuda a crear entornos reproducibles para sus proyectos de R, haciendo los proyectos:\n\nAislados: la instalación de un paquete nuevo o actualizado para un proyecto no romperá sus otros proyectos, y viceversa. renv proporciona a cada proyecto su propia biblioteca privada.\nPortátil: transporte fácilmente sus proyectos de un ordenador a otro, incluso a través de diferentes plataformas. renv facilita la instalación de los paquetes de los que depende su proyecto.\nReproducible: renv registra las versiones exactas de los paquetes de los que depende, y asegura que esas versiones exactas son las que se instalan allá donde vaya.\n\n\n\n\n\n\n\n\n\n\nLos verbos y sustantivos más importantes de renv.\n\n\n\n\nhttps://rstudio.github.io/renv/"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#section",
+    "href": "presentaciones/reproducibilidad/index.html#section",
+    "title": "Reproducibilidad",
+    "section": "",
+    "text": "https://rcd.ucsb.edu/sites/default/files/2023-12/dls-202311-renv-white.pdf"
+  },
+  {
+    "objectID": "presentaciones/reproducibilidad/index.html#referencias",
+    "href": "presentaciones/reproducibilidad/index.html#referencias",
+    "title": "Reproducibilidad",
+    "section": "Referencias",
+    "text": "Referencias\n\n\nAkalin, A. (2021). Scientific data analysis pipelines and reproducibility. https://towardsdatascience.com/scientific-data-analysis-pipelines-and-reproducibility-75ff9df5b4c5\n\n\nAssociation for Computing Machinery. (2020). Artifact review and badging - current. https://www.acm.org/publications/policies/artifact-review-and-badging-current\n\n\nBaker, M. (2016). 1,500 scientists lift the lid on reproducibility. Nature, 533(7604), 452-454. https://doi.org/10.1038/533452a\n\n\nBryan, J. (2015). How to name files. https://speakerdeck.com/jennybc/how-to-name-files\n\n\nBryan, J. (2017). Project-oriented workflow. https://www.tidyverse.org/blog/2017/12/workflow-vs-script/\n\n\nBryan, J. (2018). Excuse me, do you have a moment to talk about version control? The American Statistician, 72(1), 20-27. https://doi.org/10.1080/00031305.2017.1399928\n\n\nBryan, J., Hester, J., Pileggi, S., & Aja, E. D. (2024). What they forgot to teach you about R: the stuff you need to know about R, besides data analysis. https://rstats.wtf/\n\n\nCampitelli, E., & Corrales, P. (2024). An R reproducibility toolkit for the practical researcher. https://reproducibility.rocks/\n\n\nChacon, S. (2014). Pro Git (2.ª ed.). Apress. https://git-scm.com/book/en/v2\n\n\nClaerbout, J. F., & Karrenbach, M. (1992). Electronic documents give reproducible research a new meaning. SEG Technical Program Expanded Abstracts 1992, 601-604. https://doi.org/10.1190/1.1822162\n\n\nFanelli, D. (2018). Is science really facing a reproducibility crisis, and do we need it to? Proceedings of the National Academy of Sciences, 115(11), 2628-2631. https://doi.org/10.1073/pnas.1708272114\n\n\nGonzalez, I., Huang, D., Hejazi, N., Koziar, K., & Munk, M. (2019). Version Control with Git: Summary and Setup. https://swcarpentry.github.io/git-novice/index.html\n\n\nGoodman, S. N., Fanelli, D., & Ioannidis, J. P. A. (2016). What does research reproducibility mean? Science Translational Medicine, 8(341). https://doi.org/10.1126/scitranslmed.aaf5027\n\n\nHiggins, P. D. R. (2024). Reproducible medical research with r. https://bookdown.org/pdr_higgins/rmrwr/\n\n\nLopp, S. (2019). Reproducible Environments. https://rviews.rstudio.com/2019/04/22/reproducible-environments/\n\n\nOza, A. (2023). Reproducibility trial: 246 biologists get different results from same data sets. Nature, 622(7984), 677-678. https://doi.org/10.1038/d41586-023-03177-1\n\n\nPeng, R. D. (2011). Reproducible Research in Computational Science. Science, 334(6060), 1226-1227. https://doi.org/10.1126/science.1213847\n\n\nPlesser, H. E. (2018). Reproducibility vs. replicability: a brief history of a confused terminology. Frontiers in Neuroinformatics, 11, 76. https://doi.org/10.3389/fninf.2017.00076\n\n\nPosit Software. (2022). RStudio User Guide - renv. https://docs.posit.co/ide/user/ide/guide/environments/r/renv.html\n\n\nPosit Software. (2024). Reproducible Environments. https://solutions.posit.co/envs-pkgs/environments/\n\n\nSlingsby, J. (2024). A minimal introduction to reproducible research. https://www.ecologi.st/data-management/\n\n\nWhitaker, K. (2017). Showing your working: a how to guide to reproducible research. https://doi.org/10.6084/m9.figshare.4244996.v2\n\n\nWickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for data science: import, tidy, transform, visualize, and model data (2.ª ed.). O’Reilly. https://r4ds.hadley.nz"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#proposito",
+    "href": "presentaciones/intro-quarto/index.html#proposito",
+    "title": "Introducción a Quarto",
+    "section": "Proposito",
+    "text": "Proposito\n\n\nPasar de Word…\n\n\n\n\n\n\na Quarto"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#qué-es-quarto",
+    "href": "presentaciones/intro-quarto/index.html#qué-es-quarto",
+    "title": "Introducción a Quarto",
+    "section": "Qué es Quarto",
+    "text": "Qué es Quarto\nQuarto es un sistema open-source de publicación técnica y científica. Quarto es una interfaz de línea de comandos (CLI) que convierte formatos de texto plano (.qmd, .rmd, .md) o formatos mixtos (.ipynb/Jupyter notebook) en documentos estaticos o interactivos.\n\nQuarto permite combinar en un mismo entorno texto y código para producir resultados elegantemente formateados como documentos, páginas web, entradas de blog, libros y más.\n\n\n\nRepresantación esquemática de Quarto. Allison Horst."
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#por-qué-quarto",
+    "href": "presentaciones/intro-quarto/index.html#por-qué-quarto",
+    "title": "Introducción a Quarto",
+    "section": "Por qué Quarto",
+    "text": "Por qué Quarto\n\n\n\nOpen-source\nUn único framework\nSintaxis coherente\nMultiplataforma, multiengine, multilenguaje, multilingüe\nMejor integración con IDEs (JupyterLab, RStudio, VScode)\nCompatibilidad con formatos existentes (.Rmd, ipynb)\nIntegración más sencilla con filtros Lua\nMás de 40 formatos de salida\nExtensiones\n\n\n\n\n\nImagen de Krishnamurthy (2015)"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-artículos",
+    "href": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-artículos",
+    "title": "Introducción a Quarto",
+    "section": "Qué puedo hacer con Quarto: artículos",
+    "text": "Qué puedo hacer con Quarto: artículos\n\n\nhttps://dx.doi.org/10.2139/ssrn.4960885"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-dashboards",
+    "href": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-dashboards",
+    "title": "Introducción a Quarto",
+    "section": "Qué puedo hacer con Quarto: dashboards",
+    "text": "Qué puedo hacer con Quarto: dashboards\n\n\nhttps://geobota.github.io/dia-biologo-2024/"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-libros",
+    "href": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-libros",
+    "title": "Introducción a Quarto",
+    "section": "Qué puedo hacer con Quarto: libros",
+    "text": "Qué puedo hacer con Quarto: libros\n\n\nhttps://alexespinosaco.github.io/biologia-plantas-manual/"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-tesis",
+    "href": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-tesis",
+    "title": "Introducción a Quarto",
+    "section": "Qué puedo hacer con Quarto: tesis",
+    "text": "Qué puedo hacer con Quarto: tesis\n\n\nhttps://alexespinosaco.github.io/udea-quarto-thesis/"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-presentaciones",
+    "href": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-presentaciones",
+    "title": "Introducción a Quarto",
+    "section": "Qué puedo hacer con Quarto: presentaciones",
+    "text": "Qué puedo hacer con Quarto: presentaciones\n\n\nhttps://herbariohua.github.io/taller-elaboracion-informes/"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-sitios-web",
+    "href": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-sitios-web",
+    "title": "Introducción a Quarto",
+    "section": "Qué puedo hacer con Quarto: sitios web",
+    "text": "Qué puedo hacer con Quarto: sitios web\n\n\nhttps://geobota.github.io/"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#cómo-funciona-quarto",
+    "href": "presentaciones/intro-quarto/index.html#cómo-funciona-quarto",
+    "title": "Introducción a Quarto",
+    "section": "Cómo funciona Quarto",
+    "text": "Cómo funciona Quarto\n\nRepresentación esquemática de cómo funciona Quarto. Allison Horst."
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#no-es-sólo-r-y-rstudio",
+    "href": "presentaciones/intro-quarto/index.html#no-es-sólo-r-y-rstudio",
+    "title": "Introducción a Quarto",
+    "section": "No es sólo R y RStudio",
+    "text": "No es sólo R y RStudio"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#what-you-see-is-what-you-get-wysiwyg",
+    "href": "presentaciones/intro-quarto/index.html#what-you-see-is-what-you-get-wysiwyg",
+    "title": "Introducción a Quarto",
+    "section": "What You See Is What You Get (WYSIWYG)",
+    "text": "What You See Is What You Get (WYSIWYG)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat you see is what you get: lo que ves es lo que hay"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#what-you-see-is-what-you-mean-wysiwym",
+    "href": "presentaciones/intro-quarto/index.html#what-you-see-is-what-you-mean-wysiwym",
+    "title": "Introducción a Quarto",
+    "section": "What You See Is What You Mean (WYSIWYM)",
+    "text": "What You See Is What You Mean (WYSIWYM)\n\n\n\n\n\nViews Iceberg Traced by User:Jc86035, CC BY-SA 3.0, via Wikimedia Commons\n\n\n\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```\n\n\n\n\n\nResultado obtenido del código de la izquierda. Quarto\n\n\n\n\nWhat you see is what you mean: lo que ves es lo que quieres decir"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#integrated-development-environment-ide",
+    "href": "presentaciones/intro-quarto/index.html#integrated-development-environment-ide",
+    "title": "Introducción a Quarto",
+    "section": "Integrated development environment (IDE)",
+    "text": "Integrated development environment (IDE)\n\nAplicación que proporciona servicios integrales para facilitar el desarrollo de software.\n\n\n\n\n\n\nApariencia por defecto de RStudio.\n\n\n\n\n\n\nEditor Visual de RStudio. Quarto.\n\n\n\n\nIntegrated development environment: entorno de desarrollo integrado"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#renderizar-y-formatos",
+    "href": "presentaciones/intro-quarto/index.html#renderizar-y-formatos",
+    "title": "Introducción a Quarto",
+    "section": "Renderizar y formatos",
+    "text": "Renderizar y formatos\n\n\nTres formas de renderizar\n\nUtilizando el boton  en RStudio\n\n\n\nUtilizando la consola de R\n\nlibrary(quarto)\nquarto::quarto_render(input = \"documento.qmd\") # html por defecto\nquarto::quarto_render(input = \"documento.qmd\", output_format = \"pdf\")\n\nUtilizando la terminal\n\nquarto render document.qmd # html por defecto\nquarto render document.qmd --to pdf\n\nMás de 40 formatos de salida\n\nhtml\npdf\ntypst\ndocx\nodt\nrevealjs\npptx\ndashboard\nmuchos más!"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#anatomía-de-un-archivo-.qmd",
+    "href": "presentaciones/intro-quarto/index.html#anatomía-de-un-archivo-.qmd",
+    "title": "Introducción a Quarto",
+    "section": "Anatomía de un archivo .qmd",
+    "text": "Anatomía de un archivo .qmd\nLos archivos de Quarto (.qmd) son archivos de texto plano conformado por:\nMetadata (YAML)\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\nCódigo\n\n\n```{r}\nlibrary(dplyr)\nmtcars |&gt; \n  group_by(cyl) |&gt; \n  summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import *\n(mtcars\n  &gt;&gt; group_by(_.cyl)\n  &gt;&gt; summarize(avg_mpg = _.mpg.mean()))\n```\n\nTexto\n# Título 1\nEsta es una frase con algo de **texto en negrita**, *texto en cursiva* y una \n![Descripción de la imagen](imagen.png){fig-alt=«Alt text para la imagen»}."
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#metadata-yaml-1",
+    "href": "presentaciones/intro-quarto/index.html#metadata-yaml-1",
+    "title": "Introducción a Quarto",
+    "section": "Metadata (YAML)",
+    "text": "Metadata (YAML)\n«Yet Another Markup Language» o “YAML Ain’t Markup Language” se utiliza para proporcionar metadatos a nivel de documento o proyecto.\n\n\n\nSe coloca al principio del documento entre ---\nSiempre en pares key: y value\nPueden anidarse\nQuisquilloso con la sangría y espaciado\n\n\n---\ntitle: \"El origen de las especies\"\nauthor: \"Charles Darwin\"\nformat: \n  html:\n    toc: true\n----\n\n\n\nQuarto YAML Intelligence:autocompletar\n\n\n\n\n\n\nQuarto linting:detección de errores"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#markdown",
+    "href": "presentaciones/intro-quarto/index.html#markdown",
+    "title": "Introducción a Quarto",
+    "section": "Markdown ",
+    "text": "Markdown \n\n\nMarkdown es un formato de texto plano creado por John Gruber y Aaron Swartz, está diseñado para ser fácil de escribir y fácil de leer. Quarto se basa en Pandoc y utiliza su variante de Markdown, la cual es una versión ampliada y ligeramente revisada de la sintaxis Markdown de John Gruber.\n\n\nUn documento con formato Markdown debería poder publicarse tal cual, como texto sin formato, sin que parezca que ha sido marcado con etiquetas o instrucciones de formato. John Gruber\n\n\n\n\n\n\nAaron Swartz (1986-2013) una de las personas más importantes en la historia de Internet. Fred Benenson / www.fredbenenson.com, CC BY 2.0."
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#markdown-formato-de-texto",
+    "href": "presentaciones/intro-quarto/index.html#markdown-formato-de-texto",
+    "title": "Introducción a Quarto",
+    "section": "Markdown: formato de texto",
+    "text": "Markdown: formato de texto\nEn Quarto se puede agregar texto en diferentes formatos.\nSintaxis básica\n\n\n\n\n\n\n\nMarkdown\nSalida\n\n\n\n\n*cursiva*\ncursiva\n\n\n**negrilla**\nnegrilla\n\n\n***cursiva y negrilla***\ncursiva y negrilla\n\n\nsuperíndice^2^\nsuperíndice2\n\n\nsubíndice~2~\nsubíndice2\n\n\n~~tachado~~\ntachado\n\n\n`código puro`\ncódigo puro"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#markdown-párrafos",
+    "href": "presentaciones/intro-quarto/index.html#markdown-párrafos",
+    "title": "Introducción a Quarto",
+    "section": "Markdown: párrafos",
+    "text": "Markdown: párrafos\nEn Markdown los párrafos se construyen dejando una linea en blanco. De lo contrario, el salto de línea se trata como un espacio.\n\n\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit.\n\nSed do eiusmod tempor.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\nSed do eiusmod tempor."
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#markdown-encabezados",
+    "href": "presentaciones/intro-quarto/index.html#markdown-encabezados",
+    "title": "Introducción a Quarto",
+    "section": "Markdown: encabezados",
+    "text": "Markdown: encabezados\nEn Quarto se pueden agregar hasta seis niveles de encabezados o títulos.\n\n\n\n\n\n\n\nMarkdown\nSalida\n\n\n\n\n# Encabezado 1\nEncabezado 1\n\n\n## Encabezado 2\nEncabezado 2\n\n\n### Encabezado 3\nEncabezado 3\n\n\n#### Encabezado 4\nEncabezado 4\n\n\n##### Encabezado 5\nEncabezado 5\n\n\n###### Encabezado 6\nEncabezado 6"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#markdown-listas",
+    "href": "presentaciones/intro-quarto/index.html#markdown-listas",
+    "title": "Introducción a Quarto",
+    "section": "Markdown: listas",
+    "text": "Markdown: listas\nLista desordenada\nPara los elementos de una lista desordenada se puede utilizar: *, -, o +.\n\n\nMarkdown\n*   Elemento 1\n    +   Elemento 1.1\n        -   Elemento 1.1.1\n    +   Elemento 1.2\n*   Elemento 2\n\nSalida\n\nElemento 1\n\nElemento 1.1\n\nElemento 1.1.1\n\nElemento 1.2\n\nElemento 2\n\n\nLista ordenada\n\n\nMarkdown\n1.  Elemento 1\n    i)  Elemento 1.1\n        A.  Elemento 1.1.1\n        A.  Elemento 1.1.2\n    i)  Elemento 1.2\n1.  Elemento 2\n\nSalida\n\nElemento 1\n\nElemento 1.1\n\nElemento 1.1.1\nElemento 1.1.2\n\nElemento 1.2\n\nElemento 2"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#markdown-enlaces-e-imágene",
+    "href": "presentaciones/intro-quarto/index.html#markdown-enlaces-e-imágene",
+    "title": "Introducción a Quarto",
+    "section": "Markdown: enlaces e imágene",
+    "text": "Markdown: enlaces e imágene\nLa sintaxis para agregar enlaces e imágenes e relativamente similar.\n\n\n\nMarkdown\nOutput\n\n\n\n\n&lt;https://quarto.org&gt;\nhttps://quarto.org\n\n\n[Quarto](https://quarto.org)\nQuarto\n\n\n![Descripción](images/quarto_logo.png)\n\n\n\nDescripción"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#sec-markdown-tablas",
+    "href": "presentaciones/intro-quarto/index.html#sec-markdown-tablas",
+    "title": "Introducción a Quarto",
+    "section": "Markdown: tablas",
+    "text": "Markdown: tablas\nQuarto incluye características destinadas a facilitar la creación y personalización de tablas: especificar la alineación y el ancho de las columnas; proporcionar títulos y referencias cruzadas; generar tablas a partir de código. En Markdown las tablas pueden ser pipe tables o grid tables. Las tablas se pueden construir usando el Editor Visual o generadores https://www.tablesgenerator.com\n\n\n\nMarkdown\n| Por defecto | Izquierda | Derecha | Centro |\n|-------------|:----------|--------:|:------:|\n| 12          | 12        |      12 |   12   |\n| 123         | 123       |     123 |  123   |\n| 1           | 1         |       1 |   1    |\n\n: Demostración de pipe table.\n\nSalida\n\nDemostración de pipe table.\n\n\nPor defecto\nIzquierda\nDerecha\nCentro\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\n\n\n\n\n\n+-----------+-----------+--------------------------+\n| Fruta     | Precio    | Ventajas                 |\n+==========:+:=========:+:=========================+\n| Banano    | $1.34     | - envoltorio incorporado |\n|           |           | - color brillante        |\n+-----------+-----------+--------------------------+\n\n: Demostración de grid table.\n\n\nDemostración de grid table.\n\n\n\n\n\n\n\nFruta\nPrecio\nVentajas\n\n\n\n\nBanano\n$1.34\n\nenvoltorio incorporado\ncolor brillante"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#referencias-cruzadas",
+    "href": "presentaciones/intro-quarto/index.html#referencias-cruzadas",
+    "title": "Introducción a Quarto",
+    "section": "Referencias cruzadas",
+    "text": "Referencias cruzadas\nLas referencias cruzadas facilitan a los lectores la navegación por el documento proporcionando referencias numeradas e hipervínculos a diversas entidades, como figuras y tablas. Toda entidad con la que se puedan establecer referencias cruzadas requiere una etiqueta (fig- y tbl-), un identificador único precedido de un tipo de referencia cruzada (fig-elemento y tbl-elemento).\n\n![Istopipo de Quarto](images/quarto_logo.png){#fig-quarto}\n\nLa @fig-quarto muestra el isotipo de Quarto.\n\n\n\n\n\n\nFigura 1: Isotipo de Quarto\n\n\n\nLa Figura 1 muestra el isotipo de Quarto.\n\n\nQuarto tiene algunos prefijos reservados: fig, tbl, lst, tip, nte, wrn, imp, cau, thm, lem, cor, prp, cnj, def, exm, exr, sol, rem, eq, sec.\nEs recomendable evitar el uso de guiones bajos _."
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#citación",
+    "href": "presentaciones/intro-quarto/index.html#citación",
+    "title": "Introducción a Quarto",
+    "section": "Citación",
+    "text": "Citación\nQuarto utiliza Pandoc para generar automáticamente citas y una bibliografía en varios estilos. Es necesario tener:\n\nUn documento Quarto formateado con citas.\nUna fuente de datos bibliográficos, por ejemplo un archivo BibLaTeX (.bib) o BibTeX (.bibtex).\nOpcionalmente, un archivo CSL que especifique el formato a utilizar al generar las citas y la bibliografía.\n\n\nEl conjunto de datos flor Iris fue tomado por @anderson1936 y popularizado \nposteriormente [@fisher1936]. El conjunto de datos contiene 150 muestras de \ntres especies [@anderson1936; @fisher1936].\nEl conjunto de datos flor Iris fue tomado por Anderson (1936) y popularizado posteriormente (Fisher 1936). El conjunto de datos contiene 150 muestras de tres especies (Anderson 1936; Fisher 1936).\n\n\nReferencias\n\n\nAnderson, Edgar. 1936. «The species problem in Iris». Annals of the Missouri Botanical Garden 23 (3): 457. https://doi.org/10.2307/2394164.\n\n\nFisher, R. A. 1936. «The Use of Multiple Measurements in Taxonomic Problems». Annals of Eugenics 7 (2): 179-88. https://doi.org/10.1111/j.1469-1809.1936.tb02137.x."
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#código-1",
+    "href": "presentaciones/intro-quarto/index.html#código-1",
+    "title": "Introducción a Quarto",
+    "section": "Código",
+    "text": "Código\nEn Quarto el código puede insertarse en linea o como bloques de código (conocidos como chunks). Los chunks siempre se encuentran entre ```, mientras el código en linea se encuentra entre `. Para que el código sea ejecutable se ha de poner el nombre del lenguaje entre {}, ej. {r}. Si sólo se pone el nombre del lenguaje, el código no se ejecutará y se resaltará la sintaxis del lenguaje. Los chunks pueden tener opciones que se indican con un #| (hash pipe) y siguen la sintaxis del YAML.\n\n\n\n```{r}\n#| label: fig-ejemplo-chunk\n#| fig-cap: \"Descripción de la figura. Note el prefijo generado automáticamente\" \n#| fig-dpi: 300\n#| output-location: column-fragment\n#| code-line-numbers: \"|1|2-8|2|3-4\"\n\nlibrary(ggplot2)\n\niris |&gt; \n  ggplot2::ggplot(\n    ggplot2::aes(x = Petal.Length, y = Petal.Width)\n  ) + \n  ggplot2::geom_point(\n    ggplot2::aes(color = Species, shape = Species)\n  ) + \n  ggplot2::geom_smooth(\n    formula = y ~ x, method = \"loess\"\n  ) + \n  ggplot2::theme_classic()\n```\n\n\n\n\n\n\n\n\nFigura 2: Descripción de la figura. Note el prefijo generado automáticamente"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#de-opciones-de-chunk-al-yaml",
+    "href": "presentaciones/intro-quarto/index.html#de-opciones-de-chunk-al-yaml",
+    "title": "Introducción a Quarto",
+    "section": "De opciones de chunk al YAML",
+    "text": "De opciones de chunk al YAML\nHay una gran variedad de opciones disponibles para personalizar la salida del código ejecutado. Todas estas opciones se pueden especificar globalmente (YAML) o por bloque de código.\n\n\n---\ntitle: \"El origen de las especies\"\nformat: html\n---\n\n```{r}\n#| echo: true\n\npi + 1\n```\n\n---\ntitle: \"El origen de las especies\"\nformat: html\nexecute:\n  echo: true\n---\n\n```{r}\npi + 1\n```"
+  },
+  {
+    "objectID": "presentaciones/intro-quarto/index.html#opciones-de-ejecución",
+    "href": "presentaciones/intro-quarto/index.html#opciones-de-ejecución",
+    "title": "Introducción a Quarto",
+    "section": "Opciones de ejecución",
+    "text": "Opciones de ejecución\nLas opciones disponibles para personalizar la salida incluyen:\n\n\n\n\n\n\n\nOpción\nDescripción\n\n\n\n\neval\nEvalúa el fragmento de código (si es false, sólo muestra el código en la salida).\n\n\necho\nIncluye el código fuente en la salida.\n\n\noutput\nIncluye los resultados de ejecutar el código en la salida (true, false, o asis para indicar que la salida es markdown crudo)\n\n\nwarning\nIncluye advertencias en la salida.\n\n\nerror\nIncluye errores en la salida (esto implica que los errores de ejecución de código no detendrán el procesamiento del documento).\n\n\ninclude\nCaptura general para evitar que se incluya cualquier salida (código o resultados). Por ejemplo, include: false suprime toda la salida del bloque de código."
+  },
+  {
+    "objectID": "preparacion/index.html",
+    "href": "preparacion/index.html",
+    "title": "Preparación",
+    "section": "",
+    "text": "Requisitos\n\n\n\nSe requiere que cada participante disponga de su propio ordenador personal. En este equipo, deberá tener instalado el software necesario para el desarrollo del taller.\ninstall.packages(\n  c(\n    \"countdown\", \"ethnobotanyR\", \"flextable\", \"fontawesome\", \n    \"ggthemes\", \"gt\", \"here\", \"janitor\", \"palmerpenguins\", \n    \"readxl\", \"showtext\", \"sysfonts\", \"tidyverse\", \"visdat\" \n  )\n)"
+  },
+  {
+    "objectID": "preparacion/index.html#instalar-r",
+    "href": "preparacion/index.html#instalar-r",
+    "title": "Preparación",
+    "section": "Instalar R",
+    "text": "Instalar R\nEste es un paso a paso de cómo instalar R en Windows.\n\nIr a https://posit.co/download/rstudio-desktop/\n\n\n\nIr hasta esta sección de la página. Hacer clic en DOWNLOAD AND INSTALL R\n\n\n\nHacer clic en Download R for Windows\n\n\n\nHacer clic en base\n\n\n\nHacer clic en Download R-4.5.0 for Windows. Esto iniciara la descarga de R-4.5.0-win.exe\n\n\n\nBuscar donde se ha descargado R-4.5.0-win.exe. Hacer doble clic sobre él para abrir. Se abrirá esta ventana. Hacer clic en Aceptar\n\n\n\nHacer clic en Siguiente\n\n\n\nHacer clic en Siguiente\n\n\n\nHacer clic en Siguiente\n\n\n\nHacer clic en Siguiente\n\n\n\nHacer clic en Siguiente\n\n\n\nEsperar a que la instalación termine\n\n\n\nHacer clic en Finalizar\n\n\n\nInstalar RTools\nEs recomendable instalar RTools. Evitaremos algunos problemas al instalar ciertos paquetes\n\nRegresar a esta ventana. Hacer clic en RTools\n\n\n\nHacer clic en RTools 4.5\n\n\n\nHacer clic en Rtools45 installer o 64-bit ARM Rtools44 installer dependiendo de la configuración de su computadora. Comenzará la descarga de rtools45-6536-6492.exe o rtools45-aarch64-6536-6492.exe, respectivamente. Buscar donde se ha descargado el archivo, hacer doble clic y seguir las instrucciones."
+  },
+  {
+    "objectID": "preparacion/index.html#instalar-rstudio",
+    "href": "preparacion/index.html#instalar-rstudio",
+    "title": "Preparación",
+    "section": "Instalar RStudio",
+    "text": "Instalar RStudio\nEste es un paso a paso de cómo instalar RStudio en Windows.\n\nIr a https://posit.co/download/rstudio-desktop/\n\n\n\nIr hasta esta sección de la página. Hacer clic en DOWNLOAD RSTUDIO DESKTOP FOR WINDOWS. Esto iniciara la descarga de RStudio-2025.05.0-496.exe\n\n\n\nBuscar donde se ha descargado RStudio-2025.05.0-496.exe. Hacer doble clic sobre él para abrir. Se abrirá esta ventana. Hacer clic en Siguiente\n\n\n\nHacer clic en Instalar\n\n\n\nEsperar a que la instalación termine\n\n\n\nHacer clic en Terminar"
+  },
+  {
+    "objectID": "preparacion/index.html#instalar-quarto",
+    "href": "preparacion/index.html#instalar-quarto",
+    "title": "Preparación",
+    "section": "Instalar Quarto",
+    "text": "Instalar Quarto\n\nIr a https://quarto.org. Hacer clic en Get Started\n\n\n\nHacer clic en Download Quarto CLI. Esto iniciara la descarga de quarto-1.7.31-win.msi\n\n\n\nBuscar donde se ha descargado quarto-1.7.31-win.msi. Hacer doble clic sobre él para abrir. Se abrirá esta ventana. Hacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nEsperar a que termine\n\n\n\nHacer clic en Finish\n\n\n\nInstalar TinyTex\n\nAbrir RStudio (la apariencia puede variar)\n\n\n\nHacer clic en la pestaña Terminal que se encuentra en el lado izquierdo\n\n\n\nCopiar el siguiente código. Pegar en la Terminal usando Ctrl-Shift-VCtrl-Shift-V. Presionar EnterEnter\n\n\n\nTerminal\n\nquarto install tinytex\n\n\n\nEsperar a que termine la descarga e instalación de TinyTex\n\n\n\nAl finanilizar la descarga e instalación, la terminal se ha de ver así"
+  },
+  {
+    "objectID": "preparacion/index.html#instalar-git",
+    "href": "preparacion/index.html#instalar-git",
+    "title": "Preparación",
+    "section": "Instalar Git",
+    "text": "Instalar Git\n\nIr a https://git-scm.com. Hacer clic en Download for Windows\n\n\n\n\n\n\n\n\nAlternativa de descarga\n\n\n\n\n\nIr a https://gitforwindows.org. Hacer clic en Download. Esto iniciara la descarga de Git-2.49.0-64bit.exe\n\n\n\n\n\nHacer clic en Click here to download. Esto iniciara la descarga de Git-2.49.0-64bit.exe\n\n\n\nBuscar donde se ha descargado Git-2.49.0-64bit.exe. Hacer doble clic sobre él para abrir. Se abrirá esta ventana. Hacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nEsperar a que la instalación termine\n\n\n\nHacer clic en Finish"
+  },
+  {
+    "objectID": "preparacion/index.html#instalar-github-desktop",
+    "href": "preparacion/index.html#instalar-github-desktop",
+    "title": "Preparación",
+    "section": "Instalar GitHub Desktop",
+    "text": "Instalar GitHub Desktop\n\nIr a https://github.com/apps/desktop. Hacer clic en Download now\n\n\n\nHacer clic en Download for Windows (64bit). Esto iniciara la descarga de GitHubDesktopSetup-x64.exe\n\n\n\nBuscar donde se ha descargado GitHubDesktopSetup-x64.exe. Hacer doble clic sobre él para abrir. Se abrirá esta ventana\n\n\n\nEsperar hasta que termine al instalación y aparezca esta ventana"
+  },
+  {
+    "objectID": "preparacion/index.html#instalar-zotero",
+    "href": "preparacion/index.html#instalar-zotero",
+    "title": "Preparación",
+    "section": "Instalar Zotero",
+    "text": "Instalar Zotero\n\nIr a https://www.zotero.org. Hacer clic en Download\n\n\n\nHacer clic en Download (64-bit). Esto iniciara la descarga de Zotero-7.0.15_x64_setup.exe\n\n\n\nBuscar donde se ha descargado Zotero-7.0.15_x64_setup.exe. Hacer doble clic sobre él para abrir. Se abriá esta ventana. Esperar a que el proceso termine\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Install\n\n\n\nEsperar a que la instalación termine\n\n\n\nHacer clic en Finish"
+  },
+  {
+    "objectID": "preparacion/index.html#descargar-los-archivos-clonar-el-repositorio-del-taller",
+    "href": "preparacion/index.html#descargar-los-archivos-clonar-el-repositorio-del-taller",
+    "title": "Preparación",
+    "section": "Descargar los archivos (clonar el repositorio) del taller",
+    "text": "Descargar los archivos (clonar el repositorio) del taller\n\n\n\n\n\n\nImportante\n\n\n\nSi está inscrito al taller, descargue los materiales (clone el repositorio) del taller https://github.com/herbariohua/materiales-elaboracion-informes/ el martes 3 de junio por la mañana.\n\n\n\nIr a https://github.com/herbariohua/materiales-elaboracion-informes/\nHacer clic en &lt;&gt; Code y copiar la URL bajo la pestaña HTTPS https://github.com/herbariohua/materiales-elaboracion-informes.git\n\n\n\n\n\n\n\nTip\n\n\n\nEn este punto, podría descargar los archivos. Hacer clic en la opción Download zip. Esto descargará el archivo materiales-elaboracion-informes/-main.zip, el cual tendrá que descomprimir.\n\n\n\nEn RStudio, ir a File &gt; New Project &gt; Version Control &gt; From Git &gt; pegar la URL en el cuadro de Repository URL. Hacer clic en Create Project. Esperar a que termine\n\n\n\n\nTomado de Get Started with Quarto\n\n\n\n\n\n\n\n\nTip\n\n\n\nEn en el cuadro de Create project as subdirectory of puede elegir el directorio donde quiere descargar el repositorio."
+  },
+  {
+    "objectID": "preparacion/index.html#instalar-los-paquetes-de-r-necesarios",
+    "href": "preparacion/index.html#instalar-los-paquetes-de-r-necesarios",
+    "title": "Preparación",
+    "section": "Instalar los paquetes de R necesarios",
+    "text": "Instalar los paquetes de R necesarios\n\nAbrir RStudio (la apariencia puede variar)\n\n\n\nCopiar el siguiente código. Pegar en la Console usando Ctrl-CCtrl-C, Presionar EnterEnter\n\n\ninstall.packages(\n  c(\n    \"countdown\", \"ethnobotanyR\", \"flextable\", \"fontawesome\", \n    \"ggthemes\", \"gt\", \"here\", \"janitor\", \"palmerpenguins\", \n    \"readxl\", \"showtext\", \"sysfonts\", \"tidyverse\", \"visdat\" \n  )\n)\n\n\nLa descarga e instalación de paquetes puede tardar según su conexión a internet y las especificaciones de su equipo."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Taller: elaboración de informes",
+    "section": "",
+    "text": "Bienvenido al sitio web del taller sobre elaboración de informes del Herbario de la Universidad de Antioquia, realizado en el marco del contrato CW317139."
+  },
+  {
+    "objectID": "index.html#preparación",
+    "href": "index.html#preparación",
+    "title": "Taller: elaboración de informes",
+    "section": "Preparación",
+    "text": "Preparación\nAntes de comenzar, asegúrate de tener todo instalado y configurado como se indica en la sección Preparación. Clic aquí."
+  },
+  {
+    "objectID": "index.html#introducción-a-quarto",
+    "href": "index.html#introducción-a-quarto",
+    "title": "Taller: elaboración de informes",
+    "section": "Introducción a Quarto",
+    "text": "Introducción a Quarto\n\nSi no puedes ver la presentación, mírala haciendo clic aquí."
+  },
+  {
+    "objectID": "index.html#introducción-a-r",
+    "href": "index.html#introducción-a-r",
+    "title": "Taller: elaboración de informes",
+    "section": "Introducción a R",
+    "text": "Introducción a R\n\nSi no puedes ver la presentación, mírala haciendo clic aquí."
+  },
+  {
+    "objectID": "index.html#reproducibilidad",
+    "href": "index.html#reproducibilidad",
+    "title": "Taller: elaboración de informes",
+    "section": "Reproducibilidad",
+    "text": "Reproducibilidad\n\nSi no puedes ver la presentación, mírala haciendo clic aquí."
+  },
+  {
+    "objectID": "index.html#git-y-github",
+    "href": "index.html#git-y-github",
+    "title": "Taller: elaboración de informes",
+    "section": "Git y GitHub",
+    "text": "Git y GitHub\n\nSi no puedes ver la presentación, mírala haciendo clic aquí."
+  },
+  {
+    "objectID": "presentaciones/git-github/index.html#una-historia-conocida-y-sufrida",
+    "href": "presentaciones/git-github/index.html#una-historia-conocida-y-sufrida",
+    "title": "Git & GitHub",
+    "section": "Una historia conocida… y sufrida",
+    "text": "Una historia conocida… y sufrida\n\n\n\n\n\nUna revisión «normal» de un documento. PHD Comics.\n\n\n\n\n\n\nHistorial de versiones en Google Docs"
+  },
+  {
+    "objectID": "presentaciones/git-github/index.html#control-de-versiones",
+    "href": "presentaciones/git-github/index.html#control-de-versiones",
+    "title": "Git & GitHub",
+    "section": "Control de versiones",
+    "text": "Control de versiones\n\nUn control de versiones es un sistema que registra los cambios realizados en un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante. […] en realidad puedes hacer lo mismo con casi cualquier tipo de archivo que encuentres en una computadora. Chacon (2014)\n\nUn método básico y rudimentario del control de versiones es terner copias de un mismo archivo.\n\n2015-11-09_package-installation.R\n2016-05-21_package-installation.R\n2017-09-05_package-installation.R\n2018-06-29_package-installation.R\n\n\nSe comienza con una versión básica y se van guardando sólo los cambios. Gonzalez et al. (2019)."
+  },
+  {
+    "objectID": "presentaciones/git-github/index.html#sistemas-de-control-de-versiones",
+    "href": "presentaciones/git-github/index.html#sistemas-de-control-de-versiones",
+    "title": "Git & GitHub",
+    "section": "Sistemas de control de versiones",
+    "text": "Sistemas de control de versiones\n\n\nLocales\n\n\n\nContiene una simple base de datos, en la que se lleva el registro de todos los cambios realizados a los archivos.\n\n\n\nCentralizados\n\n\n\nTienen un único servidor que contiene todos los archivos versionados y varios clientes que descargan los archivos desde ese lugar central.\n\n\n\nDistribuidos\n\n\n\nLos clientes no solo descargan la última copia instantánea de los archivos, sino que se replica completamente el repositorio.\n\n\n\n\nImágenes tomadas de Chacon (2014)."
+  },
+  {
+    "objectID": "presentaciones/git-github/index.html#git",
+    "href": "presentaciones/git-github/index.html#git",
+    "title": "Git & GitHub",
+    "section": "Git",
+    "text": "Git\n\n\n\nComo muchas de las grandes cosas en esta vida, Git comenzó con un poco de destrucción creativa y una gran polémica. Chacon (2014).\n\n\nGit es un sistema de control de versiones distribuido gratuito y de código abierto diseñado para manejar todo, desde proyectos pequeños hasta proyectos muy grandes con velocidad y eficiencia.\n\n\n\n\nLinus Torvalds. Krd, CC BY-SA 3.0, via Wikimedia Commons"
+  },
+  {
+    "objectID": "presentaciones/git-github/index.html#por-qué-git",
+    "href": "presentaciones/git-github/index.html#por-qué-git",
+    "title": "Git & GitHub",
+    "section": "Por qué Git",
+    "text": "Por qué Git\n\n\n\nLas ventajas de Git solo superan las desventajas cuando consideras la sobrecarga de trabajar con otras personas, incluyendo tu yo futuro. ¿Y quién entre nosotros no necesita hacer eso? En un flujo de trabajo basado en Git, documentas y, opcionalmente, expones tu trabajo a medida que avanzas. La comunicación y la colaboración son las aplicaciones estrella del control de versiones. El modelo de gestión de archivos de Git puede sentirse incómodamente rígido, pero permite la distribución de archivos entre diferentes personas, computadoras y tiempo. Bryan (2018).\n\n\n\n\n\nProbablmente un mundo mejor. Lennart Wittkuhn."
+  },
+  {
+    "objectID": "presentaciones/git-github/index.html#github",
+    "href": "presentaciones/git-github/index.html#github",
+    "title": "Git & GitHub",
+    "section": "GitHub",
+    "text": "GitHub\n\n\n\nGitHub es el mayor proveedor de alojamiento de repositorios Git, y es el punto de encuentro para que millones de desarrolladores colaboren en el desarrollo de sus proyectos. Un gran porcentaje de los repositorios Git se almacenan en GitHub, y muchos proyectos de código abierto lo utilizan para hospedar su Git, realizar su seguimiento de fallos, hacer revisiones de código y otras cosas. Chacon (2014).\n\n\nIncluso para proyectos individuales privados, es una buena idea subir tu trabajo a una ubicación remota para tener tranquilidad. ¿Por qué? Porque es bastante fácil estropear tu repositorio local de Git, especialmente cuando eres nuevo en esto. La buena noticia es que a menudo solo la infraestructura de Git está estropeada. ¡Tus archivos están bien! Bryan (2018).\n\n\n\n\n\nThe Octocat, la mascota de GitHub.\n\n\n\n\nEntre las alternativas a GitHub destacan Bitbucket y GitLab."
+  },
+  {
+    "objectID": "presentaciones/git-github/index.html#git-y-github-en-rstudio",
+    "href": "presentaciones/git-github/index.html#git-y-github-en-rstudio",
+    "title": "Git & GitHub",
+    "section": "Git y GitHub en RStudio",
+    "text": "Git y GitHub en RStudio\nRStudio ofrece integración con Git y GitHub permitiendo un flujo de trabajo continuo desde el mismo IDE.\n\nPasos para sincronizar el repositorio desde RStudio."
+  },
+  {
+    "objectID": "presentaciones/git-github/index.html#referencias",
+    "href": "presentaciones/git-github/index.html#referencias",
+    "title": "Git & GitHub",
+    "section": "Referencias",
+    "text": "Referencias\n\n\n\n\nBryan, Jennifer. 2018. «Excuse Me, Do You Have a Moment to Talk about Version Control?» The American Statistician 72 (1): 20-27. https://doi.org/10.1080/00031305.2017.1399928.\n\n\nChacon, Scott. 2014. Pro Git. 2.ª ed. The expert’s voice en programa development. New York, NY: Apress. https://git-scm.com/book/en/v2.\n\n\nGonzalez, Ivan, Daisie Huang, Nima Hejazi, Katherine Koziar, y Madicken Munk. 2019. «Version Control with Git: Summary and Setup». https://swcarpentry.github.io/git-novice/index.html."
+  },
+  {
     "objectID": "presentaciones/intro-r/index.html#proposito-1",
     "href": "presentaciones/intro-r/index.html#proposito-1",
     "title": "Introducción a R",
@@ -516,600 +1111,5 @@
     "title": "Introducción a R",
     "section": "Referencias",
     "text": "Referencias\n\n\n\n\nÇetinkaya-Rundel, M. (2023). Teaching the tidyverse in 2023. https://www.tidyverse.org/blog/2023/08/teach-tidyverse-23/\n\n\nChoueiry, G. (2024). Join Dataframes in R: Left/Right/Inner/Full Joins. https://quantifyinghealth.com/join-dataframes-in-r-left-right-inner-full-joins/\n\n\nGiorgi, F. M., Ceraolo, C., & Mercatelli, D. (2022). The R Language: An Engine for Bioinformatics and Data Science. Life, 12(5), 648. https://doi.org/10.3390/life12050648\n\n\nHorst, A. M., Hill, A. P., & Gorman, K. B. (2020). palmerpenguins: Palmer Archipelago (Antarctica) penguin data. https://doi.org/10.5281/zenodo.3960218\n\n\nR Core Team. (2024). R: A Language and Environment for Statistical Computing. R Foundation for Statistical Computing. https://www.R-project.org/\n\n\nWickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10). https://doi.org/10.18637/jss.v059.i10\n\n\nWickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L., François, R., Grolemund, G., Hayes, A., Henry, L., Hester, J., Kuhn, M., Pedersen, T., Miller, E., Bache, S., Müller, K., Ooms, J., Robinson, D., Seidel, D., Spinu, V., … Yutani, H. (2019). Welcome to the Tidyverse. Journal of Open Source Software, 4(43), 1686. https://doi.org/10.21105/joss.01686\n\n\nWickham, H., & Bryan, J. (2023). R packages: organize, test, document, and share your code (Second edition). O’Reilly.\n\n\nWickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for data science: import, tidy, transform, visualize, and model data (2nd edition). O’Reilly. https://r4ds.hadley.nz"
-  },
-  {
-    "objectID": "presentaciones/git-github/index.html#una-historia-conocida-y-sufrida",
-    "href": "presentaciones/git-github/index.html#una-historia-conocida-y-sufrida",
-    "title": "Git & GitHub",
-    "section": "Una historia conocida… y sufrida",
-    "text": "Una historia conocida… y sufrida\n\n\n\n\n\nUna revisión «normal» de un documento. PHD Comics.\n\n\n\n\n\n\nHistorial de versiones en Google Docs"
-  },
-  {
-    "objectID": "presentaciones/git-github/index.html#control-de-versiones",
-    "href": "presentaciones/git-github/index.html#control-de-versiones",
-    "title": "Git & GitHub",
-    "section": "Control de versiones",
-    "text": "Control de versiones\n\nUn control de versiones es un sistema que registra los cambios realizados en un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante. […] en realidad puedes hacer lo mismo con casi cualquier tipo de archivo que encuentres en una computadora. Chacon (2014)\n\nUn método básico y rudimentario del control de versiones es terner copias de un mismo archivo.\n\n2015-11-09_package-installation.R\n2016-05-21_package-installation.R\n2017-09-05_package-installation.R\n2018-06-29_package-installation.R\n\n\nSe comienza con una versión básica y se van guardando sólo los cambios. Gonzalez et al. (2019)."
-  },
-  {
-    "objectID": "presentaciones/git-github/index.html#sistemas-de-control-de-versiones",
-    "href": "presentaciones/git-github/index.html#sistemas-de-control-de-versiones",
-    "title": "Git & GitHub",
-    "section": "Sistemas de control de versiones",
-    "text": "Sistemas de control de versiones\n\n\nLocales\n\n\n\nContiene una simple base de datos, en la que se lleva el registro de todos los cambios realizados a los archivos.\n\n\n\nCentralizados\n\n\n\nTienen un único servidor que contiene todos los archivos versionados y varios clientes que descargan los archivos desde ese lugar central.\n\n\n\nDistribuidos\n\n\n\nLos clientes no solo descargan la última copia instantánea de los archivos, sino que se replica completamente el repositorio.\n\n\n\n\nImágenes tomadas de Chacon (2014)."
-  },
-  {
-    "objectID": "presentaciones/git-github/index.html#git",
-    "href": "presentaciones/git-github/index.html#git",
-    "title": "Git & GitHub",
-    "section": "Git",
-    "text": "Git\n\n\n\nComo muchas de las grandes cosas en esta vida, Git comenzó con un poco de destrucción creativa y una gran polémica. Chacon (2014).\n\n\nGit es un sistema de control de versiones distribuido gratuito y de código abierto diseñado para manejar todo, desde proyectos pequeños hasta proyectos muy grandes con velocidad y eficiencia.\n\n\n\n\nLinus Torvalds. Krd, CC BY-SA 3.0, via Wikimedia Commons"
-  },
-  {
-    "objectID": "presentaciones/git-github/index.html#por-qué-git",
-    "href": "presentaciones/git-github/index.html#por-qué-git",
-    "title": "Git & GitHub",
-    "section": "Por qué Git",
-    "text": "Por qué Git\n\n\n\nLas ventajas de Git solo superan las desventajas cuando consideras la sobrecarga de trabajar con otras personas, incluyendo tu yo futuro. ¿Y quién entre nosotros no necesita hacer eso? En un flujo de trabajo basado en Git, documentas y, opcionalmente, expones tu trabajo a medida que avanzas. La comunicación y la colaboración son las aplicaciones estrella del control de versiones. El modelo de gestión de archivos de Git puede sentirse incómodamente rígido, pero permite la distribución de archivos entre diferentes personas, computadoras y tiempo. Bryan (2018).\n\n\n\n\n\nProbablmente un mundo mejor. Lennart Wittkuhn."
-  },
-  {
-    "objectID": "presentaciones/git-github/index.html#github",
-    "href": "presentaciones/git-github/index.html#github",
-    "title": "Git & GitHub",
-    "section": "GitHub",
-    "text": "GitHub\n\n\n\nGitHub es el mayor proveedor de alojamiento de repositorios Git, y es el punto de encuentro para que millones de desarrolladores colaboren en el desarrollo de sus proyectos. Un gran porcentaje de los repositorios Git se almacenan en GitHub, y muchos proyectos de código abierto lo utilizan para hospedar su Git, realizar su seguimiento de fallos, hacer revisiones de código y otras cosas. Chacon (2014).\n\n\nIncluso para proyectos individuales privados, es una buena idea subir tu trabajo a una ubicación remota para tener tranquilidad. ¿Por qué? Porque es bastante fácil estropear tu repositorio local de Git, especialmente cuando eres nuevo en esto. La buena noticia es que a menudo solo la infraestructura de Git está estropeada. ¡Tus archivos están bien! Bryan (2018).\n\n\n\n\n\nThe Octocat, la mascota de GitHub.\n\n\n\n\nEntre las alternativas a GitHub destacan Bitbucket y GitLab."
-  },
-  {
-    "objectID": "presentaciones/git-github/index.html#git-y-github-en-rstudio",
-    "href": "presentaciones/git-github/index.html#git-y-github-en-rstudio",
-    "title": "Git & GitHub",
-    "section": "Git y GitHub en RStudio",
-    "text": "Git y GitHub en RStudio\nRStudio ofrece integración con Git y GitHub permitiendo un flujo de trabajo continuo desde el mismo IDE.\n\nPasos para sincronizar el repositorio desde RStudio."
-  },
-  {
-    "objectID": "presentaciones/git-github/index.html#referencias",
-    "href": "presentaciones/git-github/index.html#referencias",
-    "title": "Git & GitHub",
-    "section": "Referencias",
-    "text": "Referencias\n\n\n\n\nBryan, Jennifer. 2018. «Excuse Me, Do You Have a Moment to Talk about Version Control?» The American Statistician 72 (1): 20-27. https://doi.org/10.1080/00031305.2017.1399928.\n\n\nChacon, Scott. 2014. Pro Git. 2.ª ed. The expert’s voice en programa development. New York, NY: Apress. https://git-scm.com/book/en/v2.\n\n\nGonzalez, Ivan, Daisie Huang, Nima Hejazi, Katherine Koziar, y Madicken Munk. 2019. «Version Control with Git: Summary and Setup». https://swcarpentry.github.io/git-novice/index.html."
-  },
-  {
-    "objectID": "preparacion/index.html",
-    "href": "preparacion/index.html",
-    "title": "Preparación",
-    "section": "",
-    "text": "Requisitos\n\n\n\nSe requiere que cada participante disponga de su propio ordenador personal. En este equipo, deberá tener instalado el software necesario para el desarrollo del taller.\ninstall.packages(\n  c(\n    \"countdown\", \"ethnobotanyR\", \"flextable\", \"fontawesome\", \n    \"ggthemes\", \"gt\", \"here\", \"janitor\", \"palmerpenguins\", \n    \"readxl\", \"showtext\", \"sysfonts\", \"tidyverse\", \"visdat\" \n  )\n)"
-  },
-  {
-    "objectID": "preparacion/index.html#instalar-r",
-    "href": "preparacion/index.html#instalar-r",
-    "title": "Preparación",
-    "section": "Instalar R",
-    "text": "Instalar R\nEste es un paso a paso de cómo instalar R en Windows.\n\nIr a https://posit.co/download/rstudio-desktop/\n\n\n\nIr hasta esta sección de la página. Hacer clic en DOWNLOAD AND INSTALL R\n\n\n\nHacer clic en Download R for Windows\n\n\n\nHacer clic en base\n\n\n\nHacer clic en Download R-4.5.0 for Windows. Esto iniciara la descarga de R-4.5.0-win.exe\n\n\n\nBuscar donde se ha descargado R-4.5.0-win.exe. Hacer doble clic sobre él para abrir. Se abrirá esta ventana. Hacer clic en Aceptar\n\n\n\nHacer clic en Siguiente\n\n\n\nHacer clic en Siguiente\n\n\n\nHacer clic en Siguiente\n\n\n\nHacer clic en Siguiente\n\n\n\nHacer clic en Siguiente\n\n\n\nEsperar a que la instalación termine\n\n\n\nHacer clic en Finalizar\n\n\n\nInstalar RTools\nEs recomendable instalar RTools. Evitaremos algunos problemas al instalar ciertos paquetes\n\nRegresar a esta ventana. Hacer clic en RTools\n\n\n\nHacer clic en RTools 4.5\n\n\n\nHacer clic en Rtools45 installer o 64-bit ARM Rtools44 installer dependiendo de la configuración de su computadora. Comenzará la descarga de rtools45-6536-6492.exe o rtools45-aarch64-6536-6492.exe, respectivamente. Buscar donde se ha descargado el archivo, hacer doble clic y seguir las instrucciones."
-  },
-  {
-    "objectID": "preparacion/index.html#instalar-rstudio",
-    "href": "preparacion/index.html#instalar-rstudio",
-    "title": "Preparación",
-    "section": "Instalar RStudio",
-    "text": "Instalar RStudio\nEste es un paso a paso de cómo instalar RStudio en Windows.\n\nIr a https://posit.co/download/rstudio-desktop/\n\n\n\nIr hasta esta sección de la página. Hacer clic en DOWNLOAD RSTUDIO DESKTOP FOR WINDOWS. Esto iniciara la descarga de RStudio-2025.05.0-496.exe\n\n\n\nBuscar donde se ha descargado RStudio-2025.05.0-496.exe. Hacer doble clic sobre él para abrir. Se abrirá esta ventana. Hacer clic en Siguiente\n\n\n\nHacer clic en Instalar\n\n\n\nEsperar a que la instalación termine\n\n\n\nHacer clic en Terminar"
-  },
-  {
-    "objectID": "preparacion/index.html#instalar-quarto",
-    "href": "preparacion/index.html#instalar-quarto",
-    "title": "Preparación",
-    "section": "Instalar Quarto",
-    "text": "Instalar Quarto\n\nIr a https://quarto.org. Hacer clic en Get Started\n\n\n\nHacer clic en Download Quarto CLI. Esto iniciara la descarga de quarto-1.7.31-win.msi\n\n\n\nBuscar donde se ha descargado quarto-1.7.31-win.msi. Hacer doble clic sobre él para abrir. Se abrirá esta ventana. Hacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nEsperar a que termine\n\n\n\nHacer clic en Finish\n\n\n\nInstalar TinyTex\n\nAbrir RStudio (la apariencia puede variar)\n\n\n\nHacer clic en la pestaña Terminal que se encuentra en el lado izquierdo\n\n\n\nCopiar el siguiente código. Pegar en la Terminal usando Ctrl-Shift-VCtrl-Shift-V. Presionar EnterEnter\n\n\n\nTerminal\n\nquarto install tinytex\n\n\n\nEsperar a que termine la descarga e instalación de TinyTex\n\n\n\nAl finanilizar la descarga e instalación, la terminal se ha de ver así"
-  },
-  {
-    "objectID": "preparacion/index.html#instalar-git",
-    "href": "preparacion/index.html#instalar-git",
-    "title": "Preparación",
-    "section": "Instalar Git",
-    "text": "Instalar Git\n\nIr a https://git-scm.com. Hacer clic en Download for Windows\n\n\n\n\n\n\n\n\nAlternativa de descarga\n\n\n\n\n\nIr a https://gitforwindows.org. Hacer clic en Download. Esto iniciara la descarga de Git-2.49.0-64bit.exe\n\n\n\n\n\nHacer clic en Click here to download. Esto iniciara la descarga de Git-2.49.0-64bit.exe\n\n\n\nBuscar donde se ha descargado Git-2.49.0-64bit.exe. Hacer doble clic sobre él para abrir. Se abrirá esta ventana. Hacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nEsperar a que la instalación termine\n\n\n\nHacer clic en Finish"
-  },
-  {
-    "objectID": "preparacion/index.html#instalar-github-desktop",
-    "href": "preparacion/index.html#instalar-github-desktop",
-    "title": "Preparación",
-    "section": "Instalar GitHub Desktop",
-    "text": "Instalar GitHub Desktop\n\nIr a https://github.com/apps/desktop. Hacer clic en Download now\n\n\n\nHacer clic en Download for Windows (64bit). Esto iniciara la descarga de GitHubDesktopSetup-x64.exe\n\n\n\nBuscar donde se ha descargado GitHubDesktopSetup-x64.exe. Hacer doble clic sobre él para abrir. Se abrirá esta ventana\n\n\n\nEsperar hasta que termine al instalación y aparezca esta ventana"
-  },
-  {
-    "objectID": "preparacion/index.html#instalar-zotero",
-    "href": "preparacion/index.html#instalar-zotero",
-    "title": "Preparación",
-    "section": "Instalar Zotero",
-    "text": "Instalar Zotero\n\nIr a https://www.zotero.org. Hacer clic en Download\n\n\n\nHacer clic en Download (64-bit). Esto iniciara la descarga de Zotero-7.0.15_x64_setup.exe\n\n\n\nBuscar donde se ha descargado Zotero-7.0.15_x64_setup.exe. Hacer doble clic sobre él para abrir. Se abriá esta ventana. Esperar a que el proceso termine\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Next\n\n\n\nHacer clic en Install\n\n\n\nEsperar a que la instalación termine\n\n\n\nHacer clic en Finish"
-  },
-  {
-    "objectID": "preparacion/index.html#descargar-los-archivos-clonar-el-repositorio-del-taller",
-    "href": "preparacion/index.html#descargar-los-archivos-clonar-el-repositorio-del-taller",
-    "title": "Preparación",
-    "section": "Descargar los archivos (clonar el repositorio) del taller",
-    "text": "Descargar los archivos (clonar el repositorio) del taller\n\n\n\n\n\n\nImportante\n\n\n\nSi está inscrito al taller, descargue los materiales (clone el repositorio) del taller https://github.com/herbarioudea/materiales-elaboracion-informes/ el martes 3 de junio por la mañana.\n\n\n\nIr a https://github.com/herbarioudea/materiales-elaboracion-informes/\nHacer clic en &lt;&gt; Code y copiar la URL bajo la pestaña HTTPS https://github.com/herbariohua/materiales-elaboracion-informes.git\n\n\n\n\n\n\n\nTip\n\n\n\nEn este punto, podría descargar los archivos. Hacer clic en la opción Download zip. Esto descargará el archivo materiales-elaboracion-informes/-main.zip, el cual tendrá que descomprimir.\n\n\n\nEn RStudio, ir a File &gt; New Project &gt; Version Control &gt; From Git &gt; pegar la URL en el cuadro de Repository URL. Hacer clic en Create Project. Esperar a que termine\n\n\n\n\nTomado de Get Started with Quarto\n\n\n\n\n\n\n\n\nTip\n\n\n\nEn en el cuadro de Create project as subdirectory of puede elegir el directorio donde quiere descargar el repositorio."
-  },
-  {
-    "objectID": "preparacion/index.html#instalar-los-paquetes-de-r-necesarios",
-    "href": "preparacion/index.html#instalar-los-paquetes-de-r-necesarios",
-    "title": "Preparación",
-    "section": "Instalar los paquetes de R necesarios",
-    "text": "Instalar los paquetes de R necesarios\n\nAbrir RStudio (la apariencia puede variar)\n\n\n\nCopiar el siguiente código. Pegar en la Console usando Ctrl-CCtrl-C, Presionar EnterEnter\n\n\ninstall.packages(\n  c(\n    \"countdown\", \"ethnobotanyR\", \"flextable\", \"fontawesome\", \n    \"ggthemes\", \"gt\", \"here\", \"janitor\", \"palmerpenguins\", \n    \"readxl\", \"showtext\", \"sysfonts\", \"tidyverse\", \"visdat\" \n  )\n)\n\n\nLa descarga e instalación de paquetes puede tardar según su conexión a internet y las especificaciones de su equipo."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Taller: elaboración de informes",
-    "section": "",
-    "text": "Bienvenido al sitio web del taller sobre elaboración de informes del Herbario de la Universidad de Antioquia, realizado en el marco del contrato CW317139."
-  },
-  {
-    "objectID": "index.html#preparación",
-    "href": "index.html#preparación",
-    "title": "Taller: elaboración de informes",
-    "section": "Preparación",
-    "text": "Preparación\nAntes de comenzar, asegúrate de tener todo instalado y configurado como se indica en la sección Preparación. Clic aquí."
-  },
-  {
-    "objectID": "index.html#introducción-a-quarto",
-    "href": "index.html#introducción-a-quarto",
-    "title": "Taller: elaboración de informes",
-    "section": "Introducción a Quarto",
-    "text": "Introducción a Quarto\n\nSi no puedes ver la presentación, mírala haciendo clic aquí."
-  },
-  {
-    "objectID": "index.html#introducción-a-r",
-    "href": "index.html#introducción-a-r",
-    "title": "Taller: elaboración de informes",
-    "section": "Introducción a R",
-    "text": "Introducción a R\n\nSi no puedes ver la presentación, mírala haciendo clic aquí."
-  },
-  {
-    "objectID": "index.html#reproducibilidad",
-    "href": "index.html#reproducibilidad",
-    "title": "Taller: elaboración de informes",
-    "section": "Reproducibilidad",
-    "text": "Reproducibilidad\n\nSi no puedes ver la presentación, mírala haciendo clic aquí."
-  },
-  {
-    "objectID": "index.html#git-y-github",
-    "href": "index.html#git-y-github",
-    "title": "Taller: elaboración de informes",
-    "section": "Git y GitHub",
-    "text": "Git y GitHub\n\nSi no puedes ver la presentación, mírala haciendo clic aquí."
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#proposito",
-    "href": "presentaciones/reproducibilidad/index.html#proposito",
-    "title": "Reproducibilidad",
-    "section": "Proposito",
-    "text": "Proposito\n\nMostrar la importancia de la reproducibilidad en la ciencia\nEnseñar el flujo de trabajo orientados a proyectos"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#estamos-en-crisis",
-    "href": "presentaciones/reproducibilidad/index.html#estamos-en-crisis",
-    "title": "Reproducibilidad",
-    "section": "¿Estamos en crisis?",
-    "text": "¿Estamos en crisis?\n\n\n\n\n\nRespuesta de 1576 cientificos a ¿existe una crisis de reproducibilidad? Baker (2016)\n\n\n\n\n\n\n\nRegistros de WoS que en el título, resumen o palabras clave contienen: «crisis de reproducibilidad», «crisis científica», «ciencia en crisis», «crisis en la ciencia», «crisis de replicación», o «crisis de replicabilidad». Fanelli (2018)\n\n\n\n\n\n\n\n246 biólogo obtiene 246 resultados diferentes. Oza (2023)"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#alguien-por-favor-quiere-pensar-en-los-biólogos",
-    "href": "presentaciones/reproducibilidad/index.html#alguien-por-favor-quiere-pensar-en-los-biólogos",
-    "title": "Reproducibilidad",
-    "section": "¿Alguien por favor quiere pensar en los biólogos?",
-    "text": "¿Alguien por favor quiere pensar en los biólogos?\n\n¿Cuántos trabajos publicados en su campo son reproducibles? Baker (2016)"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#why-why-oh-thats-why",
-    "href": "presentaciones/reproducibilidad/index.html#why-why-oh-thats-why",
-    "title": "Reproducibilidad",
-    "section": "“Why? Why? Oh, that’s why”",
-    "text": "“Why? Why? Oh, that’s why”\n\n¿Ha fracasado al reproducir un experimento? ¿Qué factores contribuyen a que una investigación sea irreproducible? Baker (2016)"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#alguien-tiene-que-hacer-algo-por-favor",
-    "href": "presentaciones/reproducibilidad/index.html#alguien-tiene-que-hacer-algo-por-favor",
-    "title": "Reproducibilidad",
-    "section": "«Alguien tiene que hacer algo, por favor»",
-    "text": "«Alguien tiene que hacer algo, por favor»\n\n¿Alguna vez has intentado publicar un intento de reproducción? ¿Ha establecido procedimientos de reproducibilidad? Baker (2016)"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#repetibilidad-replicabilidad-reproducibilidad-y-otras-erres",
-    "href": "presentaciones/reproducibilidad/index.html#repetibilidad-replicabilidad-reproducibilidad-y-otras-erres",
-    "title": "Reproducibilidad",
-    "section": "Repetibilidad, Replicabilidad, Reproducibilidad, y otras erres",
-    "text": "Repetibilidad, Replicabilidad, Reproducibilidad, y otras erres\n\n\nComparación de términos. Traducido de Plesser (2018).\n\n\n\n\n\n\n\nGoodman et al. (2016)\nClaerbout & Karrenbach (1992)\nAssociation for Computing Machinery (2020)\n\n\n\n\n\n\nRepetibilidad\n\n\nReproducibilidad de los métodos\nReproducibilidad\nReplicabilidad\n\n\nReproducibilidad de los resultados\nReplicabilidad\nReproducibilidad\n\n\nReproducibilidad inferencial\n\n\n\n\n\n\n\n\n\n\nExplicación de la terminología sobre reproducibilidad y replicabilidad. Whitaker (2017)."
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#el-espectro-de-la-reproducibilidad",
-    "href": "presentaciones/reproducibilidad/index.html#el-espectro-de-la-reproducibilidad",
-    "title": "Reproducibilidad",
-    "section": "El espectro de la reproducibilidad",
-    "text": "El espectro de la reproducibilidad\n\n\n\n\n\n\nEspectro de reproducibilidad más común. Peng (2011).\n\n\n\n\n\n\n\n\n\nCompartir datos y código se considera suficiente para que muchos reproduzcan el análisis de datos. Sin embargo, esto no es suficiente. Akalin (2021)."
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#niveles-de-reproducibilidad-en-r",
-    "href": "presentaciones/reproducibilidad/index.html#niveles-de-reproducibilidad-en-r",
-    "title": "Reproducibilidad",
-    "section": "Niveles de reproducibilidad en R",
-    "text": "Niveles de reproducibilidad en R\n\nNiveles de reproducibilidad. Higgins (2024)"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#advertencia",
-    "href": "presentaciones/reproducibilidad/index.html#advertencia",
-    "title": "Reproducibilidad",
-    "section": "Advertencia",
-    "text": "Advertencia\n\nSi la primera línea de tu script R es\nsetwd(\"C:\\Users\\jenny\\ruta\\que\\solo\\yo\\tengo\")\nIré a tu oficina y LE PRENDERÉ FUEGO A TU ORDENADOR 🔥\nJenny Bryan\n\n\n\n\n\n\n @jennybryan@fosstodon.org\n\n\n\n\nCientífica de datos y profesora asociada de estadística en la Universidad de Columbia Británica. Estadista e ingeniera de software en Posit.\nAutora de Happy Git and GitHub for the useR, What they gorgot to teach you about R, STAT 545: Data wrangling, exploration, and analysis with R.\nAutora y responsable de reprex, readxl, googlesheets4, usethis, entre otros.\n\n\n\nAlgo similar ocurre con rm(list = ls())."
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#dos-problemas",
-    "href": "presentaciones/reproducibilidad/index.html#dos-problemas",
-    "title": "Reproducibilidad",
-    "section": "Dos problemas",
-    "text": "Dos problemas\n\n\nsetwd()\nsetwd() establece el directorio de trabajo.\nsetwd(\"/Users/alex/github/r/etnobotanica-workshop\")\nLa probabilidad de que setwd() tenga el efecto deseado (hacer que las rutas de los archivos funcionen) para alguien que no sea su autor es del 0%. También es poco probable que funcione para el autor dentro de uno o dos años u ordenadores.\nLas rutas fijas y absolutas, especialmente cuando están esparcidas por todo el código, hacen que un proyecto sea frágil. Este tipo de código no viaja bien a través del tiempo o del espacio.\n\nrm(list = ls())\nrm(list = ls()) elimina «todos» los objetos del entorno de trabajo actual.\nPensada para reiniciar las cosas, ya sea para reiniciar el análisis actual o para cambiar de un proyecto a otro. Pero hay mejores maneras de hacer ambas cosas: reiniciar R y Usar un IDE con soporte adecuado para proyectos.\nDada la intención, no va lo suficientemente lejos. Todo lo que hace es borrar objetos creados por el usuario del espacio de trabajo. Muchos otros cambios persisten de forma invisible y pueden tener profundos efectos posteriormente."
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#entorno-de-desarrollo-integrado-ide",
-    "href": "presentaciones/reproducibilidad/index.html#entorno-de-desarrollo-integrado-ide",
-    "title": "Reproducibilidad",
-    "section": "Entorno de desarrollo integrado (IDE)",
-    "text": "Entorno de desarrollo integrado (IDE)\n\n\n\nAplicación que proporciona servicios integrales para facilitar el desarrollo de software.\nVentajas:\n\nResaltado de sintaxis\nAutocompletado de texto\nManejo de librerías\nConstruir, compilar o ejecutar\ny mucho más…\n\n\n\nIDEs populares:\n\nEmacs\nRStudio\nvim\nVS Code\n\n\n\n\n\n\nApariencia por defecto de RStudio."
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#siempre-empezar-r-desde-cero",
-    "href": "presentaciones/reproducibilidad/index.html#siempre-empezar-r-desde-cero",
-    "title": "Reproducibilidad",
-    "section": "Siempre empezar R desde cero",
-    "text": "Siempre empezar R desde cero\n\n\nSiempre es recomendable trabajar en un espacio de trabajo desde cero, sin guardar o cargar cada vez. En RStudio se puede puede hacer de esta forma.\nSiempre es recomendable reiniciar R de vez en cuando. En RStudio se puede hacer en Session &gt; Restar R. Atajo de teclado: Ctrl-Shift-F10Ctrl-Shift-F10\n\n\n\n\nPara desactivar .Rdata ir a Tools &gt; Global Options.\n\n\n\n\nMás información"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#flujo-de-trabajo-orienta-a-proyectos4",
-    "href": "presentaciones/reproducibilidad/index.html#flujo-de-trabajo-orienta-a-proyectos4",
-    "title": "Reproducibilidad",
-    "section": "Flujo de trabajo orienta a proyectos1",
-    "text": "Flujo de trabajo orienta a proyectos1\n\nEnfoque de organización que estructura todo el trabajo, código, datos y resultados relacionados con un proyecto en una única carpeta o estructura de carpetas organizada. Esta metodología facilita el manejo y la reproducibilidad de proyectos, especialmente en ciencia de datos, programación y análisis.\n\n\n\nCaracterísticas\n\nEstructura organizada de carpetas\nSeparación de código y datos\nControl de versiones\nScripts y documentación reproducibles\nPortabilidad\n\n\nVentajas\n\nReproducibilidad\nColaboración\nEscalabilidad\n\n\nProject-oriented workflow"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#proyectos",
-    "href": "presentaciones/reproducibilidad/index.html#proyectos",
-    "title": "Reproducibilidad",
-    "section": "Proyectos",
-    "text": "Proyectos\n\nGestionar tus proyectos de forma reproducible no sólo hace que tu ciencia reproducible, sino que te facilita la vida. @vsbuffalo\n\n\nUn proyecto es una carpeta que contiene todos los archivos relevantes para un trabajo en particular.\nLos proyectos permiten que las investigaciones sean reproducibles, portátiles y autocontenibles.\nTrabajar con proyectos implica tener:\n\nDisciplina en el sistema de archivos: todos los archivos relacionados a un proyecto (datos, imágenes, resultados, scripts, etc) están en la carpeta del proyecto.\nIntencionalidad en el directorio de trabajo: siempre se trabaja en el directorio del proyecto.\nDisciplina en las rutas de archivos: todas las rutas son relativas (nunca absolutas) y relativas a la carpeta del proyecto.\n\n\n\nMás información: Bryan et al. (2024); Bryan (2017)"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#proyectos-de-rstudio",
-    "href": "presentaciones/reproducibilidad/index.html#proyectos-de-rstudio",
-    "title": "Reproducibilidad",
-    "section": "Proyectos de RStudio",
-    "text": "Proyectos de RStudio\n\n\nLos proyectos de RStudio facilitan la división del trabajo en varios contextos, con su propio directorio y espacio de trabajo, historial y documentos.\n\n\n\nHay varias formas de crear un proyecto. La más sencilla es File &gt; New Project. Imagen: Wickham et al. (2023)\n\n\n\nLa barra de herramientas de proyectos se encuentra en la esquina superior derecha de RStudio. Muestra el nombre del proyecto actual, y tiene comandos para:\n\n\n\nOpciones de la barra de herramientas de proyectos de RStudio.\n\n\n\n\nMás información"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#rutas",
-    "href": "presentaciones/reproducibilidad/index.html#rutas",
-    "title": "Reproducibilidad",
-    "section": "Rutas",
-    "text": "Rutas\n\n\n\nRutas absolutas\nIndican la ubicación de un archivo o directorio desde el directorio raíz del sistema de archivos. Dificulta la reproducibilidad ya que esa ruta sólo «funciona» en el equipo donde se haya creado.\n/usuarios/yo/documentos/r/proyecto/scripts/super-analisis.R\n\n\n\n\nRutas relativas\nIndican la ubicación de un archivo o directorio a partir de la posición actual del sistema operativo en el sistema de archivos.\nscripts/super-analisis.R\n\n\n\n\n\nHere: encuentra tu camino. Ilustración de Allison Horst."
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#you-are-herehere",
-    "href": "presentaciones/reproducibilidad/index.html#you-are-herehere",
-    "title": "Reproducibilidad",
-    "section": "You are here::here()",
-    "text": "You are here::here()\nEl objetivo del paquete here es facilitar la referenciación de archivos en flujos de trabajo orientados a proyectos1. here utiliza el directorio de nivel superior de un proyecto para construir fácilmente rutas a archivos.\n\n\n\nRuta absoluta:\n\nreadr::read_csv(\"/Users/alex/documento/r/etnobotanica-workshop/data/raw_data.csv\")\n\n\n\n\n\nRuta relativa\n\nreadr::read_csv(\"data/raw_data.csv\")\n\n\n\n\n\nRuta relativa usando here\n\nreadr::read_csv(here::here(\"data\", \"raw_data.csv\")) # opción 1\nreadr::read_csv(here::here(\"data/raw_data.csv\")) # opción 2\n\n\nPuede ser: Proyecto de RStudio, repositorio de git, paquete R, carpeta con un archivo llamado .here"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#el-nombre-de-las-cosas",
-    "href": "presentaciones/reproducibilidad/index.html#el-nombre-de-las-cosas",
-    "title": "Reproducibilidad",
-    "section": "El nombre de las cosas",
-    "text": "El nombre de las cosas\n\n\n\nNo\nmyabstract.docx\nJoe’s Filenames Use Spaces and Punctuation.xlsx\nfigure 1.png\nfig 2.png\nJW7d^(2sl@deletethisandyourcareerisoverWx2*.txt\n\n\n\n\nSí\n2014-06-08_abstract-for-sla.docx\njoes-filenames-are-getting-better.xlsx\nfig01_scatterplot-talk-length-vs-interest.png\nfig02_histogram-talk-attendance.png\n1986-01-28_raw-data-from-challenger-o-rings.txt\n\n\n\n\n\nhttps://xkcd.com/1459/\n\n\n\n\nMás información: Bryan et al. (2024); Bryan (2015)"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#principios-para-los-nombres-de-los-archivos",
-    "href": "presentaciones/reproducibilidad/index.html#principios-para-los-nombres-de-los-archivos",
-    "title": "Reproducibilidad",
-    "section": "Principios para los nombres (de los archivos)",
-    "text": "Principios para los nombres (de los archivos)\n\nLegible por máquinas\n\nExpresiónes regulares (regex) y globbing1 amigable\n\nEvitar espacios, puntuación, caracteres acentuados y distinción entre mayúsculas y minúsculas\n\nFácil de computar\n\nUso deliberado de delimitadores: “_” para delimitar unidades de metadatos y “-” para delimitar palabras\n\n\nLegible por humanos\n\nEl nombre contiene información sobre el contenido\nRelacionado al concepto de URL semántica2\n\nFunciona bien con el orden predeterminado (alfanúmerico)\n\nPoner algo numérico primero\nUtilice ceros a la izquierda de otros números\nUtilice la norma ISO 8601 para fechas: YYYY-MM-DD\n\n\nDefinir uno o más patrones globales y generar archivos a partir de coincidencias inclusivas o exclusivas. Ejemplo: documento1.txt, documento2.txt. FuenteURLs que son entendibles para el usuario. Ejemplo: https://es.wikipedia.org/wiki/URL_semántica"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#ejemplos",
-    "href": "presentaciones/reproducibilidad/index.html#ejemplos",
-    "title": "Reproducibilidad",
-    "section": "Ejemplos",
-    "text": "Ejemplos\n\n\nOrden lógico\n01_marshal-data.R\n02_pre-dea-filtering.R\n03_dea-with-Limma-voom.R\n04_explore-dea-results.R\n90_Limma-model-term-name-fiasco.R\nhelper01_load-counts.R\nhelper02_load-exp-des.R\nhelper03_load-focus-statinf.R\nhelper04_extract-and-tidy.R\n\nOrden crónologico\n2015-11-09_package-installation.R\n2016-05-21_package-installation.R\n2017-09-05_package-installation.R\n2018-06-29_package-installation.R\n2019-02-19_repair-default-library.R\n2020-06-06_record-existing-pkgs.R\n2021-06-15_git-config-analysis.R\n2021-08-29-git-default-branch.R\n2022-08-11_record-existing-pkgs.R\n\n\n\n\nEjemplo más complejo\n2013-06-26_BRAFWTNEGASSAY_Plasmid-Cellline-100-1MutantFraction_HO1.csv\n2013-06-26_BRAFWTNEGASSAY_Plasmid-Cellline-100-1MutantFraction_HO2.csv\n2013-06-26_BRAFWTNEGASSAY_Plasmid-Cellline-100-1MutantFraction_plateflle.csv\n2014-02-26_BRAFWTNEGASSAY_FFPEDNA-CRC-1-41_A01.csv\n2014-02-26_BRAFWTNEGASSAY_FFPEDNA-CRC-1-41_A02.csv"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#formatos-de-los-nombres",
-    "href": "presentaciones/reproducibilidad/index.html#formatos-de-los-nombres",
-    "title": "Reproducibilidad",
-    "section": "Formatos de los nombres",
-    "text": "Formatos de los nombres\n\n\n\n\n\nAllison Horst.\n\n\n\n\nflatcase\nSCREAMINGCASE\ncamelCase\nPascalCase\nsnake_case\nSCREAMING_SNAKE_CASE\ncamel_Snake_Case\nPascal_Snake_Case\nkebab-case\nSCREAMING-KEBAB-CASE\ncamel-Kebad-Case\nPascal-Kebad-Case\n\n\n\nR no acepta todos los formatos listados. Formatos sugeridos: camelCase, flatcase, PascalCase, period.case, snake_case."
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#lo-lamento-pero-hizo-que-el-emperador-perdiera-el-estilo",
-    "href": "presentaciones/reproducibilidad/index.html#lo-lamento-pero-hizo-que-el-emperador-perdiera-el-estilo",
-    "title": "Reproducibilidad",
-    "section": "«Lo lamento, pero hizo que el emperador perdiera el estilo»",
-    "text": "«Lo lamento, pero hizo que el emperador perdiera el estilo»\n\n\nUn buen estilo de codificación es como una correcta puntuación: se puede prescindir de él, perofacilitalalectura. Todas las guías de estilo se basan fundamentalmente en opiniones. Algunas decisiones realmente facilitan el uso del código, pero muchas decisiones son arbitrarias. Lo más importante de una guía de estilo es que proporciona coherencia, lo que facilita la escritura del código porque hay que tomar menos decisiones.\n\n\nGuías de estilo\n\nGuía de estilo de Bioconductor\nGuía de estilo de Colin Gillespie\nGuía de estilo de Google\nGuía de estilo del Tidyverse\n\n\nDos paquetes de R soportan la Guía de estilo del Tidyverse: styler y lintr.\n\n\n\nStyler añade un complemento de RStudio que facilita aplicar el estilo."
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#estructura-de-un-proyecto",
-    "href": "presentaciones/reproducibilidad/index.html#estructura-de-un-proyecto",
-    "title": "Reproducibilidad",
-    "section": "Estructura de un proyecto",
-    "text": "Estructura de un proyecto\n\n\nNo hay una estructura estándar para organizar un proyecto. Lo principal es que sea «organizado» y entendible por uno mismo y por otros.\nLa estructura de las carpetas y los nombres de los archivos deben ser:\n\nAutodocumentados:\n\nLos datos en la carpeta datos\nLos scripts en la carpeta scripts\n\nFáciles de codificar. Ejemplo:\n\nmedellin_temperatura-minima.csv\nmedellin_temperatura-maxina.csv\n\nTodos los archivos necesarios para\n\nHay varios paquetes que facilitan algunas de estas tareas: usethis, rrtools.\n\nEjemplo de estructura de un proyecto\nproyecto/\n├── proyecto.Rproject  # proyecto de RStudio\n├── README.md          # útil para describir el proyecto\n├── code/\n│   ├── functions\n│   └── scripts\n├── data/\n│   ├── raw_data/      # los datos sin procesar\n│   │   ├── muestreo.xlsx\n│   ├── derived_data/  # los datos procesados\n│       └── datos.csv\n├── images/\n├── output/\n│   ├── report.pdf     # el archivo exportado\n├── report/\n│   ├── apa.csl        # el estilo de citas y referencias\n│   ├── references.bib # la información de las referencias\n│   └── report.qmd\n├── tables/\n└── templates/"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#quarto",
-    "href": "presentaciones/reproducibilidad/index.html#quarto",
-    "title": "Reproducibilidad",
-    "section": "Quarto",
-    "text": "Quarto\nNo se trata solo de obtener resultados reproducibles; los informes o manuscritos también deben serlo. Quarto es un sistema de publicación científica y técnica de código abierto. Puede entrelazar texto y código para producir resultados con un formato elegante en forma de documentos, páginas web, blogs, libros y mucho más. Los archivos de Quarto (.qmd) son archivos de texto plano conformado por:\n\nMetadata (YAML)\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\nCódigo\n\n\n```{r}\nlibrary(dplyr)\nmtcars |&gt; \n  group_by(cyl) |&gt; \n  summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import *\n(mtcars\n  &gt;&gt; group_by(_.cyl)\n  &gt;&gt; summarize(avg_mpg = _.mpg.mean()))\n```\n\nTexto\n# Título 1\nEsta es una frase con algo de **texto en negrita**, *texto en cursiva* y una \n![Descripción de la imagen](imagen.png){fig-alt=«Alt text para la imagen»}."
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#rutas-en-quarto",
-    "href": "presentaciones/reproducibilidad/index.html#rutas-en-quarto",
-    "title": "Reproducibilidad",
-    "section": "Rutas en Quarto",
-    "text": "Rutas en Quarto\nAl usar un documento de Quarto dentro de un proyecto, es importante ser consciente de la ubicación de los archivos utilizados; por eso, las rutas relativas son fundamentales. Por diseño, el directorio de trabajo para renderizar archivos de Quarto es el directorio del propio archivo, que no siempre es la raíz del proyecto (.Rproj).\n\nTenemos el siguiente proyecto. Queremos mostrar data.csv en index.qmd\nproyecto/\n├── proyecto.Rproject # proyecto de RStudio\n├── code/\n│   └── index.qmd     # arhcivo de Quarto\n└── data/\n    └── data.csv/     # los datos\n\n\n\nRuta relativa\n\nread.csv(\n  \"../data.csv\"\n)\n\n# los .. significa «una carpeta \n# arriba de donde yo esté»\n\n\nRuta relativa con here\n\nread.csv(\n  here::here(\n    \"data\",\n    \"data.csv\"\n  )\n)"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#flujo-de-trabajo",
-    "href": "presentaciones/reproducibilidad/index.html#flujo-de-trabajo",
-    "title": "Reproducibilidad",
-    "section": "Flujo de trabajo",
-    "text": "Flujo de trabajo\n\n\n\nhttps://xkcd.com/2054/\n\n\n\n\nProcesos y código\n\n\n\n\n\n\nProcesos y objetos\n\n\n\n\n\n\n\nImágenes de Bryan et al. (2024)."
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#una-api-humana-para-el-análisis",
-    "href": "presentaciones/reproducibilidad/index.html#una-api-humana-para-el-análisis",
-    "title": "Reproducibilidad",
-    "section": "Una API humana para el análisis",
-    "text": "Una API humana para el análisis\n\nSiempre que se pueda, se ha de apostar por formatos abiertos: CSV, JPEG, HTML, ODS, ODT, PDF, PNG, SVG, TSV, TXT. Imagen Bryan et al. (2024)."
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#control-de-versiones",
-    "href": "presentaciones/reproducibilidad/index.html#control-de-versiones",
-    "title": "Reproducibilidad",
-    "section": "Control de versiones",
-    "text": "Control de versiones\n\n\n\n\nUn control de versiones es un sistema que registra los cambios realizados en un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante. […] en realidad puedes hacer lo mismo con casi cualquier tipo de archivo que encuentres en una computadora. Chacon (2014)\n\n\n\nUn método básico y rudimentario del control de versiones es tener copias de un mismo archivo.\n2015-11-09_package-installation.R\n2016-05-21_package-installation.R\n2017-09-05_package-installation.R\n2018-06-29_package-installation.R\n\n\n\n\n\nSe comienza con una versión básica y se van guardando sólo los cambios. Gonzalez et al. (2019).\n\n\n\n\n\n\n\nUna revisión «normal» de un documento. PHD Comics."
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#git-y-github",
-    "href": "presentaciones/reproducibilidad/index.html#git-y-github",
-    "title": "Reproducibilidad",
-    "section": "Git y GitHub",
-    "text": "Git y GitHub\n\n\n\nGit es un sistema de control de versiones. Git gestiona la evolución de un conjunto de archivos -llamado repositorio- de una forma sana y muy estructurada. En un flujo de trabajo basado en Git, documentas y, opcionalmente, expones tu trabajo a medida que avanzas. La comunicación y la colaboración son las aplicaciones estrella del control de versiones. Bryan (2018).\n\n\n\n\n\nLogo de Git.\n\n\n\n\n\n\nGitHub es el mayor proveedor de alojamiento de repositorios Git, y es el punto de encuentro para que millones de desarrolladores colaboren en el desarrollo de sus proyectos. Un gran porcentaje de los repositorios Git se almacenan en GitHub, y muchos proyectos de código abierto lo utilizan para hospedar su Git, realizar su seguimiento de fallos, hacer revisiones de código y otras cosas. Chacon (2014).\n\n\n\n\n\nEl invertocat logo de Github. La silueta es The Octocat, la mascota de GitHub."
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#entornos-reproducibles",
-    "href": "presentaciones/reproducibilidad/index.html#entornos-reproducibles",
-    "title": "Reproducibilidad",
-    "section": "Entornos reproducibles",
-    "text": "Entornos reproducibles\n\n\nUn entorno (environment) consiste en todas las dependencias necesarias para que el código se ejecute correctamente. Esto incluye el propio R, los paquetes de R y las dependencias del sistema. Puede ser difícil gestionar entornos reproducibles:\n\nEl código que solía ejecutarse ya no se ejecuta, a pesar de que el código no ha cambiado.\nTener miedo de actualizar o instalar un nuevo paquete, ya que podría romper su código o el de otra persona.\nEscribir install.packages() en tu entorno no hace nada, o no hace lo correcto.\n\n\n\n\n\n«El proyecto cebolla»: apostar por el flujo de trabajo orientado a proyectos significa adoptar herramientas que permitan gestionar mediante programación cada una de las capas de la configuración del proyecto. Bryan et al. (2024)\n\n\n\n\nEstos retos pueden abordarse mediante una cuidadosa combinación de herramientas y estrategias. Acá sólo abordamos: la actualización segura de paquetes y la colaboración en equipo. Quedando por fuera el manejo de varias versiones de R y las dependencias del sistema, para lo cual es recomendable investigar sobre rig y Docker.\n\n\nhttps://xkcd.com/1987/"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#renv",
-    "href": "presentaciones/reproducibilidad/index.html#renv",
-    "title": "Reproducibilidad",
-    "section": "renv",
-    "text": "renv\n\n\nrenv ayuda a crear entornos reproducibles para sus proyectos de R, haciendo los proyectos:\n\nAislados: la instalación de un paquete nuevo o actualizado para un proyecto no romperá sus otros proyectos, y viceversa. renv proporciona a cada proyecto su propia biblioteca privada.\nPortátil: transporte fácilmente sus proyectos de un ordenador a otro, incluso a través de diferentes plataformas. renv facilita la instalación de los paquetes de los que depende su proyecto.\nReproducible: renv registra las versiones exactas de los paquetes de los que depende, y asegura que esas versiones exactas son las que se instalan allá donde vaya.\n\n\n\n\n\n\n\n\n\n\nLos verbos y sustantivos más importantes de renv.\n\n\n\n\nhttps://rstudio.github.io/renv/"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#section",
-    "href": "presentaciones/reproducibilidad/index.html#section",
-    "title": "Reproducibilidad",
-    "section": "",
-    "text": "https://rcd.ucsb.edu/sites/default/files/2023-12/dls-202311-renv-white.pdf"
-  },
-  {
-    "objectID": "presentaciones/reproducibilidad/index.html#referencias",
-    "href": "presentaciones/reproducibilidad/index.html#referencias",
-    "title": "Reproducibilidad",
-    "section": "Referencias",
-    "text": "Referencias\n\n\nAkalin, A. (2021). Scientific data analysis pipelines and reproducibility. https://towardsdatascience.com/scientific-data-analysis-pipelines-and-reproducibility-75ff9df5b4c5\n\n\nAssociation for Computing Machinery. (2020). Artifact review and badging - current. https://www.acm.org/publications/policies/artifact-review-and-badging-current\n\n\nBaker, M. (2016). 1,500 scientists lift the lid on reproducibility. Nature, 533(7604), 452-454. https://doi.org/10.1038/533452a\n\n\nBryan, J. (2015). How to name files. https://speakerdeck.com/jennybc/how-to-name-files\n\n\nBryan, J. (2017). Project-oriented workflow. https://www.tidyverse.org/blog/2017/12/workflow-vs-script/\n\n\nBryan, J. (2018). Excuse me, do you have a moment to talk about version control? The American Statistician, 72(1), 20-27. https://doi.org/10.1080/00031305.2017.1399928\n\n\nBryan, J., Hester, J., Pileggi, S., & Aja, E. D. (2024). What they forgot to teach you about R: the stuff you need to know about R, besides data analysis. https://rstats.wtf/\n\n\nCampitelli, E., & Corrales, P. (2024). An R reproducibility toolkit for the practical researcher. https://reproducibility.rocks/\n\n\nChacon, S. (2014). Pro Git (2.ª ed.). Apress. https://git-scm.com/book/en/v2\n\n\nClaerbout, J. F., & Karrenbach, M. (1992). Electronic documents give reproducible research a new meaning. SEG Technical Program Expanded Abstracts 1992, 601-604. https://doi.org/10.1190/1.1822162\n\n\nFanelli, D. (2018). Is science really facing a reproducibility crisis, and do we need it to? Proceedings of the National Academy of Sciences, 115(11), 2628-2631. https://doi.org/10.1073/pnas.1708272114\n\n\nGonzalez, I., Huang, D., Hejazi, N., Koziar, K., & Munk, M. (2019). Version Control with Git: Summary and Setup. https://swcarpentry.github.io/git-novice/index.html\n\n\nGoodman, S. N., Fanelli, D., & Ioannidis, J. P. A. (2016). What does research reproducibility mean? Science Translational Medicine, 8(341). https://doi.org/10.1126/scitranslmed.aaf5027\n\n\nHiggins, P. D. R. (2024). Reproducible medical research with r. https://bookdown.org/pdr_higgins/rmrwr/\n\n\nLopp, S. (2019). Reproducible Environments. https://rviews.rstudio.com/2019/04/22/reproducible-environments/\n\n\nOza, A. (2023). Reproducibility trial: 246 biologists get different results from same data sets. Nature, 622(7984), 677-678. https://doi.org/10.1038/d41586-023-03177-1\n\n\nPeng, R. D. (2011). Reproducible Research in Computational Science. Science, 334(6060), 1226-1227. https://doi.org/10.1126/science.1213847\n\n\nPlesser, H. E. (2018). Reproducibility vs. replicability: a brief history of a confused terminology. Frontiers in Neuroinformatics, 11, 76. https://doi.org/10.3389/fninf.2017.00076\n\n\nPosit Software. (2022). RStudio User Guide - renv. https://docs.posit.co/ide/user/ide/guide/environments/r/renv.html\n\n\nPosit Software. (2024). Reproducible Environments. https://solutions.posit.co/envs-pkgs/environments/\n\n\nSlingsby, J. (2024). A minimal introduction to reproducible research. https://www.ecologi.st/data-management/\n\n\nWhitaker, K. (2017). Showing your working: a how to guide to reproducible research. https://doi.org/10.6084/m9.figshare.4244996.v2\n\n\nWickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for data science: import, tidy, transform, visualize, and model data (2.ª ed.). O’Reilly. https://r4ds.hadley.nz"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#proposito",
-    "href": "presentaciones/intro-quarto/index.html#proposito",
-    "title": "Introducción a Quarto",
-    "section": "Proposito",
-    "text": "Proposito\n\n\nPasar de Word…\n\n\n\n\n\n\na Quarto"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#qué-es-quarto",
-    "href": "presentaciones/intro-quarto/index.html#qué-es-quarto",
-    "title": "Introducción a Quarto",
-    "section": "Qué es Quarto",
-    "text": "Qué es Quarto\nQuarto es un sistema open-source de publicación técnica y científica. Quarto es una interfaz de línea de comandos (CLI) que convierte formatos de texto plano (.qmd, .rmd, .md) o formatos mixtos (.ipynb/Jupyter notebook) en documentos estaticos o interactivos.\n\nQuarto permite combinar en un mismo entorno texto y código para producir resultados elegantemente formateados como documentos, páginas web, entradas de blog, libros y más.\n\n\n\nRepresantación esquemática de Quarto. Allison Horst."
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#por-qué-quarto",
-    "href": "presentaciones/intro-quarto/index.html#por-qué-quarto",
-    "title": "Introducción a Quarto",
-    "section": "Por qué Quarto",
-    "text": "Por qué Quarto\n\n\n\nOpen-source\nUn único framework\nSintaxis coherente\nMultiplataforma, multiengine, multilenguaje, multilingüe\nMejor integración con IDEs (JupyterLab, RStudio, VScode)\nCompatibilidad con formatos existentes (.Rmd, ipynb)\nIntegración más sencilla con filtros Lua\nMás de 40 formatos de salida\nExtensiones\n\n\n\n\n\nImagen de Krishnamurthy (2015)"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-artículos",
-    "href": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-artículos",
-    "title": "Introducción a Quarto",
-    "section": "Qué puedo hacer con Quarto: artículos",
-    "text": "Qué puedo hacer con Quarto: artículos\n\n\nhttps://dx.doi.org/10.2139/ssrn.4960885"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-dashboards",
-    "href": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-dashboards",
-    "title": "Introducción a Quarto",
-    "section": "Qué puedo hacer con Quarto: dashboards",
-    "text": "Qué puedo hacer con Quarto: dashboards\n\n\nhttps://geobota.github.io/dia-biologo-2024/"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-libros",
-    "href": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-libros",
-    "title": "Introducción a Quarto",
-    "section": "Qué puedo hacer con Quarto: libros",
-    "text": "Qué puedo hacer con Quarto: libros\n\n\nhttps://alexespinosaco.github.io/biologia-plantas-manual/"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-tesis",
-    "href": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-tesis",
-    "title": "Introducción a Quarto",
-    "section": "Qué puedo hacer con Quarto: tesis",
-    "text": "Qué puedo hacer con Quarto: tesis\n\n\nhttps://alexespinosaco.github.io/udea-quarto-thesis/"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-presentaciones",
-    "href": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-presentaciones",
-    "title": "Introducción a Quarto",
-    "section": "Qué puedo hacer con Quarto: presentaciones",
-    "text": "Qué puedo hacer con Quarto: presentaciones\n\n\nhttps://herbariohua.github.io/taller-elaboracion-informes/"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-sitios-web",
-    "href": "presentaciones/intro-quarto/index.html#qué-puedo-hacer-con-quarto-sitios-web",
-    "title": "Introducción a Quarto",
-    "section": "Qué puedo hacer con Quarto: sitios web",
-    "text": "Qué puedo hacer con Quarto: sitios web\n\n\nhttps://geobota.github.io/"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#cómo-funciona-quarto",
-    "href": "presentaciones/intro-quarto/index.html#cómo-funciona-quarto",
-    "title": "Introducción a Quarto",
-    "section": "Cómo funciona Quarto",
-    "text": "Cómo funciona Quarto\n\nRepresentación esquemática de cómo funciona Quarto. Allison Horst."
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#no-es-sólo-r-y-rstudio",
-    "href": "presentaciones/intro-quarto/index.html#no-es-sólo-r-y-rstudio",
-    "title": "Introducción a Quarto",
-    "section": "No es sólo R y RStudio",
-    "text": "No es sólo R y RStudio"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#what-you-see-is-what-you-get-wysiwyg",
-    "href": "presentaciones/intro-quarto/index.html#what-you-see-is-what-you-get-wysiwyg",
-    "title": "Introducción a Quarto",
-    "section": "What You See Is What You Get (WYSIWYG)",
-    "text": "What You See Is What You Get (WYSIWYG)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat you see is what you get: lo que ves es lo que hay"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#what-you-see-is-what-you-mean-wysiwym",
-    "href": "presentaciones/intro-quarto/index.html#what-you-see-is-what-you-mean-wysiwym",
-    "title": "Introducción a Quarto",
-    "section": "What You See Is What You Mean (WYSIWYM)",
-    "text": "What You See Is What You Mean (WYSIWYM)\n\n\n\n\n\nViews Iceberg Traced by User:Jc86035, CC BY-SA 3.0, via Wikimedia Commons\n\n\n\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```\n\n\n\n\n\nResultado obtenido del código de la izquierda. Quarto\n\n\n\n\nWhat you see is what you mean: lo que ves es lo que quieres decir"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#integrated-development-environment-ide",
-    "href": "presentaciones/intro-quarto/index.html#integrated-development-environment-ide",
-    "title": "Introducción a Quarto",
-    "section": "Integrated development environment (IDE)",
-    "text": "Integrated development environment (IDE)\n\nAplicación que proporciona servicios integrales para facilitar el desarrollo de software.\n\n\n\n\n\n\nApariencia por defecto de RStudio.\n\n\n\n\n\n\nEditor Visual de RStudio. Quarto.\n\n\n\n\nIntegrated development environment: entorno de desarrollo integrado"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#renderizar-y-formatos",
-    "href": "presentaciones/intro-quarto/index.html#renderizar-y-formatos",
-    "title": "Introducción a Quarto",
-    "section": "Renderizar y formatos",
-    "text": "Renderizar y formatos\n\n\nTres formas de renderizar\n\nUtilizando el boton  en RStudio\n\n\n\nUtilizando la consola de R\n\nlibrary(quarto)\nquarto::quarto_render(input = \"documento.qmd\") # html por defecto\nquarto::quarto_render(input = \"documento.qmd\", output_format = \"pdf\")\n\nUtilizando la terminal\n\nquarto render document.qmd # html por defecto\nquarto render document.qmd --to pdf\n\nMás de 40 formatos de salida\n\nhtml\npdf\ntypst\ndocx\nodt\nrevealjs\npptx\ndashboard\nmuchos más!"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#anatomía-de-un-archivo-.qmd",
-    "href": "presentaciones/intro-quarto/index.html#anatomía-de-un-archivo-.qmd",
-    "title": "Introducción a Quarto",
-    "section": "Anatomía de un archivo .qmd",
-    "text": "Anatomía de un archivo .qmd\nLos archivos de Quarto (.qmd) son archivos de texto plano conformado por:\nMetadata (YAML)\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\nCódigo\n\n\n```{r}\nlibrary(dplyr)\nmtcars |&gt; \n  group_by(cyl) |&gt; \n  summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import *\n(mtcars\n  &gt;&gt; group_by(_.cyl)\n  &gt;&gt; summarize(avg_mpg = _.mpg.mean()))\n```\n\nTexto\n# Título 1\nEsta es una frase con algo de **texto en negrita**, *texto en cursiva* y una \n![Descripción de la imagen](imagen.png){fig-alt=«Alt text para la imagen»}."
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#metadata-yaml-1",
-    "href": "presentaciones/intro-quarto/index.html#metadata-yaml-1",
-    "title": "Introducción a Quarto",
-    "section": "Metadata (YAML)",
-    "text": "Metadata (YAML)\n«Yet Another Markup Language» o “YAML Ain’t Markup Language” se utiliza para proporcionar metadatos a nivel de documento o proyecto.\n\n\n\nSe coloca al principio del documento entre ---\nSiempre en pares key: y value\nPueden anidarse\nQuisquilloso con la sangría y espaciado\n\n\n---\ntitle: \"El origen de las especies\"\nauthor: \"Charles Darwin\"\nformat: \n  html:\n    toc: true\n----\n\n\n\nQuarto YAML Intelligence:autocompletar\n\n\n\n\n\n\nQuarto linting:detección de errores"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#markdown",
-    "href": "presentaciones/intro-quarto/index.html#markdown",
-    "title": "Introducción a Quarto",
-    "section": "Markdown ",
-    "text": "Markdown \n\n\nMarkdown es un formato de texto plano creado por John Gruber y Aaron Swartz, está diseñado para ser fácil de escribir y fácil de leer. Quarto se basa en Pandoc y utiliza su variante de Markdown, la cual es una versión ampliada y ligeramente revisada de la sintaxis Markdown de John Gruber.\n\n\nUn documento con formato Markdown debería poder publicarse tal cual, como texto sin formato, sin que parezca que ha sido marcado con etiquetas o instrucciones de formato. John Gruber\n\n\n\n\n\n\nAaron Swartz (1986-2013) una de las personas más importantes en la historia de Internet. Fred Benenson / www.fredbenenson.com, CC BY 2.0."
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#markdown-formato-de-texto",
-    "href": "presentaciones/intro-quarto/index.html#markdown-formato-de-texto",
-    "title": "Introducción a Quarto",
-    "section": "Markdown: formato de texto",
-    "text": "Markdown: formato de texto\nEn Quarto se puede agregar texto en diferentes formatos.\nSintaxis básica\n\n\n\n\n\n\n\nMarkdown\nSalida\n\n\n\n\n*cursiva*\ncursiva\n\n\n**negrilla**\nnegrilla\n\n\n***cursiva y negrilla***\ncursiva y negrilla\n\n\nsuperíndice^2^\nsuperíndice2\n\n\nsubíndice~2~\nsubíndice2\n\n\n~~tachado~~\ntachado\n\n\n`código puro`\ncódigo puro"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#markdown-párrafos",
-    "href": "presentaciones/intro-quarto/index.html#markdown-párrafos",
-    "title": "Introducción a Quarto",
-    "section": "Markdown: párrafos",
-    "text": "Markdown: párrafos\nEn Markdown los párrafos se construyen dejando una linea en blanco. De lo contrario, el salto de línea se trata como un espacio.\n\n\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit.\n\nSed do eiusmod tempor.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\nSed do eiusmod tempor."
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#markdown-encabezados",
-    "href": "presentaciones/intro-quarto/index.html#markdown-encabezados",
-    "title": "Introducción a Quarto",
-    "section": "Markdown: encabezados",
-    "text": "Markdown: encabezados\nEn Quarto se pueden agregar hasta seis niveles de encabezados o títulos.\n\n\n\n\n\n\n\nMarkdown\nSalida\n\n\n\n\n# Encabezado 1\nEncabezado 1\n\n\n## Encabezado 2\nEncabezado 2\n\n\n### Encabezado 3\nEncabezado 3\n\n\n#### Encabezado 4\nEncabezado 4\n\n\n##### Encabezado 5\nEncabezado 5\n\n\n###### Encabezado 6\nEncabezado 6"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#markdown-listas",
-    "href": "presentaciones/intro-quarto/index.html#markdown-listas",
-    "title": "Introducción a Quarto",
-    "section": "Markdown: listas",
-    "text": "Markdown: listas\nLista desordenada\nPara los elementos de una lista desordenada se puede utilizar: *, -, o +.\n\n\nMarkdown\n*   Elemento 1\n    +   Elemento 1.1\n        -   Elemento 1.1.1\n    +   Elemento 1.2\n*   Elemento 2\n\nSalida\n\nElemento 1\n\nElemento 1.1\n\nElemento 1.1.1\n\nElemento 1.2\n\nElemento 2\n\n\nLista ordenada\n\n\nMarkdown\n1.  Elemento 1\n    i)  Elemento 1.1\n        A.  Elemento 1.1.1\n        A.  Elemento 1.1.2\n    i)  Elemento 1.2\n1.  Elemento 2\n\nSalida\n\nElemento 1\n\nElemento 1.1\n\nElemento 1.1.1\nElemento 1.1.2\n\nElemento 1.2\n\nElemento 2"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#markdown-enlaces-e-imágene",
-    "href": "presentaciones/intro-quarto/index.html#markdown-enlaces-e-imágene",
-    "title": "Introducción a Quarto",
-    "section": "Markdown: enlaces e imágene",
-    "text": "Markdown: enlaces e imágene\nLa sintaxis para agregar enlaces e imágenes e relativamente similar.\n\n\n\nMarkdown\nOutput\n\n\n\n\n&lt;https://quarto.org&gt;\nhttps://quarto.org\n\n\n[Quarto](https://quarto.org)\nQuarto\n\n\n![Descripción](images/quarto_logo.png)\n\n\n\nDescripción"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#sec-markdown-tablas",
-    "href": "presentaciones/intro-quarto/index.html#sec-markdown-tablas",
-    "title": "Introducción a Quarto",
-    "section": "Markdown: tablas",
-    "text": "Markdown: tablas\nQuarto incluye características destinadas a facilitar la creación y personalización de tablas: especificar la alineación y el ancho de las columnas; proporcionar títulos y referencias cruzadas; generar tablas a partir de código. En Markdown las tablas pueden ser pipe tables o grid tables. Las tablas se pueden construir usando el Editor Visual o generadores https://www.tablesgenerator.com\n\n\n\nMarkdown\n| Por defecto | Izquierda | Derecha | Centro |\n|-------------|:----------|--------:|:------:|\n| 12          | 12        |      12 |   12   |\n| 123         | 123       |     123 |  123   |\n| 1           | 1         |       1 |   1    |\n\n: Demostración de pipe table.\n\nSalida\n\nDemostración de pipe table.\n\n\nPor defecto\nIzquierda\nDerecha\nCentro\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\n\n\n\n\n\n+-----------+-----------+--------------------------+\n| Fruta     | Precio    | Ventajas                 |\n+==========:+:=========:+:=========================+\n| Banano    | $1.34     | - envoltorio incorporado |\n|           |           | - color brillante        |\n+-----------+-----------+--------------------------+\n\n: Demostración de grid table.\n\n\nDemostración de grid table.\n\n\n\n\n\n\n\nFruta\nPrecio\nVentajas\n\n\n\n\nBanano\n$1.34\n\nenvoltorio incorporado\ncolor brillante"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#referencias-cruzadas",
-    "href": "presentaciones/intro-quarto/index.html#referencias-cruzadas",
-    "title": "Introducción a Quarto",
-    "section": "Referencias cruzadas",
-    "text": "Referencias cruzadas\nLas referencias cruzadas facilitan a los lectores la navegación por el documento proporcionando referencias numeradas e hipervínculos a diversas entidades, como figuras y tablas. Toda entidad con la que se puedan establecer referencias cruzadas requiere una etiqueta (fig- y tbl-), un identificador único precedido de un tipo de referencia cruzada (fig-elemento y tbl-elemento).\n\n![Istopipo de Quarto](images/quarto_logo.png){#fig-quarto}\n\nLa @fig-quarto muestra el isotipo de Quarto.\n\n\n\n\n\n\nFigura 1: Isotipo de Quarto\n\n\n\nLa Figura 1 muestra el isotipo de Quarto.\n\n\nQuarto tiene algunos prefijos reservados: fig, tbl, lst, tip, nte, wrn, imp, cau, thm, lem, cor, prp, cnj, def, exm, exr, sol, rem, eq, sec.\nEs recomendable evitar el uso de guiones bajos _."
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#citación",
-    "href": "presentaciones/intro-quarto/index.html#citación",
-    "title": "Introducción a Quarto",
-    "section": "Citación",
-    "text": "Citación\nQuarto utiliza Pandoc para generar automáticamente citas y una bibliografía en varios estilos. Es necesario tener:\n\nUn documento Quarto formateado con citas.\nUna fuente de datos bibliográficos, por ejemplo un archivo BibLaTeX (.bib) o BibTeX (.bibtex).\nOpcionalmente, un archivo CSL que especifique el formato a utilizar al generar las citas y la bibliografía.\n\n\nEl conjunto de datos flor Iris fue tomado por @anderson1936 y popularizado \nposteriormente [@fisher1936]. El conjunto de datos contiene 150 muestras de \ntres especies [@anderson1936; @fisher1936].\nEl conjunto de datos flor Iris fue tomado por Anderson (1936) y popularizado posteriormente (Fisher 1936). El conjunto de datos contiene 150 muestras de tres especies (Anderson 1936; Fisher 1936).\n\n\nReferencias\n\n\nAnderson, Edgar. 1936. «The species problem in Iris». Annals of the Missouri Botanical Garden 23 (3): 457. https://doi.org/10.2307/2394164.\n\n\nFisher, R. A. 1936. «The Use of Multiple Measurements in Taxonomic Problems». Annals of Eugenics 7 (2): 179-88. https://doi.org/10.1111/j.1469-1809.1936.tb02137.x."
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#código-1",
-    "href": "presentaciones/intro-quarto/index.html#código-1",
-    "title": "Introducción a Quarto",
-    "section": "Código",
-    "text": "Código\nEn Quarto el código puede insertarse en linea o como bloques de código (conocidos como chunks). Los chunks siempre se encuentran entre ```, mientras el código en linea se encuentra entre `. Para que el código sea ejecutable se ha de poner el nombre del lenguaje entre {}, ej. {r}. Si sólo se pone el nombre del lenguaje, el código no se ejecutará y se resaltará la sintaxis del lenguaje. Los chunks pueden tener opciones que se indican con un #| (hash pipe) y siguen la sintaxis del YAML.\n\n\n\n```{r}\n#| label: fig-ejemplo-chunk\n#| fig-cap: \"Descripción de la figura. Note el prefijo generado automáticamente\" \n#| fig-dpi: 300\n#| output-location: column-fragment\n#| code-line-numbers: \"|1|2-8|2|3-4\"\n\nlibrary(ggplot2)\n\niris |&gt; \n  ggplot2::ggplot(\n    ggplot2::aes(x = Petal.Length, y = Petal.Width)\n  ) + \n  ggplot2::geom_point(\n    ggplot2::aes(color = Species, shape = Species)\n  ) + \n  ggplot2::geom_smooth(\n    formula = y ~ x, method = \"loess\"\n  ) + \n  ggplot2::theme_classic()\n```\n\n\n\n\n\n\n\n\nFigura 2: Descripción de la figura. Note el prefijo generado automáticamente"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#de-opciones-de-chunk-al-yaml",
-    "href": "presentaciones/intro-quarto/index.html#de-opciones-de-chunk-al-yaml",
-    "title": "Introducción a Quarto",
-    "section": "De opciones de chunk al YAML",
-    "text": "De opciones de chunk al YAML\nHay una gran variedad de opciones disponibles para personalizar la salida del código ejecutado. Todas estas opciones se pueden especificar globalmente (YAML) o por bloque de código.\n\n\n---\ntitle: \"El origen de las especies\"\nformat: html\n---\n\n```{r}\n#| echo: true\n\npi + 1\n```\n\n---\ntitle: \"El origen de las especies\"\nformat: html\nexecute:\n  echo: true\n---\n\n```{r}\npi + 1\n```"
-  },
-  {
-    "objectID": "presentaciones/intro-quarto/index.html#opciones-de-ejecución",
-    "href": "presentaciones/intro-quarto/index.html#opciones-de-ejecución",
-    "title": "Introducción a Quarto",
-    "section": "Opciones de ejecución",
-    "text": "Opciones de ejecución\nLas opciones disponibles para personalizar la salida incluyen:\n\n\n\n\n\n\n\nOpción\nDescripción\n\n\n\n\neval\nEvalúa el fragmento de código (si es false, sólo muestra el código en la salida).\n\n\necho\nIncluye el código fuente en la salida.\n\n\noutput\nIncluye los resultados de ejecutar el código en la salida (true, false, o asis para indicar que la salida es markdown crudo)\n\n\nwarning\nIncluye advertencias en la salida.\n\n\nerror\nIncluye errores en la salida (esto implica que los errores de ejecución de código no detendrán el procesamiento del documento).\n\n\ninclude\nCaptura general para evitar que se incluya cualquier salida (código o resultados). Por ejemplo, include: false suprime toda la salida del bloque de código."
   }
 ]

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://herbariohua.github.io/taller-elaboracion-informes/presentaciones/intro-r/index.html</loc>
-    <lastmod>2025-06-03T00:03:02.842Z</lastmod>
-  </url>
-  <url>
-    <loc>https://herbariohua.github.io/taller-elaboracion-informes/presentaciones/git-github/index.html</loc>
-    <lastmod>2025-06-03T01:53:56.828Z</lastmod>
-  </url>
-  <url>
-    <loc>https://herbariohua.github.io/taller-elaboracion-informes/preparacion/index.html</loc>
-    <lastmod>2025-06-02T20:43:12.602Z</lastmod>
-  </url>
-  <url>
-    <loc>https://herbariohua.github.io/taller-elaboracion-informes/index.html</loc>
-    <lastmod>2025-06-03T01:47:05.051Z</lastmod>
-  </url>
-  <url>
     <loc>https://herbariohua.github.io/taller-elaboracion-informes/presentaciones/reproducibilidad/index.html</loc>
-    <lastmod>2025-06-03T00:33:04.981Z</lastmod>
+    <lastmod>2025-06-03T17:13:30.156Z</lastmod>
   </url>
   <url>
     <loc>https://herbariohua.github.io/taller-elaboracion-informes/presentaciones/intro-quarto/index.html</loc>
-    <lastmod>2025-06-02T21:20:35.271Z</lastmod>
+    <lastmod>2025-06-03T17:13:30.059Z</lastmod>
+  </url>
+  <url>
+    <loc>https://herbariohua.github.io/taller-elaboracion-informes/preparacion/index.html</loc>
+    <lastmod>2025-06-03T23:51:25.416Z</lastmod>
+  </url>
+  <url>
+    <loc>https://herbariohua.github.io/taller-elaboracion-informes/index.html</loc>
+    <lastmod>2025-06-03T17:13:30.011Z</lastmod>
+  </url>
+  <url>
+    <loc>https://herbariohua.github.io/taller-elaboracion-informes/presentaciones/git-github/index.html</loc>
+    <lastmod>2025-06-03T17:13:30.027Z</lastmod>
+  </url>
+  <url>
+    <loc>https://herbariohua.github.io/taller-elaboracion-informes/presentaciones/intro-r/index.html</loc>
+    <lastmod>2025-06-03T17:13:30.103Z</lastmod>
   </url>
 </urlset>
